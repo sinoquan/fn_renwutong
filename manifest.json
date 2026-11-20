@@ -1,6 +1,6 @@
 {
  "version": "2026-11-20",
- "updatedAt": "2026-11-20T10:07:06Z",
+ "updatedAt": "2026-11-20T11:42:16Z",
  "rules": [
   {
    "id": "audiences",
@@ -78,13 +78,6 @@
    "version": "1.0.0",
    "file": "rules/qd-189.yaml",
    "sha256": "2287a0b04992bafa8815a1961e08c671f40b20f75d1e258f66214fb51cb6c9dd"
-  },
-  {
-   "id": "qd-2dfan",
-   "name": "2DFan",
-   "version": "1.0.0",
-   "file": "rules/qd-2dfan.yaml",
-   "sha256": "64d629f4162fc18dd58314526cdf3991cfd8f071fb93142d12d95c9680a0c9b4"
   },
   {
    "id": "qd-2libra",
@@ -199,13 +192,6 @@
    "sha256": "9e0873850de255af36f06c91f1178354fa8f27e7e95192ff345ad47658db6e2e"
   },
   {
-   "id": "qd-9dm",
-   "name": "9DM玖大猫",
-   "version": "1.0.0",
-   "file": "rules/qd-9dm.yaml",
-   "sha256": "3709c61b5ba6644fe640c68cc5f5595dfed0877edd4a1e9230130b2effaa704f"
-  },
-  {
    "id": "qd-acg",
    "name": "极点ACG",
    "version": "1.0.0",
@@ -283,13 +269,6 @@
    "sha256": "c381c36b1a0ef8fde5ed03c83baba7dd39c83fb2b9f2a4ee1953a70885fdace5"
   },
   {
-   "id": "qd-blue",
-   "name": "blue高清公馆",
-   "version": "1.0.0",
-   "file": "rules/qd-blue.yaml",
-   "sha256": "9f51c75f551b84468c761806e23e93b9d14fe21e8c5467885b9906c5a75fa9da"
-  },
-  {
    "id": "qd-c4d",
    "name": "一酷C4D",
    "version": "1.0.0",
@@ -316,13 +295,6 @@
    "version": "1.0.0",
    "file": "rules/qd-ccna.yaml",
    "sha256": "f591605f2bc8e9d1117903db6e1a67d888040772f6afdf44ec457009fa26e4be"
-  },
-  {
-   "id": "qd-chiphell",
-   "name": "chiphell",
-   "version": "1.0.0",
-   "file": "rules/qd-chiphell.yaml",
-   "sha256": "9f733977cadb71f1fb57a5e34d59bc5f2ffa34815560e2c0995ac5621ac34115"
   },
   {
    "id": "qd-cngame",
@@ -430,13 +402,6 @@
    "sha256": "31b12fe01287b498d4c1da90fb6c1bd5ac6d4ce071cbd33c85af26bd53268204"
   },
   {
-   "id": "qd-game",
-   "name": "单机Game怀旧馆",
-   "version": "1.0.0",
-   "file": "rules/qd-game.yaml",
-   "sha256": "49186b7ac7107324526f7f2507e24a53f41344dd4bb2763973efea2e8f1b51db"
-  },
-  {
    "id": "qd-gamegamept",
    "name": "gamegamept",
    "version": "1.1.0",
@@ -449,13 +414,6 @@
    "version": "1.0.0",
    "file": "rules/qd-gebi1.yaml",
    "sha256": "bee943819c9a930ea224616db91f2663be879fb717c8972d9a51f4c13833615f"
-  },
-  {
-   "id": "qd-glados",
-   "name": "glados",
-   "version": "1.0.0",
-   "file": "rules/qd-glados.yaml",
-   "sha256": "1568999dc664b9414c3dbb443a22d165ac5aa0dd256366d9b0fe27484d13e596"
   },
   {
    "id": "qd-gm",
@@ -498,13 +456,6 @@
    "version": "1.0.0",
    "file": "rules/qd-hdarea.yaml",
    "sha256": "17b3c1b4d1331b6c2d5ccb0b0bff36ebbe8da133ee67d8baabd537f71ca9c838"
-  },
-  {
-   "id": "qd-hddolby",
-   "name": "HDDolby",
-   "version": "1.0.0",
-   "file": "rules/qd-hddolby.yaml",
-   "sha256": "5cdf0810534ba2d5828e74ab76a679268f9f00d5fbdfb2b18ae232777b6a7e11"
   },
   {
    "id": "qd-hdsay",
@@ -610,13 +561,6 @@
    "version": "1.0.0",
    "file": "rules/qd-leaguehd.yaml",
    "sha256": "fce714f643065ea6dfb4c23bc9b62b17d2fa37ca58bbc9af32c993cf3e69f2eb"
-  },
-  {
-   "id": "qd-lemonhdlottery",
-   "name": "LemonHDLottery",
-   "version": "1.0.0",
-   "file": "rules/qd-lemonhdlottery.yaml",
-   "sha256": "7390326625c4192a12e498bb00dbd2c180e2bd0d60a456baa32f636cb58ab215"
   },
   {
    "id": "qd-lightnovel",
@@ -766,20 +710,6 @@
    "sha256": "ee19fde7197692acb2832ea6af824068e05e0fbfe17ea0a4b6442d1f6b84b9c3"
   },
   {
-   "id": "qd-pro",
-   "name": "盘搜pro",
-   "version": "1.0.0",
-   "file": "rules/qd-pro.yaml",
-   "sha256": "57cf40bb2fb736873d4f74171422f9dcc21b3b0206d14ef793a35c3d4ce43b42"
-  },
-  {
-   "id": "qd-pt",
-   "name": "通用pt任务保号支持雨星陨阁",
-   "version": "1.0.0",
-   "file": "rules/qd-pt.yaml",
-   "sha256": "89327d6d71e77a894afb31ba5fb77ea298f8bc56b0ba4e1407985d516a62fe33"
-  },
-  {
    "id": "qd-pterclub",
    "name": "pterclub",
    "version": "1.0.0",
@@ -920,13 +850,6 @@
    "sha256": "fb9c7e6dd6f27c47578bb28747ca4ed68380d2e9336e24d9cf0605264594009b"
   },
   {
-   "id": "qd-tiaokan",
-   "name": "tiaokan",
-   "version": "1.0.0",
-   "file": "rules/qd-tiaokan.yaml",
-   "sha256": "629fe4deb3cfea4d25f760c2cdad9168fde78bc1934cbff850e7c46d62e84402"
-  },
-  {
    "id": "qd-tidb",
    "name": "TiDB_社区会员中心",
    "version": "1.0.0",
@@ -939,13 +862,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tool-lu.yaml",
    "sha256": "6269023ee46ba48db2b7ce1471ae04611a24f40a25438722f8b9d32957355427"
-  },
-  {
-   "id": "qd-tpl-11089",
-   "name": "一加社区",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-11089.yaml",
-   "sha256": "8739bbd725da09adbb715a1e6ea6c3294fb371039db958ae3f563ba8530f5a51"
   },
   {
    "id": "qd-tpl-11799",
@@ -969,13 +885,6 @@
    "sha256": "8b6347b0ca2f4749d0fed3c8efb21e7524d348141440c9f12897c22fd7aab22b"
   },
   {
-   "id": "qd-tpl-12570",
-   "name": "夸父资源社",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-12570.yaml",
-   "sha256": "b79b8b0f5d4e45a16ff64823e0e34643573487250a6037cf377d028603b960a8"
-  },
-  {
    "id": "qd-tpl-13147",
    "name": "阡陌居",
    "version": "1.0.0",
@@ -988,13 +897,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-13336.yaml",
    "sha256": "8d151469df307e5862ba68d863c133d4c12db59445d327add07187127e1c11d8"
-  },
-  {
-   "id": "qd-tpl-13463",
-   "name": "梦楠分享",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-13463.yaml",
-   "sha256": "46411e14ddaf0029428e109ba0dc02c154d73c9f444a1f436d63da977666353c"
   },
   {
    "id": "qd-tpl-14196",
@@ -1158,13 +1060,6 @@
    "sha256": "f719fe3702fd09e067a0c2757349957bdcb2c149d999f7c89f7bbf38c9aa425c"
   },
   {
-   "id": "qd-tpl-3012",
-   "name": "乐淘一番",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-3012.yaml",
-   "sha256": "5e22fb6a072c9cca7b5ede74b2bb994620be0c47b859b1f543e09eb3f9bf5583"
-  },
-  {
    "id": "qd-tpl-30655",
    "name": "父子被窝",
    "version": "1.0.0",
@@ -1214,20 +1109,6 @@
    "sha256": "58d11f78b2edc342d19f6dc279c1214e662aea2dd474a6b5a160dbb6454f82c3"
   },
   {
-   "id": "qd-tpl-35861",
-   "name": "文心一格",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-35861.yaml",
-   "sha256": "c0ee9820c26a6f2eb16794fd704fd55c4ca4b7fb0e0a27c1dec376fc45656671"
-  },
-  {
-   "id": "qd-tpl-35948",
-   "name": "初音的青葱",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-35948.yaml",
-   "sha256": "bd5f1f65ccd66bb2843ee8da112730d3f712733a9469d871734001730fc291a5"
-  },
-  {
    "id": "qd-tpl-36790",
    "name": "港知堂",
    "version": "1.0.0",
@@ -1254,13 +1135,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-39186.yaml",
    "sha256": "21e49ce885e1fca499f59b380673b7290fb77f74a7fe56cd3cfb51bb74d26726"
-  },
-  {
-   "id": "qd-tpl-39250",
-   "name": "游戏大桶",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-39250.yaml",
-   "sha256": "46d441fee983097f47920a2c3f13df78a11954111f6a5a49f01c4264fefaf6db"
   },
   {
    "id": "qd-tpl-39426",
@@ -1310,13 +1184,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-45181.yaml",
    "sha256": "2218d074700abe822127a90a64a341532b4345de255d9164eef552f564b237a2"
-  },
-  {
-   "id": "qd-tpl-45950",
-   "name": "杉果游戏",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-45950.yaml",
-   "sha256": "a4c4cfac3477b031bc5697b1c595c0b6124c3bb1ce4b038bd535269be659be1c"
   },
   {
    "id": "qd-tpl-45976",
@@ -1494,13 +1361,6 @@
    "sha256": "9fa1b83c2a97e6659fef11560fe9b010a2c2a556f9990da68d311edf02ce1696"
   },
   {
-   "id": "qd-tpl-6328",
-   "name": "心动日剧",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-6328.yaml",
-   "sha256": "a76c33b8c01e5be609a892edbb235e3f0332b4308f68f311f3e1c0165e3432ae"
-  },
-  {
    "id": "qd-tpl-63396",
    "name": "瀚思彼岸",
    "version": "1.0.0",
@@ -1564,13 +1424,6 @@
    "sha256": "20dc5d0eed4c7bd85ef0895a95d3d36c3330c033d714ed444845ec86bf7a912d"
   },
   {
-   "id": "qd-tpl-71223",
-   "name": "母带吧音乐",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-71223.yaml",
-   "sha256": "eb888a73ff568d8e314f0244574d64e26562b4538813c0c8bc39219e55b1d621"
-  },
-  {
    "id": "qd-tpl-71535",
    "name": "雨云任务",
    "version": "1.0.0",
@@ -1611,13 +1464,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-75808.yaml",
    "sha256": "34fe1996ea53c11fad9c46d8f0e54dacfd0003b5eec5f80a16bfa5077f44c65d"
-  },
-  {
-   "id": "qd-tpl-75955",
-   "name": "影巢",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-75955.yaml",
-   "sha256": "a49b19e441fb9c0446f9adc173ba3817864e29238a1a08f71b204fe9cff52980"
   },
   {
    "id": "qd-tpl-75968",
@@ -1688,13 +1534,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-77726.yaml",
    "sha256": "08b6fd868bebc603320acebe9aad2203dc93c7e8eca27daa7c803445ec408ecd"
-  },
-  {
-   "id": "qd-tpl-7868",
-   "name": "芯幻",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-7868.yaml",
-   "sha256": "0ecc2bd0d6a7d3e39f3337e5972d4af3250c32cf96a60350a658a525834867e4"
   },
   {
    "id": "qd-tpl-7878",
@@ -1781,20 +1620,6 @@
    "sha256": "0963e633e7dbaf8e78bdf6b1b1ca3cb2e683db0d4a200d34538e9acf8d1995e8"
   },
   {
-   "id": "qd-tpl-83822",
-   "name": "书香门第",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-83822.yaml",
-   "sha256": "5b84b47a7c608ee91785be9ccbf42b733c81df41f8fd34d7b1e2e111c3b73ac9"
-  },
-  {
-   "id": "qd-tpl-84520",
-   "name": "咸鱼单机",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-84520.yaml",
-   "sha256": "ff7699c259bb25bbad4c6a5a1fa35e9685bf2f1eda32bb3d562ebbe2795567f2"
-  },
-  {
    "id": "qd-tpl-85845",
    "name": "标准网",
    "version": "1.0.0",
@@ -1858,13 +1683,6 @@
    "sha256": "8d4aeecb4c522562a7934591166e51d3d25a6bd7a8ff2d2e22566f99d99f5fa5"
   },
   {
-   "id": "qd-tpl-90193",
-   "name": "影链湾",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-90193.yaml",
-   "sha256": "402aa5686427a8a3f1bab70e33ff3825249e726cba0a4ada61841ca3454dabbe"
-  },
-  {
    "id": "qd-tpl-90770",
    "name": "数码之家",
    "version": "1.0.0",
@@ -1877,13 +1695,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-91157.yaml",
    "sha256": "30f4d6da16e1b7932bbcbd7f1e62de999f7b96995b56bd5f679ca55708645c36"
-  },
-  {
-   "id": "qd-tpl-91510",
-   "name": "去盘搜",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-91510.yaml",
-   "sha256": "5b9baff3591affb753c499507821aa8689769b654157f40c3f413b79a275d6a3"
   },
   {
    "id": "qd-tpl-92510",
@@ -1905,13 +1716,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-93560.yaml",
    "sha256": "6610201311e30b0593669727e641d30d3818f7d9e0322e9086a5c4922e832d7a"
-  },
-  {
-   "id": "qd-tpl-93712",
-   "name": "速蛙云",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-93712.yaml",
-   "sha256": "d73b20017b992a65ae5e012274be0fbc4dac08dbcbf6de4eda35e2f8c71a2acb"
   },
   {
    "id": "qd-tpl-9390",
@@ -2101,13 +1905,6 @@
    "version": "1.0.0",
    "file": "rules/qd-xhifini.yaml",
    "sha256": "3e560eea340930be462f081191c690359d19974800ad007cfc058610d0e0c58b"
-  },
-  {
-   "id": "qd-xiaoyunbbs",
-   "name": "xiaoyunbbs",
-   "version": "1.0.0",
-   "file": "rules/qd-xiaoyunbbs.yaml",
-   "sha256": "24776c68a9dd0dff3a3e0b701effd5ab8ab5c06f82dd776b789adebcf9200cbc"
   },
   {
    "id": "qd-xuejieba-checkin-native",
