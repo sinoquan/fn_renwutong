@@ -1,0 +1,8 @@
+{
+ "version": "2.0.12",
+ "url": "https://github.com/sinoquan/fn_renwutong/releases/download/v2.0.12/renwutong",
+ "sha256": "c0713f921664e75631194ab261c4d453c7136abe6c2447679334db0dbbc48b25",
+ "size": 11493528,
+ "notes": "自更新上线：每天凌晨随机静默升级；设置页精简",
+ "publishedAt": "2026-11-21T00:50:00+08:00"
+}
