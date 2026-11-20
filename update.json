@@ -1,8 +1,8 @@
 {
- "version": "2.0.12",
- "url": "https://github.com/sinoquan/fn_renwutong/releases/download/v2.0.12/renwutong",
- "sha256": "c0713f921664e75631194ab261c4d453c7136abe6c2447679334db0dbbc48b25",
+ "version": "2.0.13",
+ "url": "https://github.com/sinoquan/fn_renwutong/releases/download/v2.0.13/renwutong",
+ "sha256": "c993d197140c8b1ae62809c2f805d1cec5d128f5b61335f86c64e498ec6bf5dd",
  "size": 11493528,
- "notes": "自更新上线：每天凌晨随机静默升级；设置页精简",
- "publishedAt": "2026-11-21T00:50:00+08:00"
+ "notes": "自更新端到端验证版本",
+ "publishedAt": "2026-11-21T00:45:00+08:00"
 }
