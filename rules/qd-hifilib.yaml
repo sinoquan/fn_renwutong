@@ -1,0 +1,163 @@
+id: qd-hifilib
+name: hifilib
+category: other
+icon: community
+summary: 每日任务
+description: |
+  任务地址：https://www.hifilib.com/
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: none
+version: 1.0.0
+updatedAt: 2026-11-20
+allowedHosts: [www.hifilib.com]
+fields:
+  - key: auth
+    label: auth
+    type: text
+    required: false
+  - key: formhash
+    label: formhash
+    type: text
+    required: false
+  - key: idhash
+    label: idhash
+    type: text
+    required: false
+  - key: password
+    label: password
+    type: password
+    required: false
+  - key: ua
+    label: ua
+    type: text
+    required: false
+  - key: username
+    label: username
+    type: text
+    required: false
+  - key: very
+    label: very
+    type: text
+    required: false
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: GET
+    url: "https://www.hifilib.com/"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      Upgrade-Insecure-Requests: "1"
+      Sec-Fetch-Dest: "document"
+      Sec-Fetch-Mode: "navigate"
+      Sec-Fetch-Site: "same-origin"
+      Sec-Fetch-User: "?1"
+      Priority: "u=0, i"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+      TE: "trailers"
+  - name: 任务
+    method: POST
+    url: "https://www.hifilib.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      Content-Type: "application/x-www-form-urlencoded"
+      Origin: "https://www.hifilib.com"
+      Referer: "https://www.hifilib.com/"
+      Upgrade-Insecure-Requests: "1"
+      Sec-Fetch-Dest: "iframe"
+      Sec-Fetch-Mode: "navigate"
+      Sec-Fetch-Site: "same-origin"
+      Sec-Fetch-User: "?1"
+      Priority: "u=4"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+      TE: "trailers"
+  - name: 任务
+    method: GET
+    url: "https://www.hifilib.com/member.php?mod=logging&action=login&auth={{auth|urlencode}}&referer=https%3A%2F%2Fwww.hifilib.com%2F&infloat=yes&handlekey=login&inajax=1&ajaxtarget=fwin_content_login"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "*/*"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      X-Requested-With: "XMLHttpRequest"
+      Referer: "https://www.hifilib.com/"
+      Sec-Fetch-Dest: "empty"
+      Sec-Fetch-Mode: "cors"
+      Sec-Fetch-Site: "same-origin"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+      TE: "trailers"
+  - name: 任务
+    method: GET
+    url: "https://www.hifilib.com/misc.php?mod=seccode&action=update&idhash={{idhash|urlencode}}&{{random(0, 1, 17)|urlencode}}=&modid=member%3A%3Alogging"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "*/*"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      Referer: "https://www.hifilib.com/"
+      Sec-Fetch-Dest: "script"
+      Sec-Fetch-Mode: "no-cors"
+      Sec-Fetch-Site: "same-origin"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+      TE: "trailers"
+  - name: 任务
+    method: GET
+    url: "https://www.hifilib.com/misc.php?mod=seccode&update={{update|urlencode}}&idhash={{idhash|urlencode}}"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      Referer: "https://www.hifilib.com/"
+      Sec-Fetch-Dest: "image"
+      Sec-Fetch-Mode: "no-cors"
+      Sec-Fetch-Site: "same-origin"
+      Priority: "u=5, i"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+      TE: "trailers"
+  - name: 任务
+    method: POST
+    url: "https://www.hifilib.com/member.php?mod=logging&action=login&loginsubmit=yes&handlekey=login&loginhash={{loginhash|urlencode}}&inajax=1"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      Content-Type: "application/x-www-form-urlencoded"
+      Origin: "https://www.hifilib.com"
+      Referer: "https://www.hifilib.com/"
+      Upgrade-Insecure-Requests: "1"
+      Sec-Fetch-Dest: "iframe"
+      Sec-Fetch-Mode: "navigate"
+      Sec-Fetch-Site: "same-origin"
+      Sec-Fetch-User: "?1"
+      Priority: "u=4"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+  - name: 任务
+    method: GET
+    url: "https://www.hifilib.com/home.php?mod=spacecp&ac=credit"
+    headers:
+      User-Agent: "{{ua}}"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      Referer: "https://www.hifilib.com/home.php?mod=spacecp"
+      Upgrade-Insecure-Requests: "1"
+      Sec-Fetch-Dest: "document"
+      Sec-Fetch-Mode: "navigate"
+      Sec-Fetch-Site: "same-origin"
+      Sec-Fetch-User: "?1"
+      Priority: "u=0, i"
+      Pragma: "no-cache"
+      Cache-Control: "no-cache"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: [签到成功, 签到获得, 获得魔力, 获得积分]

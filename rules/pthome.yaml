@@ -1,0 +1,42 @@
+id: pthome
+name: PTHome
+category: pt
+icon: pt
+summary: 每日任务
+description: |
+  任务地址：https://pthome.net/attendance.php
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: high
+version: 1.0.1
+updatedAt: 2026-11-20
+allowedHosts: [pthome.net]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: GET
+    url: "https://pthome.net/attendance.php"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      cookie: "{{cookie}}"
+      dnt: "1"
+      pragma: "no-cache"
+      referer: "https://pthome.net/userdetails.php"
+      sec-ch-ua: "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"macOS\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: [签到成功, 签到获得, 获得魔力, 获得积分]

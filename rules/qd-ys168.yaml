@@ -1,0 +1,35 @@
+id: qd-ys168
+name: 永硕活跃任务ys168
+category: other
+icon: community
+summary: 每日任务
+description: |
+  任务地址：http://ht.ys168.com/login.aspx
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: none
+version: 1.0.0
+updatedAt: 2026-11-20
+allowedHosts: [ht.ys168.com]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: POST
+    url: "http://ht.ys168.com/login.aspx"
+    headers:
+      Accept: "text/plain, */*; q=0.01"
+      Accept-Language: "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
+      Content-Type: "application/x-www-form-urlencoded; charset=UTF-8"
+      DNT: "1"
+      Origin: "http://ht.ys168.com"
+      Proxy-Connection: "keep-alive"
+      Referer: "http://ht.ys168.com/login.aspx"
+      User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+      X-Requested-With: "XMLHttpRequest"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: [签到成功, 签到获得, 获得魔力, 获得积分]

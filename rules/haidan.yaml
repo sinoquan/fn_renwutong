@@ -1,0 +1,38 @@
+id: haidan
+name: 海胆
+category: pt
+icon: pt
+summary: 每日任务
+description: |
+  任务地址：https://www.haidan.cc/signin.php
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: high
+version: 1.0.0
+updatedAt: 2026-11-20
+allowedHosts: [www.haidan.cc]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: GET
+    url: "https://www.haidan.cc/signin.php"
+    headers:
+      accept: "*/*"
+      cookie: "{{cookie}}"
+      referer: "https://www.haidan.cc/index.php"
+      x-requested-with: "XMLHttpRequest"
+  - name: 任务
+    method: GET
+    url: "https://www.haidan.cc/index.php"
+    headers:
+      accept: "*/*"
+      cookie: "{{cookie}}"
+      referer: "https://www.haidan.cc/index.php"
+      x-requested-with: "XMLHttpRequest"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: ["regex:302", "regex:href=['\"]userdetails\\.php\\?id=\\d+['\"]"]

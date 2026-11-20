@@ -1,0 +1,345 @@
+id: qd-tpl-90149
+name: 掌上百科账号版
+category: other
+icon: community
+summary: 每日任务
+description: |
+  任务地址：https://www.pdawiki.com/forum/
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: none
+version: 1.0.0
+updatedAt: 2026-11-20
+allowedHosts: [www.pdawiki.com]
+fields:
+  - key: WXUA
+    label: WXUA
+    type: text
+    required: false
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/"
+    headers:
+      accept: "*/*"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "script"
+      sec-fetch-mode: "no-cors"
+      sec-fetch-site: "same-origin"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/member.php?mod=logging&action=login"
+    headers:
+      accept: "*/*"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "script"
+      sec-fetch-mode: "no-cors"
+      sec-fetch-site: "same-origin"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: POST
+    url: "https://www.pdawiki.com/forum/member.php?mod=logging&action=login&loginsubmit=yes&loginhash={{loginhash|urlencode}}&inajax=1"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      content-type: "application/x-www-form-urlencoded"
+      origin: "https://www.pdawiki.com"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "iframe"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/home.php?mod=spacecp&ac=credit&showcredit=1&inajax=1&ajaxtarget=extcreditmenu_menu"
+    headers:
+      accept: "*/*"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=dsu_paulsign:sign"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "empty"
+      sec-fetch-mode: "cors"
+      sec-fetch-site: "same-origin"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+      x-requested-with: "XMLHttpRequest"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=dsu_paulsign%3Asign"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=hux_bank:hux_bank"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: POST
+    url: "https://www.pdawiki.com/forum/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&infloat=1&inajax=1"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      content-type: "application/x-www-form-urlencoded"
+      origin: "https://www.pdawiki.com"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=dsu_paulsign:sign"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "iframe"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Aare_yqs_money"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=dsu_paulsign:sign"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Atime_slot&typeid=1&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Atime_slot&typeid=2&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Atime_slot&typeid=3&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Aspend&typeid=1&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Aspend&typeid=2&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Aspend&typeid=3&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money%3Agetaward&typeid=1&formhash={{formhash3|urlencode}}"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/plugin.php?id=mogu_lottery%3Ahome"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=are_yqs_money:are_yqs_money"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "document"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "{{WXUA}}"
+  - name: 任务
+    method: POST
+    url: "https://www.pdawiki.com/forum/plugin.php?id=mogu_lottery%3Aresult"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      content-type: "application/x-www-form-urlencoded"
+      origin: "https://www.pdawiki.com"
+      pragma: "no-cache"
+      sec-ch-ua-mobile: "?0"
+      sec-fetch-dest: "iframe"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "{{WXUA}}"
+  - name: 任务
+    method: POST
+    url: "https://www.pdawiki.com/forum/plugin.php?id=mogu_lottery%3Aresult"
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      content-type: "application/x-www-form-urlencoded"
+      origin: "https://www.pdawiki.com"
+      pragma: "no-cache"
+      sec-ch-ua-mobile: "?0"
+      sec-fetch-dest: "iframe"
+      sec-fetch-mode: "navigate"
+      sec-fetch-site: "same-origin"
+      sec-fetch-user: "?1"
+      upgrade-insecure-requests: "1"
+      user-agent: "{{WXUA}}"
+  - name: 任务
+    method: GET
+    url: "https://www.pdawiki.com/forum/home.php?mod=spacecp&ac=credit&showcredit=1&inajax=1&ajaxtarget=extcreditmenu_menu"
+    headers:
+      accept: "*/*"
+      accept-language: "zh-CN,zh;q=0.9"
+      cache-control: "no-cache"
+      pragma: "no-cache"
+      referer: "https://www.pdawiki.com/forum/plugin.php?id=dsu_paulsign:sign"
+      sec-ch-ua: "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+      sec-ch-ua-mobile: "?0"
+      sec-ch-ua-platform: "\"Windows\""
+      sec-fetch-dest: "empty"
+      sec-fetch-mode: "cors"
+      sec-fetch-site: "same-origin"
+      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+      x-requested-with: "XMLHttpRequest"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: ["regex:欢迎您回来"]

@@ -1,0 +1,48 @@
+id: qd-ccna
+name: 攻城狮论坛-CCNA论坛
+category: other
+icon: community
+summary: 每日任务
+description: |
+  任务地址：http://bbs.vlan5.com/
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: none
+version: 1.0.0
+updatedAt: 2026-11-20
+allowedHosts: [bbs.vlan5.com]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: GET
+    url: "http://bbs.vlan5.com/"
+    headers:
+      Cache-Control: "max-age=0"
+      DNT: "1"
+      Upgrade-Insecure-Requests: "1"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      Referer: "http://bbs.vlan5.com/member.php?mod=register"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Cookie: "{{cookie}}"
+  - name: 任务
+    method: POST
+    url: "http://bbs.vlan5.com/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&infloat=1&sign_as=1&inajax=1"
+    headers:
+      Cache-Control: "max-age=0"
+      Origin: "http://bbs.vlan5.com"
+      Upgrade-Insecure-Requests: "1"
+      DNT: "1"
+      Content-Type: "application/x-www-form-urlencoded"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      Referer: "http://bbs.vlan5.com/"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Cookie: "{{cookie}}"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: [签到成功, 签到获得, 获得魔力, 获得积分]

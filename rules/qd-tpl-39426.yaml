@@ -1,0 +1,82 @@
+id: qd-tpl-39426
+name: 真白萌
+category: other
+icon: community
+summary: 每日任务
+description: |
+  任务地址：https://masiro.me/admin/auth/login
+  作用：调用该站点自己的任务接口完成每日任务。
+risk: none
+version: 1.0.0
+updatedAt: 2026-11-20
+allowedHosts: [masiro.me]
+fields:
+  - key: cf_clearance
+    label: cf_clearance
+    type: text
+    required: false
+  - key: token
+    label: token
+    type: text
+    required: false
+  - key: ua
+    label: ua
+    type: text
+    required: false
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+steps:
+  - name: 任务
+    method: GET
+    url: "https://masiro.me/admin/auth/login"
+    headers:
+      referer: "https://masiro.me/admin"
+      user-agent: "{{ua}}"
+      cookie: "cf_clearance={{cf_clearance}}"
+  - name: 任务
+    method: POST
+    url: "https://masiro.me/admin/auth/login"
+    headers:
+      origin: "https://masiro.me"
+      referer: "https://masiro.me/admin"
+      user-agent: "{{ua}}"
+      x-csrf-token: "{{token}}"
+  - name: 任务
+    method: GET
+    url: "https://masiro.me/admin"
+    headers:
+      referer: "https://masiro.me/admin/auth/login"
+      user-agent: "{{ua}}"
+  - name: 任务
+    method: GET
+    url: "https://masiro.me/admin/wishingPondIndex"
+    headers:
+      referer: "https://masiro.me/admin"
+      user-agent: "{{ua}}"
+  - name: 任务
+    method: POST
+    url: "https://masiro.me/admin/gachiyaWishingPond"
+    headers:
+      origin: "https://masiro.me"
+      referer: "https://masiro.me/admin/wishingPondIndex"
+      user-agent: "{{ua}}"
+      x-csrf-token: "{{token}}"
+  - name: 任务
+    method: GET
+    url: "https://masiro.me/admin/dailySignIn"
+    headers:
+      referer: "https://masiro.me/admin"
+      user-agent: "{{ua}}"
+      x-csrf-token: "{{token}}"
+  - name: 任务
+    method: GET
+    url: "https://masiro.me/admin/userCenterShow"
+    headers:
+      referer: "https://masiro.me/admin"
+      user-agent: "{{ua}}"
+check:
+  notLogin: [请登录, 登录后方可]
+  already: [已签到, 已经签到, 今日已签到]
+  success: ["regex:\\\\u767b\\\\u5f55\\\\u6210\\\\u529f!", "regex:\\\\u4eca\\\\u65e5\\\\u5df2\\\\u6253\\\\u5361"]
