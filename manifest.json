@@ -1,6 +1,6 @@
 {
  "version": "2026-11-20",
- "updatedAt": "2026-11-20T10:01:42Z",
+ "updatedAt": "2026-11-20T10:07:06Z",
  "rules": [
   {
    "id": "audiences",
@@ -138,9 +138,9 @@
   {
    "id": "qd-3g",
    "name": "3G壁纸网",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-3g.yaml",
-   "sha256": "05668e471fde7e7a98f628bd1143e0df137fc608a0bc08492f55475b459dc9a1"
+   "sha256": "07a43bd17ec5af09bd41dcc671747aea0a583488a74533af88cbfbb58002ba69"
   },
   {
    "id": "qd-4399",
@@ -306,9 +306,9 @@
   {
    "id": "qd-carpt",
    "name": "CarPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-carpt.yaml",
-   "sha256": "9444e6fecf5d8d0ff2425f75c695e84e8c1f2dbe1914dab595ea8046e381bad1"
+   "sha256": "b4d8d2feb1e9c995a8a8cc7b07dd44111e7df52845119cc5b8cac8275a910963"
   },
   {
    "id": "qd-ccna",
@@ -439,9 +439,9 @@
   {
    "id": "qd-gamegamept",
    "name": "gamegamept",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-gamegamept.yaml",
-   "sha256": "6ea8906360df9fb255b0a26f710f99e8d4403690cd2af8b9eff7cba63961c159"
+   "sha256": "ea03f935486b1b3b4a8490b1606bd398effda79f24312bee44244f78ba27e9c9"
   },
   {
    "id": "qd-gebi1",
@@ -733,9 +733,9 @@
   {
    "id": "qd-nicept",
    "name": "nicept",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-nicept.yaml",
-   "sha256": "fa2b2091c132e4c858dd79c3d8461ee955070be002395519b24458d30d422045"
+   "sha256": "9f6afb6837ed256cc1867dacbb832e6e92e2d800933f065a6562b438cea43aa3"
   },
   {
    "id": "qd-nicept-net",
@@ -1489,9 +1489,9 @@
   {
    "id": "qd-tpl-63093",
    "name": "蓝光演唱会",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-tpl-63093.yaml",
-   "sha256": "d226a2c6532a951c59e4eed83508388c0c55eb853a7d086683086590d45e154f"
+   "sha256": "9fa1b83c2a97e6659fef11560fe9b010a2c2a556f9990da68d311edf02ce1696"
   },
   {
    "id": "qd-tpl-6328",
