@@ -1,6 +1,6 @@
 {
  "version": "2.0.19",
- "url": "https://github.com/sinoquan/fn_renwutong/releases/download/v2.0.19/renwutong-2.0.19.tar.gz",
+ "url": "https://raw.githubusercontent.com/sinoquan/fn_renwutong/main/dist/renwutong-2.0.19.tar.gz",
  "sha256": "031786ffec98b8b6b9f5e56790eb4bdcf2043912e9645dac85d072efec574c5b",
  "size": 5183146,
  "notes": "整包替换验证（含前端）",
