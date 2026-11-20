@@ -1,8 +1,8 @@
 {
- "version": "2.0.14",
- "url": "https://github.com/sinoquan/fn_renwutong/releases/download/v2.0.14/renwutong-2.0.14",
- "sha256": "2ec75d411e2f688751aebf6d5a17f32da8683036a39cf27f50bdd13d23bd98d8",
- "size": 11497624,
+ "version": "2.0.15",
+ "url": "https://github.com/sinoquan/fn_renwutong/releases/download/v2.0.15/renwutong-2.0.15",
+ "sha256": "96343ca251df24e063aaa3857557ed9482af38f757077eb8ea66950c442c0ac7",
+ "size": 11505816,
  "notes": "自更新端到端验证",
- "publishedAt": "2026-11-21T01:10:00+08:00"
+ "publishedAt": "2026-11-21T01:30:00+08:00"
 }
