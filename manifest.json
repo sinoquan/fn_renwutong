@@ -1,62 +1,62 @@
 {
  "version": "2026-11-20",
- "updatedAt": "2026-11-20T07:31:11Z",
+ "updatedAt": "2026-11-20T10:01:42Z",
  "rules": [
   {
    "id": "audiences",
    "name": "Audiences",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "file": "rules/audiences.yaml",
-   "sha256": "95d3e3b478af0868c4c2e6d82fce2a70ea5fb2163c3a7d0689c7400fa7a35c3c"
+   "sha256": "b994e8fbbf5290fddb71277a3ed0245c4d20d46ebbd9128229074cab0a24a609"
   },
   {
    "id": "freefarm",
    "name": "自由农场",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/freefarm.yaml",
-   "sha256": "c9252ac75c32132ddc1ea31de80ad93873592fd0a004c23e0171f2d0e4bcc5a5"
+   "sha256": "676ac201efd5a202bf162a3f8498a4b128f8608db809d420d7033274dcf6c3d4"
   },
   {
    "id": "haidan",
    "name": "海胆",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/haidan.yaml",
-   "sha256": "ed2590f0020bb14e457f784ea8bc1c17ab2d3a6fd319cb408bc5a4de659ec525"
+   "sha256": "916089493804a8d14a8feb8391688afa8ac4b768ea9ac1a3f1ae5cbfbe672eda"
   },
   {
    "id": "hdhome",
    "name": "HDHome",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "file": "rules/hdhome.yaml",
-   "sha256": "b4c8fbfb15e24fa063be657e228e9dca45fce6d4950c84a1a717ba94a15f1fb5"
+   "sha256": "b3525e020cdec0ad50adeb798c026266811ea7e6c69367cde4d8c3c6b94a2f14"
   },
   {
    "id": "hdtime",
    "name": "HDTime",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdtime.yaml",
-   "sha256": "707ac2dec92adead826d3b132e0f6f27ba4521567614fa87826934e5505b9ec6"
+   "sha256": "b778c30da27d8da17ca33f154334f0f8c31b48bb5c6280e998a5863b25f03b14"
   },
   {
    "id": "ourbits",
    "name": "OurBits",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "file": "rules/ourbits.yaml",
-   "sha256": "b5186bf54201d9e62105ab6f77ddc1657d0a46144783be933d62a308b557c668"
+   "sha256": "7b2ac16a3214e9bc7b7ee1e3d21b273af509f5605ea03eb03c3591d6eb1a80b7"
   },
   {
    "id": "pthome",
    "name": "PTHome",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "file": "rules/pthome.yaml",
-   "sha256": "d8656041c4a85ac4390b658edcd2543f71be29ca5e4167e2ce02df2c010884eb"
+   "sha256": "5e10de747adffee08a606ad2912d907c95c2a1d15955c8c130fe0939fb44501f"
   },
   {
    "id": "pttime",
    "name": "PTTime",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pttime.yaml",
-   "sha256": "6962f5892fc36f665a0246b309998bddee96e29f9255c45c8e6ffcf1b0821e14"
+   "sha256": "cd2e5ec726d6f98d676d6832ae4d29ad20731b15fee17c634390ecc5c772acb6"
   },
   {
    "id": "qd-123",
@@ -586,9 +586,9 @@
   {
    "id": "qd-kamept-com",
    "name": "kamept",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-kamept-com.yaml",
-   "sha256": "2d21ce2b346023e983561cfd43e3383c73d58948813b8fac8ad27ee629391462"
+   "sha256": "93dcc382577ab9bb3879ecd78be322b9f630efb44e0ea7f802906633f1e86b8b"
   },
   {
    "id": "qd-kdays",
@@ -740,9 +740,9 @@
   {
    "id": "qd-nicept-net",
    "name": "nicept",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-nicept-net.yaml",
-   "sha256": "77154cfa6252a17457e6743570e41bedcd9d6c1731b38d64a4ece10a9d6d0f3d"
+   "sha256": "4deacab9548929400dee15112affd1b676ba0a49bcb09bb65623c3612cced2f6"
   },
   {
    "id": "qd-nodeloc",
@@ -2056,9 +2056,9 @@
   {
    "id": "qd-www-52pojie-cn",
    "name": "吾爱破解",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-www-52pojie-cn.yaml",
-   "sha256": "a614443aeacc1897bf200ae530b4f0ea8811547c210c4b13cf6b07870b2b47a7"
+   "sha256": "7b1c38df38dca2bf100b0dd50dcdfbed2002b142aca836a291a9b0c2064bce5a"
   },
   {
    "id": "qd-www-anywlan-com",
@@ -2161,16 +2161,16 @@
   {
    "id": "soulvoice",
    "name": "SoulVoice",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/soulvoice.yaml",
-   "sha256": "78fbec1889d417afb9662b03d7971fdc26f7d11eff81057e7f8f2f8d5b689c02"
+   "sha256": "8625e55a353ef753c86475fa84d5cb59c479b92ea28e20437aef2d8964534bef"
   },
   {
    "id": "totheglory",
    "name": "ToTheGlory",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/totheglory.yaml",
-   "sha256": "45e0d6ea4f7f85cd5cecb01679f7abd91b1f75f92442a8c7acfe39c10520172d"
+   "sha256": "2d0112a18af58257c88860a898db3fef31d182a4fbe8bd5d025ebb1c1442bf55"
   }
  ]
 }

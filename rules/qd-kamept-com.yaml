@@ -8,7 +8,7 @@ description: |
   作用：调用该站点自己的任务接口，完成每日任务/领取，比只访问首页更准确。
   执行：每天在你设定的时间窗内随机选一个时间发起请求，失败会在首页提示。
 risk: high
-version: 1.0.0
+version: 1.1.0
 updatedAt: 2026-11-20
 allowedHosts: [kamept.com]
 fields:
@@ -17,23 +17,54 @@ fields:
     type: password
     required: true
     help: 登录站点后按 F12 → Network → 复制 Request Headers 里的 Cookie 整串
-steps:
-  - name: 请求
-    method: GET
-    url: "https://kamept.com/attendance.php"
-    headers:
-      upgrade-insecure-requests: "1"
-      dnt: "1"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-      sec-fetch-site: "same-origin"
-      sec-fetch-mode: "navigate"
-      sec-fetch-user: "?1"
-      sec-fetch-dest: "document"
-      accept-encoding: "gzip, deflate, br"
-      accept-language: "zh-CN,zh;q=0.9"
-      cookie: "{{cookie}}"
-check:
-  notLogin: [请登录, 登录后方可, login.php]
-  already: [已签到, 已经签到, 今天已签到]
-  success: [签到成功, 签到获得, 获得魔力, 获得积分, 成功签到]
+defaultTask: checkin
+tasks:
+  - key: checkin
+    name: 每日签到
+    type: checkin
+    description: 打开任务页完成每日签到
+    steps:
+      - name: 请求
+        method: GET
+        url: "https://kamept.com/attendance.php"
+        headers:
+          upgrade-insecure-requests: "1"
+          dnt: "1"
+          user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
+          accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          sec-fetch-site: "same-origin"
+          sec-fetch-mode: "navigate"
+          sec-fetch-user: "?1"
+          sec-fetch-dest: "document"
+          accept-encoding: "gzip, deflate, br"
+          accept-language: "zh-CN,zh;q=0.9"
+          cookie: "{{cookie}}"
+    check:
+      notLogin: [请登录, 登录后方可, login.php]
+      already: [已签到, 已经签到, 今天已签到]
+      success: [签到成功, 签到获得, 获得魔力, 获得积分, 成功签到]
+
+  - key: login
+    name: 模拟登录
+    type: login
+    description: 先访问首页、停顿后再确认 Cookie 仍有效；失效会立刻提示你重填
+    steps:
+      - name: 检查登录态
+        method: GET
+        url: "https://kamept.com/index.php"
+        headers:
+          cookie: "{{cookie}}"
+    check:
+      notLogin: [takelogin.php, 登录 / 注册, 你需要启用cookies, 请登录, 登录后方可]
+      success: [logout.php, 退出登录, 个人中心, 我的账户, 我的资料]
+  - key: keepalive
+    name: 保活
+    type: keepalive
+    description: 只定时访问首页留活跃记录，不判定登录态；适合不想动账号的场景
+    steps:
+      - name: 访问首页
+        method: GET
+        url: "https://kamept.com/index.php"
+        headers:
+          cookie: "{{cookie}}"
+    check: {}

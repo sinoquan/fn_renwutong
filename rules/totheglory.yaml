@@ -7,7 +7,7 @@ description: |
   任务地址：https://totheglory.im/my.php
   作用：调用该站点自己的任务接口完成每日任务。
 risk: high
-version: 1.0.0
+version: 1.1.0
 updatedAt: 2026-11-20
 allowedHosts: [totheglory.im]
 fields:
@@ -19,45 +19,76 @@ fields:
     label: id
     type: text
     required: false
-steps:
-  - name: 任务
-    method: GET
-    url: "https://totheglory.im/my.php"
-    headers:
-      pragma: "no-cache"
-      cache-control: "no-cache"
-      upgrade-insecure-requests: "1"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
-      referer: "https://totheglory.im/login.php"
-      cookie: "{{cookies}}"
-  - name: 任务
-    method: POST
-    url: "https://totheglory.im/signed.php"
-    headers:
-      origin: "https://totheglory.im"
-      x-requested-with: "XMLHttpRequest"
-      cookie: "{{cookies}}"
-      pragma: "no-cache"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
-      content-type: "application/x-www-form-urlencoded"
-      accept: "*/*"
-      cache-control: "no-cache"
-      referer: "https://totheglory.im/my.php"
-  - name: 任务
-    method: POST
-    url: "https://totheglory.im/userdetails.php?id={{id|urlencode}}"
-    headers:
-      origin: "https://totheglory.im"
-      x-requested-with: "XMLHttpRequest"
-      cookie: "{{cookies}}"
-      pragma: "no-cache"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
-      content-type: "application/x-www-form-urlencoded"
-      accept: "*/*"
-      cache-control: "no-cache"
-      referer: "https://totheglory.im/my.php"
-check:
-  notLogin: ["https://totheglory.im/login.php", "失败登录", "https://totheglory.im/login.php", "失败登录"]
-  already: [已签到, 已经签到, 今日已签到]
-  success: [签到成功, 签到获得, 获得魔力, 获得积分]
+defaultTask: checkin
+tasks:
+  - key: checkin
+    name: 每日签到
+    type: checkin
+    description: 打开任务页完成每日签到
+    steps:
+      - name: 任务
+        method: GET
+        url: "https://totheglory.im/my.php"
+        headers:
+          pragma: "no-cache"
+          cache-control: "no-cache"
+          upgrade-insecure-requests: "1"
+          user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+          accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+          referer: "https://totheglory.im/login.php"
+          cookie: "{{cookies}}"
+      - name: 任务
+        method: POST
+        url: "https://totheglory.im/signed.php"
+        headers:
+          origin: "https://totheglory.im"
+          x-requested-with: "XMLHttpRequest"
+          cookie: "{{cookies}}"
+          pragma: "no-cache"
+          user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+          content-type: "application/x-www-form-urlencoded"
+          accept: "*/*"
+          cache-control: "no-cache"
+          referer: "https://totheglory.im/my.php"
+      - name: 任务
+        method: POST
+        url: "https://totheglory.im/userdetails.php?id={{id|urlencode}}"
+        headers:
+          origin: "https://totheglory.im"
+          x-requested-with: "XMLHttpRequest"
+          cookie: "{{cookies}}"
+          pragma: "no-cache"
+          user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+          content-type: "application/x-www-form-urlencoded"
+          accept: "*/*"
+          cache-control: "no-cache"
+          referer: "https://totheglory.im/my.php"
+    check:
+      notLogin: ["https://totheglory.im/login.php", "失败登录", "https://totheglory.im/login.php", "失败登录"]
+      already: [已签到, 已经签到, 今日已签到]
+      success: [签到成功, 签到获得, 获得魔力, 获得积分]
+
+  - key: login
+    name: 模拟登录
+    type: login
+    description: 先访问首页、停顿后再确认 Cookie 仍有效；失效会立刻提示你重填
+    steps:
+      - name: 检查登录态
+        method: GET
+        url: "https://totheglory.im/index.php"
+        headers:
+          cookie: "{{cookie}}"
+    check:
+      notLogin: [takelogin.php, 登录 / 注册, 你需要启用cookies, 请登录, 登录后方可]
+      success: [logout.php, 退出登录, 个人中心, 我的账户, 我的资料]
+  - key: keepalive
+    name: 保活
+    type: keepalive
+    description: 只定时访问首页留活跃记录，不判定登录态；适合不想动账号的场景
+    steps:
+      - name: 访问首页
+        method: GET
+        url: "https://totheglory.im/index.php"
+        headers:
+          cookie: "{{cookie}}"
+    check: {}
