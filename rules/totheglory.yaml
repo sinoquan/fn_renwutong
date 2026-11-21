@@ -7,7 +7,7 @@ description: |
   任务地址：https://totheglory.im/my.php
   作用：调用该站点自己的任务接口完成每日任务。
 risk: high
-version: 1.1.0
+version: 1.1.1
 updatedAt: 2026-11-20
 allowedHosts: [totheglory.im]
 fields:
@@ -77,7 +77,7 @@ tasks:
         method: GET
         url: "https://totheglory.im/index.php"
         headers:
-          cookie: "{{cookie}}"
+          cookie: "{{cookies}}"
     check:
       notLogin: [takelogin.php, 登录 / 注册, 你需要启用cookies, 请登录, 登录后方可]
       success: [logout.php, 退出登录, 个人中心, 我的账户, 我的资料]
@@ -90,5 +90,5 @@ tasks:
         method: GET
         url: "https://totheglory.im/index.php"
         headers:
-          cookie: "{{cookie}}"
+          cookie: "{{cookies}}"
     check: {}

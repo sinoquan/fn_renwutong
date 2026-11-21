@@ -1,6 +1,6 @@
 {
  "version": "2026-11-21",
- "updatedAt": "2026-11-21T08:49:28Z",
+ "updatedAt": "2026-11-21T10:01:38Z",
  "rules": [
   {
    "id": "audiences",
@@ -1860,9 +1860,9 @@
   {
    "id": "totheglory",
    "name": "ToTheGlory",
-   "version": "1.1.0",
+   "version": "1.1.1",
    "file": "rules/totheglory.yaml",
-   "sha256": "2d0112a18af58257c88860a898db3fef31d182a4fbe8bd5d025ebb1c1442bf55"
+   "sha256": "c81a40949b3c5f5f7b50bbd0a9faf16020a7d349226a067a6aa7ba7b6ef5c4eb"
   }
  ]
 }
