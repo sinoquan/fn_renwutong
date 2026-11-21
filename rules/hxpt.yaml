@@ -2,15 +2,15 @@ id: hxpt
 name: "好学"
 category: pt
 icon: pt
-summary: 保活
+summary: 签到 + 模拟登录 + 保活
 description: |
   站点地址：https://www.hxpt.org/
-  作用：定时访问首页留存活跃记录（保号）。不做签到，也不判定登录态。
+  作用：签到、模拟登录、保活。
+  签到：调用站点自带的签到页 /attendance.php。
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
   探活 2026-11-21：探活通过
-  注意：本站不是 NexusPHP，登录后的页面无法离线验证，因此只提供保活。
 risk: high
-version: 1.0.0
+version: 1.1.0
 updatedAt: 2026-11-21
 allowedHosts: [www.hxpt.org]
 fields:
@@ -18,8 +18,36 @@ fields:
     label: Cookie
     type: password
     required: true
-defaultTask: keepalive
+defaultTask: checkin
 tasks:
+  - key: checkin
+    name: 签到
+    type: checkin
+    description: 打开签到页完成每日签到
+    steps:
+      - name: 签到
+        method: GET
+        url: "https://www.hxpt.org/attendance.php"
+        headers:
+          cookie: "{{cookie}}"
+          referer: "https://www.hxpt.org/"
+    check:
+      notLogin: ["takelogin.php", "login.php"]
+      already: ["已签到", "已经签到", "今日已签到"]
+      success: ["签到成功", "签到获得", "获得魔力", "获得积分"]
+  - key: login
+    name: 模拟登录
+    type: login
+    description: 访问首页确认 Cookie 仍有效；未登录会被重定向到登录页
+    steps:
+      - name: 检查登录态
+        method: GET
+        url: "https://www.hxpt.org/"
+        headers:
+          cookie: "{{cookie}}"
+    check:
+      notLogin: ["takelogin.php", "login.php?returnto", "你需要启用cookies"]
+      success: ["logout.php", "退出登录", "个人中心", "我的账户", "我的资料"]
   - key: keepalive
     name: 保活
     type: keepalive

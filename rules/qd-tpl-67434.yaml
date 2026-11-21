@@ -1,76 +1,42 @@
 id: qd-tpl-67434
-name: 飞牛私有云社区
-category: other
+name: 飞牛私有云论坛
+aliases: [飞牛论坛, fnOS 论坛]
+category: forum
 icon: community
-summary: 每日任务
+summary: 每日打卡
 description: |
   任务地址：https://club.fnnas.com/plugin.php?id=zqlj_sign
-  作用：调用该站点自己的任务接口完成每日任务。
-risk: none
-version: 1.0.0
-updatedAt: 2026-11-20
+  作用：完成站点自带「天天打卡」插件的每日打卡。
+  执行：先打开打卡页取本次的 sign 令牌，再带着令牌提交（两步）。
+  说明：当天已打卡会返回「您今天已经打过卡了，请勿重复操作」。
+risk: high
+version: 1.2.0
+updatedAt: 2026-11-21
 allowedHosts: [club.fnnas.com]
 fields:
   - key: cookie
     label: Cookie
     type: password
     required: true
+    help: 登录后按 F12 → Network → 复制 Request Headers 里的 Cookie 整串
 steps:
-  - name: 任务
+  - name: 取打卡令牌
     method: GET
     url: "https://club.fnnas.com/plugin.php?id=zqlj_sign"
     headers:
-      sec-ch-ua: "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      Upgrade-Insecure-Requests: "1"
-      DNT: "1"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "same-origin"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-User: "?1"
-      Sec-Fetch-Dest: "document"
-      Referer: "https://club.fnnas.com/"
-      Accept-Language: "zh-CN,zh;q=0.9"
-      Cookie: "{{cookie}}"
-  - name: 任务
+      cookie: "{{cookie}}"
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    # 打卡链接形如 plugin.php?id=zqlj_sign&sign=f11e5601，令牌每次会话都可能变
+    capture:
+      sign: 'plugin\.php\?id=zqlj_sign&sign=([0-9a-f]+)'
+  - name: 提交打卡
     method: GET
-    url: "https://club.fnnas.com/plugin.php?id=zqlj_sign&sign={{sign|urlencode}}"
+    url: "https://club.fnnas.com/plugin.php?id=zqlj_sign&sign={{sign}}"
     headers:
-      sec-ch-ua: "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      Upgrade-Insecure-Requests: "1"
-      DNT: "1"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "same-origin"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-User: "?1"
-      Sec-Fetch-Dest: "document"
-      Referer: "https://club.fnnas.com/plugin.php?id=zqlj_sign"
-      Accept-Language: "zh-CN,zh;q=0.9"
-      Cookie: "{{cookie}}"
-  - name: 任务
-    method: GET
-    url: "https://club.fnnas.com/home.php?mod=spacecp&ac=credit&showcredit=1"
-    headers:
-      Cache-Control: "max-age=0"
-      sec-ch-ua: "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "none"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-User: "?1"
-      Sec-Fetch-Dest: "document"
-      Accept-Language: "zh-CN,zh;q=0.9"
-      Cookie: "{{cookie}}"
+      cookie: "{{cookie}}"
+      referer: "https://club.fnnas.com/plugin.php?id=zqlj_sign"
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
 check:
-  notLogin: [请登录, 登录后方可]
-  already: [已签到, 已经签到, 今日已签到]
-  success: [签到成功, 签到获得, 获得魔力, 获得积分]
+  notLogin: [您需要先登录, 请先登录, 请登录后]
+  already: [已经打过卡, 请勿重复操作]
+  success: [打卡成功, 签到成功]

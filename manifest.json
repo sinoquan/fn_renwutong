@@ -1,132 +1,132 @@
 {
  "version": "2026-11-21",
- "updatedAt": "2026-11-21T11:52:08Z",
+ "updatedAt": "2026-11-21T13:11:20Z",
  "rules": [
   {
    "id": "0dayfiles",
    "name": "0DayFiles",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/0dayfiles.yaml",
-   "sha256": "40e1241c806c62e34dfa36c8cd1215f6239ae7b5fbbd3c113e0be3cbd5a7b7d4"
+   "sha256": "9c33eab337c9b1e53ba0548a50519dddedcb32f1025f7beb9655fefe0a283a9d"
   },
   {
    "id": "13city",
    "name": "13city",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/13city.yaml",
-   "sha256": "2ccb908399cf0a6efa564346c6e17a118c0e3a573aaa1e13850bb2e2a853751e"
+   "sha256": "4a65a6088054f846932723a1ec985048fc4f4f36a065562509bb6a2454a8c20d"
   },
   {
    "id": "1ptba",
    "name": "1PTBar",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/1ptba.yaml",
-   "sha256": "40e851d2ae0f3ddfa0b223a54425c8d6ab11a712e688e06cc942506f1da29ccb"
+   "sha256": "054ed735cfcd0fb5de9462b54184f4e16eac48e8b39845255e0f27a179350b4a"
   },
   {
    "id": "52movie",
    "name": "52movie",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/52movie.yaml",
-   "sha256": "5708e8f923bfc42e14f294bf621e54108214a471e7d5e57b9c135f4316f3b8d4"
+   "sha256": "771e334c8e4855c10ca4d74693c544195245ca0d7fd8eac4cc1fdff539151faa"
   },
   {
    "id": "52pt",
    "name": "52PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/52pt.yaml",
-   "sha256": "f685e9da303ada2459b096f894d962c07ac61a5215adf08ef85b9bdd0ecf37d6"
+   "sha256": "944203c4b14e771ada955f117541afe2f7fc61bccc7786c6ee965525b9dc89aa"
   },
   {
    "id": "abtorrents",
    "name": "ABTorrents",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/abtorrents.yaml",
-   "sha256": "0330049c715c1d85a84180c0f538fefdad644f979bb59a20951538f81e251b97"
+   "sha256": "8382d5be41118d2b5de935cd7751ca6dac0f1232a86975eaec79eca23ae23dd7"
   },
   {
    "id": "afun",
    "name": "Afun",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/afun.yaml",
-   "sha256": "835084b69f9aa9d533242b5b39a1b4808b531888bd8d1f46a969d3ffe9fc3f7a"
+   "sha256": "0dde2df53ad5409a821d65733de430442fd646759ec8f2f8ac1591444352acfb"
   },
   {
    "id": "agsvpt",
    "name": "AGSVPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/agsvpt.yaml",
-   "sha256": "6b20a82d7282ceca77013364e07d9a611d556b7615af3f5db129abc437be8b4f"
+   "sha256": "7d04661b7cb6e510552bc52b75a0490a92460e11043dff2eadc0f879ddcea22d"
   },
   {
    "id": "aidoruonline",
    "name": "Aidoru!Online",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/aidoruonline.yaml",
-   "sha256": "3bc5b36d80eefda0e378ecf0c0a498c9cddcebc1a2429aa0107910d8012afd12"
+   "sha256": "a3be97ef257d3588bc6c2db23fb968ed655f7f74784e08a2f03ff5285499554b"
   },
   {
    "id": "aither",
    "name": "Aither",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/aither.yaml",
-   "sha256": "7b7aacc28f42bf223e4a8dea51581ec5962c389e444af934470a851c6ccb9e5d"
+   "sha256": "055d72d337d9629622e50d221c716e1b38736caa183960cf25e86f369c851630"
   },
   {
    "id": "alingpt",
    "name": "alingPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/alingpt.yaml",
-   "sha256": "2ad9561e54f9975a4d934c5d3c8eedab76bcfbbbf0555c0c11c4575b0097365b"
+   "sha256": "d5d86a65e64efbd27bdb2e0218aee7b68a4e3bfe8e906c94aaa6ac37a062df19"
   },
   {
    "id": "alpharatio",
    "name": "AlphaRatio",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/alpharatio.yaml",
-   "sha256": "ae3810b08be73aea2c64e9216f8530bfb3d5ad484fd7704e9b6c5f460c11f840"
+   "sha256": "7d7c326a0d3c6b2626092a2fe5c77d1fd68e5e901941f38896bc19ebea188488"
   },
   {
    "id": "animebytes",
    "name": "AnimeBytes",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/animebytes.yaml",
-   "sha256": "4f63fb9d8e665cd0fd13563946a2dd33d7363dfc5813345c2ef71874d972a903"
+   "sha256": "f570b0a34ccfbd34e5ca9a40604cdd0ef1f1935bab4fd2cb045df91289b8173e"
   },
   {
    "id": "animelovers",
    "name": "ANIMELOVERS",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/animelovers.yaml",
-   "sha256": "620e4ee51298a543c78bad35cbdf5d3ba81850dccae3393fa2f12cd25f63d7e4"
+   "sha256": "9c458346e2cb0cf0c551fa912fe2ec7100dcd3934aa8549e49aa3b8cb409dade"
   },
   {
    "id": "animez",
    "name": "AnimeZ",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/animez.yaml",
-   "sha256": "5cf9948a8b92710c542507c70e0cafb0bd128523f119c92377d4d368c864a8fc"
+   "sha256": "14525b51efc5b98f6cd6fe28f28c97cb92a881de727f0a9639eb6e22d726c87f"
   },
   {
    "id": "anthelion",
    "name": "Anthelion",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/anthelion.yaml",
-   "sha256": "fdbf905df578463b48c4322151e87a8f5cf1bd30b5559883cd34ba91e5ffc665"
+   "sha256": "b1aa05aee479acd62383611b5d06335524c0fc1cf64c1c3564e125a7d5622f10"
   },
   {
    "id": "asiancinema",
    "name": "AsianCinema",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/asiancinema.yaml",
-   "sha256": "8e715b2a9681ba818ac58469549702300b6574fb3909e66bbc510c60f9e0d44a"
+   "sha256": "4f640761acdae1e093664a817dcaeeccaeccfef6d86eb551a931b17830d866fa"
   },
   {
    "id": "asmrpt",
    "name": "ASMR PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/asmrpt.yaml",
-   "sha256": "a7a063ede146769990c80114947130955008d9903be149d233525565c986b47c"
+   "sha256": "d9c159480147bdc86e00db0b8cb8b4bfde65b9f6341eafa2c3533cb8c921e008"
   },
   {
    "id": "audiences",
@@ -138,506 +138,506 @@
   {
    "id": "audionews",
    "name": "AudioNews",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/audionews.yaml",
-   "sha256": "db445ec1ec698da4fae9c20a1134a96715c1974f2eb22d4255b70e9c92b778b9"
+   "sha256": "cea5be2a35d6a80e51e678dcff8cbd5fcd896fb1c68e27e6649327c35ef2efcc"
   },
   {
    "id": "aura4k",
    "name": "Aura4k",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/aura4k.yaml",
-   "sha256": "2a7caf581275e5464f41d52042012155209fde8f201bbb6115ba3c08b6c7d233"
+   "sha256": "076cdbf7f756137ab78f36bf827b940c83a523c1ad3c726dee548357fe524df7"
   },
   {
    "id": "avgv",
    "name": "爱薇网",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/avgv.yaml",
-   "sha256": "c808ffdd7c9a76cca63a1d0c1b3b1311c8f2ba51c6ca14059ff62169435f1785"
+   "sha256": "f6fcd979d815b02f61e7d15de2d67dcb84f054a4709dc971743537ae7bc89460"
   },
   {
    "id": "avistaz",
    "name": "AvistaZ",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/avistaz.yaml",
-   "sha256": "d4cf0975154ff8b156c74d23ea149267fc33751ef877b3453206d84244caf7de"
+   "sha256": "22a41f3d98ff22ae52bc9c995ecdccd04482ea93eb6444d982b2850130d37625"
   },
   {
    "id": "awesomehd",
    "name": "Awesome-HD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/awesomehd.yaml",
-   "sha256": "148dd3aa58b94b8a004fef96468be670c1f5a2134fa41cbb1ad756c8731b35e5"
+   "sha256": "d138c7aea8cbca04b017fc54a36a5402baa39b4df45c7fdc4a35d2f1f530e60b"
   },
   {
    "id": "azusa",
    "name": "梓喵",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/azusa.yaml",
-   "sha256": "479da0c92c1a42b10c08f82759bc9f1831b3b8f6fd07eea47bebd5e468616685"
+   "sha256": "73346c1a1dbd956e37281046c786fb040a08b729d4ac9b647c8255fdaffb1e7a"
   },
   {
    "id": "baconbits",
    "name": "baconBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/baconbits.yaml",
-   "sha256": "2150602e74829e04fdcfe22a7e210701a860ed40e6a127f69a9c6c0968b66dde"
+   "sha256": "0c2229b237e1a56ea25dc0eb093a66d6df8cd4ec4cda1996463f03d18e42b7eb"
   },
   {
    "id": "bakabt",
    "name": "BakaBT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bakabt.yaml",
-   "sha256": "b0b9adbe695949b29de0de7f4199c8a3be26701e73dcabd4e31bd0fc15c69ab3"
+   "sha256": "f3f1d1eaba02f7a8559a515067d5eee35fbc7e151e748132a85be32e6fc04695"
   },
   {
    "id": "baozi",
    "name": "包子",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/baozi.yaml",
-   "sha256": "fbdf9b2241a5b17c88c9af4fc66c859005661546ddd92c23c033cf5a4a6edf6c"
+   "sha256": "e6b3fd108e6384c98b1c0924f8f2278fa361641af2caf555c0b19393d91dbdbf"
   },
   {
    "id": "beitai",
    "name": "备胎",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/beitai.yaml",
-   "sha256": "2aeaeffcbfbfe7cfb0670182edd380df049f53bb52fcaa8e3fc685df3cdceb25"
+   "sha256": "fd4a68ea103f5943b56bcecc4bf1681b1fa10f0d8fd3690c84eec647cc5221c4"
   },
   {
    "id": "bemaniso",
    "name": "Bemaniso",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bemaniso.yaml",
-   "sha256": "b7f09d12f7b17e0c4538b9d21b8de6b484856b52014a44192b9e3ddc47f837f7"
+   "sha256": "69025fa90224ef5059061313bd56df466436c0f03d1e813707c8373ec79031a1"
   },
   {
    "id": "beyondhd",
    "name": "BeyondHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/beyondhd.yaml",
-   "sha256": "a0036d090a5d17b118fd713b51e7e566966178b974d5066410601eddca406c97"
+   "sha256": "23029204bc077edc36f2bd01e22f1a341d68bcd215bc2df92e308f79b9d5f852"
   },
   {
    "id": "bibliotik",
    "name": "Bibliotik",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bibliotik.yaml",
-   "sha256": "3a3b278bff0e52a9a0d0aa6b2165d8072741bd4a44ab2fe47ea203179a62cf2e"
+   "sha256": "fa1a5505796bbece20361f17e548c3db488434cfd1fc2ed63b7b7772f9f045f8"
   },
   {
    "id": "bitbr",
    "name": "bitbr",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bitbr.yaml",
-   "sha256": "3c117cb22f9705a1563619014f7f373368892b82ff1c7613716ae4e104f347e2"
+   "sha256": "bc9d50cc445ddd6ee13e9b717aaa4ee74386c19aee068eb99de4da2922213757"
   },
   {
    "id": "bitporn",
    "name": "BitPorn",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bitporn.yaml",
-   "sha256": "5831200d4f7fc76cd7708f3e1b11530d9468e9bf96c0796cc4bb092b6600328c"
+   "sha256": "79c5b60a2af1745f4fd3d6aa9fc918fd4e91506412a8bde128f665e5d9d86236"
   },
   {
    "id": "bitpt",
    "name": "极速之星",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bitpt.yaml",
-   "sha256": "fddc43d79a9476b65864a02cda5db337b240eb7deda248b6c5211040b117217d"
+   "sha256": "0d86173c16a8adf6ddc53afc4b3f57e3462daba994a6233dbd3fe18eeafafd86"
   },
   {
    "id": "blutopia",
    "name": "Blutopia",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/blutopia.yaml",
-   "sha256": "75a4de41656df6582f566a1dd28c078f392f21044ee9a0536059ae9365095581"
+   "sha256": "106598ef78dcd28f5466703b6feedafbb8c0f18104ef3dccd65e0908e8edc11a"
   },
   {
    "id": "broadcasthenet",
    "name": "BroadcastTheNet",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/broadcasthenet.yaml",
-   "sha256": "eee5ab73e7ffe6c376dbfca48f686fd6da2526b1d93e55b6aa3df2545a85bb8b"
+   "sha256": "dc482b2cd135375cbd1acd1103e485508c5b90faecccfcf98b12e41701350354"
   },
   {
    "id": "brokenstones",
    "name": "BrokenStones",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/brokenstones.yaml",
-   "sha256": "ecb39a1b86dd07fc450a197e66c9aa5a0a2e7baa39d5b379fa34baeaea698057"
+   "sha256": "8c8ea2b39c3425bffd7007ccf7a6728572e82886c6d3933f7441346543c78029"
   },
   {
    "id": "btschool",
    "name": "BTSCHOOL",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/btschool.yaml",
-   "sha256": "25d3d8f3d44f0c388444366d85c708b1b7394867903f0f774328809f833e927b"
+   "sha256": "e90199e5117ea80ce79173503a13552714685c4c6c61fa97d0d8a7cb975fdc79"
   },
   {
    "id": "bwtorrents",
    "name": "BWT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/bwtorrents.yaml",
-   "sha256": "1c9943dbc0ab66a057d636cee2117762d60512b120cb81003218670b87cd5cf6"
+   "sha256": "2d0afcb3181efea7c841429e4b0ec9df9b2c9526406d209b7748de4738c39e71"
   },
   {
    "id": "byrbt",
    "name": "北邮人-BYRBT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/byrbt.yaml",
-   "sha256": "bc2e73e802411d69fe027c7538912b672aac28423fb37de636b46f5bb5e13c5e"
+   "sha256": "a844976682b003ff50b495033edfc678e22c5e908a19ccca6d41cae56139fda7"
   },
   {
    "id": "c411",
    "name": "C411",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/c411.yaml",
-   "sha256": "98c617b9134bc835d6362bb59a714f6b38052c872abd69c9b82052940e716620"
+   "sha256": "bb946ba9a468600c5fe72884c59357e6c9083307601032a89c28349b31955d7a"
   },
   {
    "id": "capybarabr",
    "name": "CapybaraBR",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/capybarabr.yaml",
-   "sha256": "0f2f5cc5fbdbfa2605951aa6761a9296793135ff306ae9a3a8eb85eafc40f826"
+   "sha256": "04d084a520ae3416e100ac470f65d0477abf1e6dba9a7d2c950872c5539ecda7"
   },
   {
    "id": "cathoderaytube",
    "name": "Cathode-Ray.Tube",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cathoderaytube.yaml",
-   "sha256": "e367dda79671f10fedf65f7fffe8eb068a16d05f09b90bec0d544c70d3ee77ed"
+   "sha256": "f4f9004f97fa33244aae703ce30df6a4d8b3f57af57bfc9dd0358aacd0271eb9"
   },
   {
    "id": "cbg",
    "name": "藏宝阁",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cbg.yaml",
-   "sha256": "5f013600f5b5d15ee7369fb43638ab0a9bede6479e79374a8b3c48ff5c644f26"
+   "sha256": "fc26b77486ddfd3e8477d739168c7aea12c48816dbb071271659a36e13710779"
   },
   {
    "id": "ccfbits",
    "name": "CCFBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ccfbits.yaml",
-   "sha256": "df46875eae1dad42480986ea64a955d7b85b569fd2d6d60a186a1862133c4b17"
+   "sha256": "b403d85560dc4b8445c7f34e6493b4abe6f004678f3593e1a8c4c0168833b8da"
   },
   {
    "id": "cdfile",
    "name": "CD File",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cdfile.yaml",
-   "sha256": "e8229ac2c8748c4f5ddbf9d07540e32d22c7344935c75d3b44e9cbc2745da396"
+   "sha256": "d21f890b1b7cac005201ee70130c2484ce86261dd238b94cfc542709618ad714"
   },
   {
    "id": "cdy",
    "name": "传道院",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cdy.yaml",
-   "sha256": "b84fc698f8ebafd3bb7099a9bc295d1aed09326c392a0aff00702333e3e8479c"
+   "sha256": "d7592cf48c8ff9f9efcc693e0db8ff6b4940784b3438531747682ca5f76d1212"
   },
   {
    "id": "ceskeforum",
    "name": "CeskeForum",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ceskeforum.yaml",
-   "sha256": "b63df5767cb3d4b7fd1f4196cab453be450733bd9810d81836495bbd13dd70fc"
+   "sha256": "35cdb37405a5496fc5260d673c5574a407c8d9dc9fe1afe63fb4b707ed6f0398"
   },
   {
    "id": "cgpeers",
    "name": "CGPeers",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cgpeers.yaml",
-   "sha256": "5ff7c73124336d330a2c02171939a5a0311c9f6cd9be7ff89d06325512afc65e"
+   "sha256": "87f3fec80b3df8620799c2fd59d6818f6860b074b3a46c851edcd3d2d44a8f6b"
   },
   {
    "id": "chdbits",
    "name": "CHDBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/chdbits.yaml",
-   "sha256": "1238c734ef96f399d237844c1a88da367d73e601487809d82217a7863795c9d4"
+   "sha256": "9a55efaf58f7fbd1ffd119cb5ef1dc835aba87b4f5364747f96319cd58884676"
   },
   {
    "id": "cinemageddon",
    "name": "Cinemageddon",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cinemageddon.yaml",
-   "sha256": "dc64dd33c20af63c39c1e376f8f174a3bc95b2fd7893d32411c509a7405049e8"
+   "sha256": "f8c2eb4b8bd3e58d876bf03fe66b2a9bec65ee3def623136ceae62c588dc8a35"
   },
   {
    "id": "cinematik",
    "name": "Cinematik",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cinematik.yaml",
-   "sha256": "a439d19a74eb74145a83a30e63a45a60a4911962b75895af2aa40acba9d35b2c"
+   "sha256": "3823acfec73c6a3f8cd5fc2967c4af53fdc243e1b93bb43ef96011cc01b465c5"
   },
   {
    "id": "cinemaz",
    "name": "CinemaZ",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cinemaz.yaml",
-   "sha256": "3b361f4c1584ac71095ce250c56f8c9fad85c378d2e1a791f5b2d334d15695de"
+   "sha256": "57b5b68ea375ce570ad3a72a346a8577034bc7fc9c3d179b11175bd83a8e8dda"
   },
   {
    "id": "clearjav",
    "name": "ClearJAV",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/clearjav.yaml",
-   "sha256": "8b8e12b82d0afb72eba8601e3c6b895d7e3ca88f6052aa3a40ca5142869cbcd6"
+   "sha256": "94420bfa9f0123348cb07484a3a72f5ae1dd3c0b4a1391eafff2812d651daf89"
   },
   {
    "id": "cnscg",
    "name": "圣城家园PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cnscg.yaml",
-   "sha256": "1aff855e3b1eb07b155ea59414b14bf2fc9db1250f6fc6fddb7142ae8e92de0d"
+   "sha256": "db270c2de530692de5a973a2fad9170eef27db57689b0063eaa1c3cd7c32337d"
   },
   {
    "id": "colapt",
    "name": "可乐",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/colapt.yaml",
-   "sha256": "daf8ebc5848ecb17b0b2812f7f1a8b1e23f0e88722efe8a8972524cfd6b721af"
+   "sha256": "fdb94eb692c39d0157cd8d5aac41f809a39bbe64f58cffddb28fb2b843607b3a"
   },
   {
    "id": "concen",
    "name": "ConCen",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/concen.yaml",
-   "sha256": "a16986c9327be018f82b9188d96bfc896ba116ec6a128d0586d8cde3a90fc13c"
+   "sha256": "40f41a1d3e176966884e109e1d12872baa31f059383fcca6839bbe14fa06d377"
   },
   {
    "id": "concertos",
    "name": "Concertos",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/concertos.yaml",
-   "sha256": "5c5cced0f1c62595ec1cdf310bd354efe69afe8227531a2b967361ae22472dcf"
+   "sha256": "4a5e6ecb7be96ad46115c120dc39b35689fc1e1d89c8a425e3c21da329eb9870"
   },
   {
    "id": "crabpt",
    "name": "CrabPt",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/crabpt.yaml",
-   "sha256": "f121fdde0929cb4838ba51b9928f464782cae718bcd153adc4e52e63dcfa51f9"
+   "sha256": "efb6b4f4b9f2a7b011d7493c9c53e62a4447e1bbe33abbb94f550f5b765e3bfc"
   },
   {
    "id": "cspt",
    "name": "财神",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cspt.yaml",
-   "sha256": "a601bf7c7fad10cf383c58699445e2f5138a3ad01836d88bfbeb8b0f485fef92"
+   "sha256": "0da36ff3a402cc2bc0e6d708d5cdf4360fca45eb4e2077f85c35cba2781750d8"
   },
   {
    "id": "cyanbug",
    "name": "CyanBug",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/cyanbug.yaml",
-   "sha256": "db933cf2738ba017827865e73f51387a7b0057f581b47b1871eacb1a79e14eb7"
+   "sha256": "341bb527b581db39d019c34a26000b18364dde6af712edaa233519673f9c648c"
   },
   {
    "id": "dabaojian",
    "name": "大宝剑",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dabaojian.yaml",
-   "sha256": "2f392f4e91644b6995fe2cf257db89a3b9394c1bc52cae7c4ec6c7bd96f2f5bd"
+   "sha256": "b5aee9f8a5aa6c1ec934f927ac8d3a153e6889b28a4bf2dfaf23fb0d2e9200c4"
   },
   {
    "id": "dajiao",
    "name": "DAJIAO",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dajiao.yaml",
-   "sha256": "da6173e81b408f1ad73d749f9f0d208ba02733970d24669478b6f94c4f434060"
+   "sha256": "642a9e5cefbbe845a5b1e1daeb9509ff268e8ba7e39dfc06230d19afedfe5cf9"
   },
   {
    "id": "danishbytes",
    "name": "DanishBytes",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/danishbytes.yaml",
-   "sha256": "2d98f420051e0438894ad14adc821a144507cf54ef7a7c83be828904535cf7d9"
+   "sha256": "73dc343de52b5a200418410b9de2a5326ee4028e2ed0f5396cdedd7fee871cd9"
   },
   {
    "id": "darkland",
    "name": "Darkland",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/darkland.yaml",
-   "sha256": "87c356eb4b806b77fb42c41f929c6be02451928ee1b99cafc881d12cec917ef3"
+   "sha256": "d5d8086594df7b9f1bef41d930db34c70c9f650839874e13ad63dd555e7b6d71"
   },
   {
    "id": "darkpeers",
    "name": "darkpeers",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/darkpeers.yaml",
-   "sha256": "28af51810de33d788eb165badcade38ccc04e143f379dd281893f0c48fbcce9c"
+   "sha256": "0e8dbddda267b7e16fd9063a7aae0987309381daad28cd155b5a8d0715b26673"
   },
   {
    "id": "datascene",
    "name": "DataScene",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/datascene.yaml",
-   "sha256": "b60504b664a74a3f65d074592f2c4afc246b23cd27805a695d727f938c4d9946"
+   "sha256": "1c5a5275cdd70b0273d7847e3078f01d6d41d7d961d6e10d6ee127627a7bcb78"
   },
   {
    "id": "daxiangjiao",
    "name": "DaXiangJiao",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/daxiangjiao.yaml",
-   "sha256": "a0a128ef0a679275981e23646449d380c38804c042d68eb91a23c6608083df9e"
+   "sha256": "fb926a048640d7f7f16862e549aaac0f0235ffb9d0cd17f03500121edcabb3d5"
   },
   {
    "id": "desigaane",
    "name": "DesiGaane",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/desigaane.yaml",
-   "sha256": "e6f9d4c0b35b62a39f012027713487d6fa56fe9411526a96e9ec16d7d285240b"
+   "sha256": "d7c9879b7187a77bf4729761202e7442d1183070962c3c1a6bfc941ee862bc4a"
   },
   {
    "id": "desitorrents",
    "name": "DesiTorrents",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/desitorrents.yaml",
-   "sha256": "4b49e5386550e30f2f291c177dcc74465b806c72a25398292525384afde0ceeb"
+   "sha256": "40aed1d8686683c439842c175a69f466fe7c56b669fa415bb018af56fc7ddde0"
   },
   {
    "id": "dhtclub",
    "name": "DHTCLUB PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dhtclub.yaml",
-   "sha256": "78eaed1308bf3abbc8e09c74034d2008abb60c7398f1e8aa2ee8216a2b07e3d0"
+   "sha256": "27e163eb9a5c592d998bb998a9143a1ba71a696a037629aa1c66dccd13bdf407"
   },
   {
    "id": "dicmusic",
    "name": "DICMusic",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dicmusic.yaml",
-   "sha256": "0f90464b4a93025388f90b4e152f8f53ed0292b8582906699a87ac0457a9cde0"
+   "sha256": "0b0f2c0f8fe2f97b57b9c1c6f4cefccc6f7fde3212b0e84c27698f4bee13ec34"
   },
   {
    "id": "digitalcore",
    "name": "DigitalCore",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/digitalcore.yaml",
-   "sha256": "3a48783676c11688596d98daa6383f6c92bd07e01928ee9f0624d3b0d82dcc07"
+   "sha256": "7ad7b03ce60988f56c64a54b9b05ce92fcb565ba72b02098ba42ffbe1b282cc7"
   },
   {
    "id": "dirtybytes",
    "name": "DirtyBytes",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dirtybytes.yaml",
-   "sha256": "e9765f36e3f1bfc7f65588d8f343c9101eb7a61c47d6aa51da445016e999ab4c"
+   "sha256": "5c80d3a79a086a118ff9629b7bbd60b868efcf6ba68654626f5995dbd1ee598d"
   },
   {
    "id": "discfan",
    "name": "DiscFan",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/discfan.yaml",
-   "sha256": "7ac4cd9f2a1ccb0e20155689aa5495de2f2f86ad01976359421963a66064950c"
+   "sha256": "a4709954ec777dc0b0a01597ff970d470e9158ce345f65d640ea24ff41f5e641"
   },
   {
    "id": "dragonhd",
    "name": "龍之家",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dragonhd.yaml",
-   "sha256": "53469fb70c445b771644ac135f49b213cde8ad899c6587bb3221ab11535371c6"
+   "sha256": "f83089d63085e8f3378cacbe9ba93c613e5de97888140c75bf714fc1bb1fb3bc"
   },
   {
    "id": "dreadvault",
    "name": "DreadVault",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dreadvault.yaml",
-   "sha256": "973b9d4b453effc66e1894030e36aa486b31486b483555c7cb940d3767ad7db4"
+   "sha256": "1471ad77f15870afdb3eab9da115fb4bb51a584de1470bdffa00803003f51e0d"
   },
   {
    "id": "dstudio",
    "name": "Depth Studio",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dstudio.yaml",
-   "sha256": "429b3bcab12a1ecafaf3becbf4b688ec17031092711d799214594fbe00ed0691"
+   "sha256": "bafc3e8e8bf087957275b53ac60995ca57805a68b3fe2e0ceeb1a7f514a7d57e"
   },
   {
    "id": "dubhe",
    "name": "天枢",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dubhe.yaml",
-   "sha256": "216508b5483353db601a91f0e39b63612bfa2f729f7a1bc7e9a17f5c95474076"
+   "sha256": "c898758d1f0d57d20befb2e8da8e36608c6b840dd4ee1dbb86d27dacde424408"
   },
   {
    "id": "dxdhd",
    "name": "DXDHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/dxdhd.yaml",
-   "sha256": "1f66c920a4768a25ab1da274eccbb662f38eaedb7e02ae1d5635dad3fb731bca"
+   "sha256": "667c85f1e56645d3c89455e9844a110657c01306b5034a0bb75f0ae43bf373aa"
   },
   {
    "id": "ecustpt",
    "name": "ECUSTPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ecustpt.yaml",
-   "sha256": "6f34a8207ffab1217714b36756c1f489556a7a634b8077eb1c19ccdc0968b8a6"
+   "sha256": "d0600499c8e02c62fa0046e73cc3d1b5d714aec987897e609bdccf533f5e3acf"
   },
   {
    "id": "empornium",
    "name": "Empornium",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/empornium.yaml",
-   "sha256": "4f8c39635e15a5e1507822a37b0c25cf708022b7256cd6f36ccf46e271f101fc"
+   "sha256": "c5c3ed25ab5048bb35964b1e7218a971db2bf943802a8468e891c9128ff45e75"
   },
   {
    "id": "emuwarez",
    "name": "eMuwarez",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/emuwarez.yaml",
-   "sha256": "038853f9b7e38a2e9916f76053ef9f74cd6ce7e3f5227bb16447a442087406a2"
+   "sha256": "87482d3a331ae4ed7d11430e1596b7d15d809761f47ea5b414551846a8074184"
   },
   {
    "id": "exoticaz",
    "name": "ExoticaZ",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/exoticaz.yaml",
-   "sha256": "c3c768d6930214acc30bbf7dde33abb89014bdfd4e667a5e8f9c94a70d1977e5"
+   "sha256": "61db92a809e1ded55ff55c871a61d5868beb9e8294553f4b6c9c89b78de53cac"
   },
   {
    "id": "fappaizuri",
    "name": "Fappaizuri",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/fappaizuri.yaml",
-   "sha256": "8d45ebc2003d8dd48f1bbda852e88e6a2fca20900368fbbd15090eb4abe7618f"
+   "sha256": "ae660b3252f073bf2ab7b4b98c346bc49e8ea57e642ba0db52fd9f0632f6e2ed"
   },
   {
    "id": "fearnopeer",
    "name": "FearNoPeer",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/fearnopeer.yaml",
-   "sha256": "2e411671313af2c818a5a68c8050196cb33eae29c6f1154aadf039498fb62f08"
+   "sha256": "ee5601c1138eff90d203d632ac52353bb162eccffdd78faa46792883debdb03e"
   },
   {
    "id": "femdomcult",
    "name": "Femdomcult",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/femdomcult.yaml",
-   "sha256": "160d1c5edfc851de10d916b3ab4becd0775a8985e0be17188d0837f7e148dbe1"
+   "sha256": "6b1e096a6cabade798ddf03c24737d2ce92a5e77c3ca00e410429962dec7d2d8"
   },
   {
    "id": "fhpt",
    "name": "凤凰PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/fhpt.yaml",
-   "sha256": "d77f6459c2b6109becf8392bbaaa7a59f60b791672c6d93996e114080524d2ae"
+   "sha256": "81dc6a79637026fef4cead3a86648c424850884572c5bd3ebde4a211bcf30e6f"
   },
   {
    "id": "filelist",
    "name": "FileList",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/filelist.yaml",
-   "sha256": "57dcbe34eb2a5a1464d6042e21283d81d7a3b662a45ec2908007a5a3ffb82ca9"
+   "sha256": "7cca97ccf52bb073dd49a6354f484cc8d2faa94c829bc3f7297684eefefe4b91"
   },
   {
    "id": "filept",
    "name": "Filept",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/filept.yaml",
-   "sha256": "ea0ad75be788c372e66090293a8094efaf45b5a076ef82e8dcc46f288b8dcf4e"
+   "sha256": "294117f7d772aec686417fb90fb28c2d539c12881dcff89116c5ac1c378cd3b4"
   },
   {
    "id": "freefarm",
@@ -649,72 +649,72 @@
   {
    "id": "fsm",
    "name": "FSM",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/fsm.yaml",
-   "sha256": "2449d849c4eb35a68017ffdf77d8ce2a15e53f71400a9c068029f33537e278df"
+   "sha256": "07453eb29f8614b3510d5918d671cdbf3cbcd26ffe729b5ee5105872045f07be"
   },
   {
    "id": "gainbound",
    "name": "丐帮",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/gainbound.yaml",
-   "sha256": "4b75bb321c71e4696b76b75270a69d056f110d80d6b218aeb57bb3a0aff574c4"
+   "sha256": "ea8d07ce66241755a631ac9d8d43b95c174ebb6d39ede7431fce9c1657488b32"
   },
   {
    "id": "gazellegames",
    "name": "GazelleGames",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/gazellegames.yaml",
-   "sha256": "57bde3a52039182481f548d6065ee51673a0d290611eb532024688c034a55be8"
+   "sha256": "742b9f991ee3967ced63f9c1c324d5d5c0ca21c936687e14e80e63493e526332"
   },
   {
    "id": "geminitracker",
    "name": "GeminiTracker",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/geminitracker.yaml",
-   "sha256": "1f5f0492ba39023356bc69a83e260a22a9ed1f3504d282f1394e749148390516"
+   "sha256": "1d49d6b0622cfa0d1239463cd10278af935e8b14b5487e6d3b287cacf3eb1e5c"
   },
   {
    "id": "generationfree",
    "name": "Generation-Free",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/generationfree.yaml",
-   "sha256": "13ddf05e5199772303b412a3d83ab93bf4af2aba2ec588be262a5bc0f54cc579"
+   "sha256": "3f64527790e40751af62a005b37305bf305003ea9cad8ac8ffa52faaa7ef24d4"
   },
   {
    "id": "gfxpeers",
    "name": "GFXPeers",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/gfxpeers.yaml",
-   "sha256": "b25aa4940450e179bfd35c89d38d33e1b6e9cc19d357cf2cfc626bba30a0f45d"
+   "sha256": "cc1119f93a90f10ae1894df8c0224b3e4591a6d9732f1dcf607e8d74b5a6a428"
   },
   {
    "id": "greatposterwall",
    "name": "GreatPosterWall",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/greatposterwall.yaml",
-   "sha256": "fdca920c000581fb15f4ada349919bc1a147b0db0da223e9051430643f87a517"
+   "sha256": "f992c313d1e5482b8a2cf9f9a965ee51fb4c9dd7f8295e31fe010e794c8f5280"
   },
   {
    "id": "gtnet",
    "name": "Gay-Torrents.net",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/gtnet.yaml",
-   "sha256": "11df9981738b18e7b0382a89bbf125fa895ab1871cf2610da08e9b75b402fdc1"
+   "sha256": "42ba7470a269f45f68658a67403f605666b1bd4c6486308b103748d6ddb61010"
   },
   {
    "id": "gtorg",
    "name": "Gay-Torrents.Org",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/gtorg.yaml",
-   "sha256": "136b4c9872d0cc1b8f1f38a8f437c3e544084ea686154ca93a58bc06f730e409"
+   "sha256": "51c923241c2d1645da3fee3494e3b8b057e22bc40d1ebef2353c37ad7da04de6"
   },
   {
    "id": "gtru",
    "name": "GayTorrent.ru",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/gtru.yaml",
-   "sha256": "15cc21985223057c3198e2310b15c331dfc34e29d2dba9dddbd3a462606627d4"
+   "sha256": "c61329df4dd53e1501e87419731946f9f0a8b0e4fa880a3b7a7a9afc2d399e9b"
   },
   {
    "id": "haidan",
@@ -726,114 +726,114 @@
   {
    "id": "happyfappy",
    "name": "HappyFappy",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/happyfappy.yaml",
-   "sha256": "77b62b9e38cddcc34c5a689ea0b32cdf41c3912f666cb873c49ef0fb766fe6b9"
+   "sha256": "6369fabc484e608d04d4c147747d0b19460b13dcafe57b527ef691c3fdfc6819"
   },
   {
    "id": "hares",
    "name": "HaresClub",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hares.yaml",
-   "sha256": "a43726d8bb14dfe9f21db4104d0a7ee50f1935f3300f387f775a57186028176c"
+   "sha256": "c8c8971a26d2e745b4bfb490deef2651e0ee65a6d7b70ea45623dfcdae576b59"
   },
   {
    "id": "hd4fans",
    "name": "HD4FANS",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hd4fans.yaml",
-   "sha256": "fd32d2a88bff0c3f0c07bdd1f3e15045d68814221695d074afead01794eddd65"
+   "sha256": "c9af5a36b579be61a7b954819e475c189bfe58d391c3caf1baf87640ca6e79e2"
   },
   {
    "id": "hd4free",
    "name": "HD4Free",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hd4free.yaml",
-   "sha256": "d4623a28a96b72aed73db3697ebffa7e538d100a76249f88c34a89be89e72029"
+   "sha256": "c8dc6eb23231d56eefe79e925ac06cfcc1ca5b1ea627627869ca134c74d1369f"
   },
   {
    "id": "hdai",
    "name": "HDAI",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdai.yaml",
-   "sha256": "fff2f241290ac5f4677fb8469e0a6fe49fa86fd9982e05e9efa18c94c6c55a70"
+   "sha256": "031d015951aa8a927b6aca64b9aa76e1c42a22ae1fed7524f24c9a32d077f5de"
   },
   {
    "id": "hdarea",
    "name": "HDArea",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdarea.yaml",
-   "sha256": "885df547644d571be9dd5d36aa729ae49f64b8f1e8804a1af616022535b40a73"
+   "sha256": "178018cd4871c692316c6f3ca2571ab4477ab1a1b87fcc8ec9811406aab874b7"
   },
   {
    "id": "hdatmos",
    "name": "HDATMOS",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdatmos.yaml",
-   "sha256": "8cba99d03791a749d33b018e63089e13bc3778be3700c12a547313b3ee58a4b2"
+   "sha256": "794a064c6f74d1d96658dd27754207c43009279f39714d857f8e1a97f336b666"
   },
   {
    "id": "hdbao",
    "name": "HDBao",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdbao.yaml",
-   "sha256": "3592131f3f1d8fafd7db9146b250174d9a284ce504bb6ea2d2aac749209d06c3"
+   "sha256": "f75a007da4a7490adf6dba6b6bcba17d82e0f651d52510242a2f0ac6027c9adf"
   },
   {
    "id": "hdbits",
    "name": "HDBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdbits.yaml",
-   "sha256": "fc802404388f1dbb2af4cbf9f99af94554fee48ee745ae6920a848c421534621"
+   "sha256": "9496b6434cc2d535bd19f57fb2169c5c6b33c14f16c143c635fae58b797f803e"
   },
   {
    "id": "hdchina",
    "name": "HDChina",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdchina.yaml",
-   "sha256": "882ce71983e3042b6091cae54787c83a5c4173950aefdf4a955c009673f66d50"
+   "sha256": "03ed6093069b5e6c3595742552be0596479ed3d3194a12a499d88d34aa79cfeb"
   },
   {
    "id": "hdcity",
    "name": "HDCity",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdcity.yaml",
-   "sha256": "13295cd114f2b1359a4556c0a50cbd1bfd5323a1b7b75c5bf3951010db21317f"
+   "sha256": "25174e02970532ad53aeba19f96a852a9799088833f488dd7351b46ea39428dc"
   },
   {
    "id": "hdclone",
    "name": "HDClone",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdclone.yaml",
-   "sha256": "e031ce78405e3776e5dbd0ffe009beb1bd6299bb34af5e0bbba0714f9412f4ab"
+   "sha256": "9b53956a5ef2cdabb371a96e429708f38ba0da9248d4d37731835210c60a965e"
   },
   {
    "id": "hddisk",
    "name": "HDDisk",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hddisk.yaml",
-   "sha256": "70e075a900c3bcc1cf602bdf1d9924f62892ec33030ab68c5aaa5bcef76bfd03"
+   "sha256": "1472a3e79fbf194243c25e977cc9e6c46f801890099c1d48bc7b02f4d8e3e475"
   },
   {
    "id": "hddolby",
    "name": "UHDDolby",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hddolby.yaml",
-   "sha256": "c49aba5e1661466833357b6bdcaa29ff335dff64e20b417dd0852e9ad253f103"
+   "sha256": "94e2902b4b562e288837c586c55f687c95d7bf94469ce3575b0f3a76f0e52918"
   },
   {
    "id": "hdf",
    "name": "HD-Forever",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdf.yaml",
-   "sha256": "1fb8cfd964e9d9cc4fecd3251992762f60f7c5b262ede6ce247ec2b94b9c9319"
+   "sha256": "0942e563f5664b1c4ac21a81fa9e6ca71774ad561445bc0f4bfa7c76e244d8d5"
   },
   {
    "id": "hdfans",
    "name": "HDFans",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdfans.yaml",
-   "sha256": "dea6868ad89cae8df78bbc3c3fe4240ef19bac6ce8da3ce9c9b97afd6404238f"
+   "sha256": "1bff72d8fac3e3ca5d9e52180d60e5e6da980fc7659a01c9d31ef18a83cd0bd4"
   },
   {
    "id": "hdhome",
@@ -845,58 +845,58 @@
   {
    "id": "hdkylin",
    "name": "HDKylin",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdkylin.yaml",
-   "sha256": "2048759228164eae1e1f9e2f2c98f1a830f93671593bbefd2fe7043276f044eb"
+   "sha256": "87848a48d1a2a1edb8fd2e4471d89b3fe7ecf4bfc094b1e01bae8f80695b0e1d"
   },
   {
    "id": "hdmayi",
    "name": "HDmayi",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdmayi.yaml",
-   "sha256": "ea6704f4507e6cf4abfb82d2f4491c29f87b35dedfe3ed0715409302a8f0770b"
+   "sha256": "bd5bfb41530f352cab570116a3b2c2983b2f211f9054a93ec7b745745611491a"
   },
   {
    "id": "hdpost",
    "name": "HDPOST",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdpost.yaml",
-   "sha256": "1e6a7eb86b6b93eaad7994309950e74654a5d2a924c188a2fb4099894b5cbf04"
+   "sha256": "bc7d55b0aa483ba63a3e95e09afef0cc89b726ef498fbe91b7d4c0692bc6276b"
   },
   {
    "id": "hdpt",
    "name": "明教",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdpt.yaml",
-   "sha256": "4386cc9ba598da9e50b7f25da9d63a6009cc5aa0dac3d843628867a47326594a"
+   "sha256": "026d48edeb18f03c605da6688b953be77902c2e4bce61d216dcaf5193eb117a7"
   },
   {
    "id": "hdroute",
    "name": "HDRoute",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdroute.yaml",
-   "sha256": "57db9f635001b102a8a51c70372637aa1b11f1c6a618ce08c1fb8dcf61d90bd3"
+   "sha256": "9a32398cdbc3f819aeb475b98607229026933497aed3e3ef24a2e9f368807bb6"
   },
   {
    "id": "hdsky",
    "name": "HDSky",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdsky.yaml",
-   "sha256": "1dca98f273abb7ec22f5f6adc794321595183be8cb616113b774b27f0e96d618"
+   "sha256": "a21fced500b1f71c9355d0ae1b90b0afdaa5ee15b0b98b15e14cb9bcc276b623"
   },
   {
    "id": "hdspace",
    "name": "HD-Space",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdspace.yaml",
-   "sha256": "e1b128de84e14fa22d7466c4cadb2052a26e37f7e53224f3adea19330dd4ef78"
+   "sha256": "5b879f0af9b9c96a14603017d6a23aee8ec3429712fc011396d3986bbb7b8d86"
   },
   {
    "id": "hdstreet",
    "name": "高清街",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdstreet.yaml",
-   "sha256": "68e562bd4ec442f9d24e0bd88c06e6f2e4d712b86f85e19dc57f799759bd3797"
+   "sha256": "d6b92f4a142a28c2060693bbd5ed6c5c1b7f0d647acb2832ad9ecde4ff2a8cc2"
   },
   {
    "id": "hdtime",
@@ -908,534 +908,534 @@
   {
    "id": "hdtorrents",
    "name": "HD-Torrents",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdtorrents.yaml",
-   "sha256": "c578c6a6697f230d2004374b39201ec3bf6b8c79a7f286149d0b367e31efd0f3"
+   "sha256": "8ab4d3ce3ef0f2c32479fb3dd8f3ce4e90a60156e4e026a71af0df474d6e4a69"
   },
   {
    "id": "hdunited",
    "name": "HD-UNiT3D",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdunited.yaml",
-   "sha256": "20fd821a638e1658bb88f9d3fd978e311cc7cc0207ec315e4c2d61f2205d71a4"
+   "sha256": "aa51a8014664e29b6738c0c9ef846dda0593abf92e9caa815d1883439f0affd1"
   },
   {
    "id": "hdvideo",
    "name": "HDVideo",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdvideo.yaml",
-   "sha256": "447a541027eb2c83744363385be4b7ec6a3b8231ea58b4c9562cb0e84b2b4b66"
+   "sha256": "68df85a57a81fae28b761b1069125ff9f72e2f99d8555d79e0a1a153539b81e3"
   },
   {
    "id": "hdzone",
    "name": "HDZone",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hdzone.yaml",
-   "sha256": "e4b3809c85b13155d3f240ff68f67d9d3c4dbb23e06d25d8f51e2d0ab2c52e23"
+   "sha256": "c1ac166c7c61c9e345e96c08cd8004e7fc3b44dc84c3ec0bc3ab66757e2f9ef1"
   },
   {
    "id": "hellenichd",
    "name": "HELLENIC-HD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hellenichd.yaml",
-   "sha256": "ed9b05268b5d1c4e21a6fb57a63c3573886795513be9f80e835316bdd0ac0c77"
+   "sha256": "4d053f4bb30eefdf06cfef4233d230ac072319ad2c0eaec15497a727d76ec3bd"
   },
   {
    "id": "hhanclub",
    "name": "憨憨",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hhanclub.yaml",
-   "sha256": "39e54e16d218743f46f6da46326c5afbe2de8bbdec6bf38c08848bd609712c6e"
+   "sha256": "4d841451c74be91f6e54994bd598dca9b4f9e211d542559017da5366d4ec94f5"
   },
   {
    "id": "hitpt",
    "name": "百川PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hitpt.yaml",
-   "sha256": "00484f55288b96f59a8ec991bf362e892e26942d1deae67a65ee204b7aab8aa0"
+   "sha256": "0f077bafe576768a727ff4b9089d12e66384212efb185369f5fb1460f7c9c265"
   },
   {
    "id": "homiehelpdesk",
    "name": "HomieHelpdesk",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/homiehelpdesk.yaml",
-   "sha256": "0efa9eebc7950a59d6163089fb44e53cb838b2496d8794ed77c179e904bbff9c"
+   "sha256": "f501f49066ce56dc4ebf11f73e4c1f05fc418e3f545d52e2636d101be4a41b3d"
   },
   {
    "id": "hqmusic",
    "name": "HQMusic",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hqmusic.yaml",
-   "sha256": "b643a035c257a77f0c783a8ad4b3bb2f101439926a3685b432185b552ee44a7b"
+   "sha256": "6f3e160226436129802112a20264e9995f91db6d93207242f1241055087c9ad5"
   },
   {
    "id": "hspt",
    "name": "回声PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hspt.yaml",
-   "sha256": "62150f2ddd6c0a154b698af38f7c0feb25dff3d5b993af4ae6d69492dd0cea18"
+   "sha256": "311ece191bab60507903ac5b4711cf93aa22816ae28e80f7443dc5df9f6ae564"
   },
   {
    "id": "htpt",
    "name": "海棠PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/htpt.yaml",
-   "sha256": "211dad419f687bb2c4fb4ae0bab4414507b7b0d80f0f453674a1ce7b688fc338"
+   "sha256": "0eebf8ac2f76a4c6983f28f28906fac28edd08d3451048693b6ac021d8bd4f97"
   },
   {
    "id": "hudbt",
    "name": "蝴蝶-HUDBT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hudbt.yaml",
-   "sha256": "9f0d177a19d5c661c41777a4d993f4e1fe3286678cebc44c8cabd40755c64746"
+   "sha256": "5157fa69a339d04c0b8c09f96b1454478e90c67be60ce468adfa04184671d36c"
   },
   {
    "id": "huno",
    "name": "HUNO",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/huno.yaml",
-   "sha256": "c728cf4a6b0068c219bd3a5d8925145bb034c0b0df00653d08b4db45684a2b99"
+   "sha256": "4f50ec97ddb9d2ee2e7f4b2aaf1409710732f504a1eab7274778ee06e133899a"
   },
   {
    "id": "hxpt",
    "name": "好学",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/hxpt.yaml",
-   "sha256": "70d58ed049bd36fa7dda285460fad9a431a2a9c447229b77d3a20c49f3de0b22"
+   "sha256": "80b714b658aec3d696d49af816088d9d0ce485a88d67e1a7475fc95cd18f15f6"
   },
   {
    "id": "ianon",
    "name": "iAnon",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ianon.yaml",
-   "sha256": "54eb11d0af277c436e84c63109f9464deadeca33b75e30cecc5720f65bd32579"
+   "sha256": "c4255cf24f83bfb992909f7c0245259018cfd80dc230fd29b3de45fb70c3c1a9"
   },
   {
    "id": "ihdbits",
    "name": "iHDBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ihdbits.yaml",
-   "sha256": "7d93b9b978ee59d2635897f5ffdb212873b7fef3624906894eb35e251530605a"
+   "sha256": "ff68bd1317fb824a89f48d38288dd569841109e25000b54bdae7f722d3466ce6"
   },
   {
    "id": "ilolicon",
    "name": "ilolicon",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ilolicon.yaml",
-   "sha256": "05440b42be5b6b1c48128da90698871f13ac6b7c32d3b9a09b743aad030d3ba1"
+   "sha256": "dead66468d08f1e894f523b864f628a5cc5d6888e20c61a279235bf1ec268381"
   },
   {
    "id": "infinityhd",
    "name": "InfinityHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/infinityhd.yaml",
-   "sha256": "c99c08943192c48f8f0d69a53d4370ea5ae87a9c56db5ec4fe0d0c637e21d84e"
+   "sha256": "f52fb4f2c2ea6ca1bf96f91d2cf00a23d787e70bdc1fbbfb83eaad18ebc08782"
   },
   {
    "id": "iptorrents",
    "name": "IPTorrents",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/iptorrents.yaml",
-   "sha256": "80f10ab4586751793a6e6a8dbf4bebb4a0d175c790e42f3c541f29c0f6f99b3b"
+   "sha256": "0bc49aeb17838848dfc6c25466de960bf7c082a43232fe6a3c3daf9fdcfd6eb6"
   },
   {
    "id": "itzmx",
    "name": "PT分享站",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/itzmx.yaml",
-   "sha256": "99362af58a8f110ff128e0e2f82e1b3f8cc89c8ddb81035f253345574bd96b95"
+   "sha256": "2a234da2f36d6d6cf1688e876947e5530576f51073292c5d3e7a4c1f8321f0e5"
   },
   {
    "id": "joyhd",
    "name": "JoyHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/joyhd.yaml",
-   "sha256": "300bdef23eff663f06cdcc1c45e436808b780cfc1337ddb320a15a5607271584"
+   "sha256": "f44205c9e9a7d8fae3ef6b55abaf3f729b5f3d5d612e9ca905e211fa9beb7614"
   },
   {
    "id": "jpopsuki",
    "name": "JPopSuki",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/jpopsuki.yaml",
-   "sha256": "e858cec56f3ac8cfebf8e0bc260c50ace2805ac469fcddea3bd347e6761b6925"
+   "sha256": "381460556247595e821fdb805ce31c347d6a1b15189fc9d44a01bfba3b18f7e8"
   },
   {
    "id": "jptv4us",
    "name": "JPTV4us",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/jptv4us.yaml",
-   "sha256": "16b2d3111ce113bd2d98cc3963c3353c425213d7f86f2e868f16c57c278f1167"
+   "sha256": "98c491a061b72146528e30ae8d3402d3fe072ff5a3985da7f92d6058d54d4d1d"
   },
   {
    "id": "jptvclub",
    "name": "JPTVClub",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/jptvclub.yaml",
-   "sha256": "488a292eacca79c350583fac9ab53768a797587773ad20f0ef878c9655fcc088"
+   "sha256": "f26cf7376afdee6b070fafc9b99150d513ef5cc899cf61941d0cc75689bf4675"
   },
   {
    "id": "karagarga",
    "name": "KaraGarga",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/karagarga.yaml",
-   "sha256": "aecbf405695ab4e9d27bdc1bdc06c219fa68cd44f72ae54c5a8bb8382f5f088b"
+   "sha256": "f7f72c3e7ce4e83e0b137397b971c01500a09e968535af679fe81ca9a7080f1e"
   },
   {
    "id": "keepfrds",
    "name": "PT@KEEPFRDS",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/keepfrds.yaml",
-   "sha256": "75a6bbce338f3c9515178df837f18b724e6d5f2d07f8b69d7e641b360865ee5b"
+   "sha256": "f926a930f391a9aa1e79136421f195ff751ebd64e57c0c21af9119185231ffbe"
   },
   {
    "id": "kelu",
    "name": "Kelu",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/kelu.yaml",
-   "sha256": "ea3b5a2758c9002052861ebdfa96f948d7ec633c8d0df502ad6c18e36f2bbca7"
+   "sha256": "f1c0ad634f41f7b840674325632d7ed32aeb2de417c03ef8d40e6f3782bbf78e"
   },
   {
    "id": "kimoji",
    "name": "KIMOJI",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/kimoji.yaml",
-   "sha256": "e017a8f8213ec9b9e8e1cd2ffbe5940edc8584774e6e53c2152e97ce97900cad"
+   "sha256": "b307577898644c742b1e98fb6b4e86272d097058f2d41fa6c235ce38a5360bd6"
   },
   {
    "id": "kufei",
    "name": "库非",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/kufei.yaml",
-   "sha256": "1c98efa3514c3f2159d2c6db7fe811654f8b36dd3cf2dd75422765037d2c7b8f"
+   "sha256": "1d6253ed3223eee84defa4c9d5f08e7a9ae838367e6f627e17a08915d5edba67"
   },
   {
    "id": "kufirc",
    "name": "kufirc",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/kufirc.yaml",
-   "sha256": "d3c56566cc404acd196c7b863d998de84ca344d53fdee6f2ddd8d301118a9c58"
+   "sha256": "0160da8737342b39aa5b6f51f4a59876a8d66c9d96c9def5e83778099673ec08"
   },
   {
    "id": "kunlun",
    "name": "昆仑",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/kunlun.yaml",
-   "sha256": "4ca7252ef46d539e82ca597a0ecff634aa99e0ec98a3db234d1e88e61c8bf99c"
+   "sha256": "a7f17443816cbe8a504bf2895a1cb8e35b0ec359dc263b4ca0909918199cc338"
   },
   {
    "id": "lajidui",
    "name": "lajidui",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/lajidui.yaml",
-   "sha256": "e10014a3cf6ed613bfcb18971e94ed1d899dc2d2d5ad71a2e6c5d2ae98ddbe12"
+   "sha256": "0cd540ed10806a11dd00fb5d22f0eea0615fa8a1d8c9634a059d7ca7882bd3f7"
   },
   {
    "id": "latteam",
    "name": "LAT-Team",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/latteam.yaml",
-   "sha256": "090edeb1777412e104a25044fb191eccd37e2c92538e64474f422eabefe54c26"
+   "sha256": "6647aac3f72c92f7cddc65dd0a8047573ed2f69bbf8c49cec2d285a41f4e84ec"
   },
   {
    "id": "learnflakes",
    "name": "LearnFlakes",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/learnflakes.yaml",
-   "sha256": "aa7ba27b3458b9647ac9c6064d9e58f0c16981eae4841682becb0aae3731c521"
+   "sha256": "35fd6b23a8a3207850a704ff6c83db0ea82bff462c8813ed3401eebdbd811af5"
   },
   {
    "id": "lemonhd",
    "name": "LemonHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/lemonhd.yaml",
-   "sha256": "83a1d8304a3ce088374a13c443176344d33c7e59bdfd9c7e48ed6328240dec1a"
+   "sha256": "1861e074a61fcd6353720b7e25f13396ac5de9e7b78128bf47abc8b4b351dd45"
   },
   {
    "id": "lemonhdnet",
    "name": "柠檬不甜",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/lemonhdnet.yaml",
-   "sha256": "69086a40b2161c27d7998041aa1457081c23aeadd5d8456b182400b434634e75"
+   "sha256": "7046557dd4742c7399c9dae2cd8cdfee1d99b7330bb42451fb7f8fe8c7e326a8"
   },
   {
    "id": "longpt",
    "name": "LongPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/longpt.yaml",
-   "sha256": "2753b97ac97b962e8cc1f6858ef2baa344effd0c674e8422f35525829c38aba5"
+   "sha256": "66295238cd3439a182b06abcd01f6f3981eb319ba6b31335116d690603b2d577"
   },
   {
    "id": "losslessclub",
    "name": "LosslessClub",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/losslessclub.yaml",
-   "sha256": "3c3b18af5235063b76b45cd94e84036e3c162f893c8d70bb2f08017191d68f78"
+   "sha256": "88680d5554cca6280f780dcb5e061913a18d3ed004f30b38362a79fc442a2ced"
   },
   {
    "id": "lpbits",
    "name": "LP-Bits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/lpbits.yaml",
-   "sha256": "4b38d00889e2a3829b4767f87036548cfa98d8c44ccb1748123804c9914e0a0c"
+   "sha256": "d57df92a9595d19aeb190a14f32319c4b516ba27c544cfc33de4e0adb9947efc"
   },
   {
    "id": "lst",
    "name": "LST",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/lst.yaml",
-   "sha256": "676743faac9ccbaf0d7443f9753156d6d5f2cda842f7527ee2fac280e71b3094"
+   "sha256": "295d6c7caadad9e99dd2ae927f581099988835254037fe54b1c9609112913e09"
   },
   {
    "id": "luckpt",
    "name": "LuckPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/luckpt.yaml",
-   "sha256": "1fc66de9102718e06737fba071863fecfdb4038c1913db173be0fb88f7a3cb66"
+   "sha256": "7ec7ce43856b231ae565fde3477fdbdc4e41737405544fdfba282e01d4020909"
   },
   {
    "id": "luminarr",
    "name": "Luminarr",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/luminarr.yaml",
-   "sha256": "ad6b16726941075e9151944e19d642556547ce4a308b356180476c12cfbf1001"
+   "sha256": "b0f5cd60ee17bd80b59e914274cca4dfe388d1fa96c2a575dd8b4c59a0547bfb"
   },
   {
    "id": "lztr",
    "name": "LzTr",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/lztr.yaml",
-   "sha256": "72ecc2e860fd8b9774c3b8eec3305ba122b3db862873a70187bad45bfad20ee9"
+   "sha256": "12a653fe0875fc1eeb19f38c2c19fee7344a7936608f2556e528dba34e42c96a"
   },
   {
    "id": "march",
    "name": "March-Media",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/march.yaml",
-   "sha256": "ac4b437a5f328a337148ab56739bd9e3df24261c16da1e125935358bf3d3e5ee"
+   "sha256": "f97819dd03858e228db373012fac82ab1ac3aebb17f88935bc738d652311bddb"
   },
   {
    "id": "midnightscene",
    "name": "MidnightScene",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/midnightscene.yaml",
-   "sha256": "87b595b97032db62ade3eea6b362a323970b1f5505b7983a8011122cc6b37cee"
+   "sha256": "8156eaa694b541dd6131e1061ba192e4a7e8bd89f7093a3947e860d47ddd3480"
   },
   {
    "id": "milkie",
    "name": "Milkie",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/milkie.yaml",
-   "sha256": "2366d3254fda1dbaf8b1f7c55ce3caa3d1a9e3b825fbb1a6cdce9cf79925cbe2"
+   "sha256": "86b2071bb2728a26b773715435cdadcfa8d415aae9ffaba5a019d0ba6470b723"
   },
   {
    "id": "minept",
    "name": "MINE.pt",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/minept.yaml",
-   "sha256": "441f5f6d4137ee0914eda55c70c741c043e3b8357078fcc4c2c74791ec9b68a4"
+   "sha256": "770b1dec7fdaefc19f79deb15d5abd8de749dd7a358be45d4740b7014511895e"
   },
   {
    "id": "moecat",
    "name": "MoeCat",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/moecat.yaml",
-   "sha256": "2768d866bcc142f81057c63a7764677234af0f94b1571166b60473d86aeb68a2"
+   "sha256": "aaffa9048e8720213d74516b2038640366d8a12174dbc18439f86f620925101f"
   },
   {
    "id": "momentpt",
    "name": "MomentPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/momentpt.yaml",
-   "sha256": "be390a32e58827e199dce51481e7b8ff8fc8fdda82addb4b723adac86d66df4a"
+   "sha256": "3527a8e3b523cd844ea998f9eb243a037b8afa01bf3d93621d5f5448a526ed3e"
   },
   {
    "id": "monikadesign",
    "name": "Monikadesign",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/monikadesign.yaml",
-   "sha256": "4ddc0b02ccda3286f74d09dcae9b9afed1b1315d25ba906767aa04b475f8bbcb"
+   "sha256": "4d6affc0eb1dfa89f9e87b09405609106948396d46daa9a50a01e8751bb1dd28"
   },
   {
    "id": "morethantv",
    "name": "MoreThanTV",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/morethantv.yaml",
-   "sha256": "379a427a7281fdcea971ca506541183756df4d24a0d74d2b16c8e3f46577ee7b"
+   "sha256": "a363d677ee337ca99daa9018cea0c43205f90b0f63d01d3bd28f98259fec1514"
   },
   {
    "id": "mteam",
    "name": "M-Team - TP",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/mteam.yaml",
-   "sha256": "6e1c65b4518e6d2c84e2e185db86539f1b946514bd54f59e622117398d32a991"
+   "sha256": "c0da8138b2b6de9a07483a21e8cbc72a1cce1749652cf1d98b9d1591a54b21c7"
   },
   {
    "id": "musopia",
    "name": "音乐乌托邦",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/musopia.yaml",
-   "sha256": "4f493f1ab8634835acaaf26853567c94b07d67380f8db7f99ecc0bab4fca4bc2"
+   "sha256": "3addc0507914cbeb7a56c9cc22fd7893f0759b56ddb9915b3f87dfc6b8c7172e"
   },
   {
    "id": "muxuege",
    "name": "慕雪阁",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/muxuege.yaml",
-   "sha256": "921bed113db205c292f20eadd669d7e4ded9bb0f4eac14b565ed033659171d85"
+   "sha256": "807d972e2278c546176aa0d7ed6e64fa20e26364293880dc4ffd90505de96ae6"
   },
   {
    "id": "myanonamouse",
    "name": "MyAnonamouse",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/myanonamouse.yaml",
-   "sha256": "016160afb526d46fa26cd0de8e2ab29158075a06a48e1d31360754e14b057649"
+   "sha256": "58886fab7c8e23333fa97b1cbbbbd1a5e95458af630c41c518b11eb8a5904acd"
   },
   {
    "id": "mypt",
    "name": "MyPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/mypt.yaml",
-   "sha256": "d567e9d67609687c456af50170203f39e99bab5ef5080506e39eb2bb0ca99eec"
+   "sha256": "e7f829cc964f67f842f9f3d421fbb3e1377a58492bfb8877158470e74dabf3e1"
   },
   {
    "id": "myspleen",
    "name": "MySpleen",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/myspleen.yaml",
-   "sha256": "ffa729ed415d5bfd9521b387244cda50100bfbd18276f0d68f92b600b16063ff"
+   "sha256": "2939efbb6ab7b57083e7af63463dad1cae159bdf46f5e2b1da4fc2c10b9c8fcb"
   },
   {
    "id": "nanyangpt",
    "name": "南洋PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nanyangpt.yaml",
-   "sha256": "8b777c27956e7bc784b70428f58c79e11b69cd04025aa9fcb56bf6f7f3493315"
+   "sha256": "17381fd3788ed435caf537f24d90d19a4e0da41393b37d130370113687f7c988"
   },
   {
    "id": "ncore",
    "name": "nCore",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ncore.yaml",
-   "sha256": "bafb95ec84570768c1786ea179be4f531509e54c25b47a340fd841f8def2675b"
+   "sha256": "0a68bb8e28619bcfe4e7c37493534e0e89e34ce163ef9cd6d33eb46b10eab66a"
   },
   {
    "id": "nebulance",
    "name": "Nebulance",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nebulance.yaml",
-   "sha256": "ee0b785f94271fa84a7a37bdba9801adb87b632126bb4c25dd4c6efbd4317ac9"
+   "sha256": "40bc3ddbe2c3891b959500d92d4ad8dfabcce599dc889ecc77dd475883367cde"
   },
   {
    "id": "neu6",
    "name": "六维空间",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/neu6.yaml",
-   "sha256": "aebdb7b6489ba87a8eb52cc8659d6e355ac84c73cb2c3ba197ae03fc6d795397"
+   "sha256": "798a5bc546952eadb3788b5479719016706dedfaebe8a6e6a2508ee439b4c94c"
   },
   {
    "id": "nexushd",
    "name": "NexusHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nexushd.yaml",
-   "sha256": "0d3047f8c36ad73cb4fed185337116bce6a765eabeebeb25e9b7301583c46110"
+   "sha256": "f75560abf2efd92df45000d89ef941f310c9699cb97361d0bc362cbf3b1c0c35"
   },
   {
    "id": "nicept",
    "name": "NicePT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nicept.yaml",
-   "sha256": "20a2022c7b5015e5317ba1ae18c9b766b7856e4a721df1443c001463a1c919fc"
+   "sha256": "13088d91317846d144dfae54e519485f5279f81697482bd544958d2597a2fa2d"
   },
   {
    "id": "njtupt",
    "name": "浦园",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/njtupt.yaml",
-   "sha256": "156b7e6e5f83abdc6f5694c85980316802e1cf258a32a7520175d87771fa4ffc"
+   "sha256": "bbcec612968e5c447c198df7fe3d522a23d7d49dee6bbbbb25ec465c7fa29da1"
   },
   {
    "id": "nordicbytes",
    "name": "NordicBytes",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nordicbytes.yaml",
-   "sha256": "fa3537d3591e856d37ac9ca9b7cd1d5cf58ea8919907ed56bcf7f35ef847c0a0"
+   "sha256": "9d154c3db39443671090a94ca674a6fb1c3545f9d923f5c9f15971497e8ed255"
   },
   {
    "id": "nordicquality",
    "name": "NordicQuality",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nordicquality.yaml",
-   "sha256": "6ef04da54a68ba9d7c664cbc2ed2a3de41eedd0f24ed524db8e6c26b415a2df1"
+   "sha256": "601ffeac7b040e073da19db6866eb4d905fa3d9e322fb14d19b5dcb54aae47bd"
   },
   {
    "id": "novahd",
    "name": "NovaHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/novahd.yaml",
-   "sha256": "1d56f1b3cec9829be3ef67a41563cbd33bacb608f1ec4fb54d2d8f5bd45bcf9d"
+   "sha256": "d0364aef54290c5919431bcf05dfa1f463215a7fd77e2074e00dc2eb698b5373"
   },
   {
    "id": "npupt",
    "name": "NPUBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/npupt.yaml",
-   "sha256": "c52f575f57afdd90cd43579787adc426550e2f6cad89d28cd3146f58373a7d03"
+   "sha256": "030b7a924f495dd988533ce61de4758d037623d199ba0bcb0e0401f54d06fc43"
   },
   {
    "id": "nwsuaf6",
    "name": "麦田PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/nwsuaf6.yaml",
-   "sha256": "6b9d81bbf0ccca0f62f6050a02c5fd16bb57c10e2ffce23e9f72998f74f2be5c"
+   "sha256": "f3620a5441989ab7bb33816515345c9710589153fa3ee001b3ea18a53cc18428"
   },
   {
    "id": "okpt",
    "name": "OKPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/okpt.yaml",
-   "sha256": "29be8b6384470602d95de6b27a60b8ab96ed3794dce843abbe970b288ea023f8"
+   "sha256": "fe208d12ab1a33d5e2d309065bec0b706f0a7060d0863e5b12f71072d722139a"
   },
   {
    "id": "oldtoonsworld",
    "name": "OldToonsWorld",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/oldtoonsworld.yaml",
-   "sha256": "562d6230bb4d23c76c516053824d99c2dfe0bd2990ff27b54ff15f463827382a"
+   "sha256": "5ab1ab3501c90e77263a62257158416fc8a6f1199e528a800518832b01fdae20"
   },
   {
    "id": "onlyencodes",
    "name": "OnlyEncodes+",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/onlyencodes.yaml",
-   "sha256": "2dc022867f4bbf8c95538d7505bc6f0c7b86c180ed6611767c41e13c6f4ccd2e"
+   "sha256": "f7c49e011cbb6e1450118f316f7fbba89c5f4de2c7b09d0966c139590961e4b3"
   },
   {
    "id": "opencd",
    "name": "OpenCD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/opencd.yaml",
-   "sha256": "956fac8d049cbced7997b3aec8dfbcf36d9f6aa2396c049d90f3769b6c0ff6b5"
+   "sha256": "367a28128073daee23c55f8346a35b41d8b0bf7964e6ff14bff0390ed7461d94"
   },
   {
    "id": "oppaiti",
    "name": "Oppaitime",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/oppaiti.yaml",
-   "sha256": "9508bb8fd09b517b0f5a6ad3a7097fbca06b1ee62454aa21d3401a16cbbf0103"
+   "sha256": "88ff7fd872693ac96c2014ad3fa2dde8a72b9aad688bf44faf766af7af8e5e90"
   },
   {
    "id": "orpheus",
    "name": "Orpheus",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/orpheus.yaml",
-   "sha256": "c8f5bd090ff77265e75e547dd4659e4783e78d508db731a203e13faf93b5ddbd"
+   "sha256": "c9da130755af1b1ec0593fbba1591898e21f6b79afe4015687b5371b264be7f8"
   },
   {
    "id": "oshenpt",
    "name": "OshenPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/oshenpt.yaml",
-   "sha256": "91ca7903e538fbb38f5228a9330c0d97c7a44e6164fd0438d93ff6f757e0f934"
+   "sha256": "9398cd4ef049456450a839b22a51c1e1111053d6938115efdccc218a02f890cd"
   },
   {
    "id": "ourbits",
@@ -1447,142 +1447,142 @@
   {
    "id": "pandapt",
    "name": "PandaPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pandapt.yaml",
-   "sha256": "c70584c15bd0cde8f0d28ee67145c1d6aec362eada09f3c6a44e9dc0d6a4d748"
+   "sha256": "43ee9214296554af92b2a312805fec32ad8ec7a1b61d01d5c5206bd2d683f12f"
   },
   {
    "id": "passthepopcorn",
    "name": "PassThePopcorn",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/passthepopcorn.yaml",
-   "sha256": "3152f1d8c532f3b02b7b689d9f4cccd506dbee45271af51ee79328c5f6ab4540"
+   "sha256": "9dd64e9e814bf03a619b9f2ab0c8f778b406d2beb78d2b001113b46480035774"
   },
   {
    "id": "peergarden",
    "name": "PeerGarden",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/peergarden.yaml",
-   "sha256": "2293a4dbf3eeaf92d8f206c00b98b010b66418ebb0f60862bdf437de5348a0d1"
+   "sha256": "75a138c34d3cc44568ce31ba239ce0fba5dd7ae49d3093dc4a79333c1b96f963"
   },
   {
    "id": "phoenixproject",
    "name": "Phoenix Project",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/phoenixproject.yaml",
-   "sha256": "566bb148b9900dc748f1b303c40ace57a0f52a4c5f46c2fc9f6351339fc4e072"
+   "sha256": "566398a078f7b27690c1ac239b3643c42345c2087a45eb088254a5d07cd9ee2e"
   },
   {
    "id": "piggo",
    "name": "Piggo",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/piggo.yaml",
-   "sha256": "5e8aa28078cc0c3d09112d4bbf6bd6141f75cafd38235dea904956f4ba7c30a0"
+   "sha256": "f64bad393f7dc94bf6a7f338e436333d1c266c77358dcdc6b778683766e3dba7"
   },
   {
    "id": "pixelcove",
    "name": "PixelCove",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pixelcove.yaml",
-   "sha256": "95dc6cd7f906ca15fe313cec12882c5588629d259ec6f0ed193e0391f3a7decc"
+   "sha256": "6766e2f61a36bff6441ffdb7408245c42954ed01aa66f03c6811418b743dac17"
   },
   {
    "id": "playletpt",
    "name": "PlayLet",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/playletpt.yaml",
-   "sha256": "1f3d582949c7bbb3714b55589f7d99d8f4c8a80b2f765d6a05bdf11d5e67db78"
+   "sha256": "bc5a2cd453ece466b80b2cec17fd664d6e04cf4cd022964bbd7883ab0e1d9c3e"
   },
   {
    "id": "polishtorrent",
    "name": "PolishTorrent",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/polishtorrent.yaml",
-   "sha256": "f805fce3cc03fc7a5e4e06632ad37b7a32f5bccb3f3edd2d1de72611b3ff7e11"
+   "sha256": "2eaee78aaa18c3fb36de61e85a05eb368ff5455ee89fa1ca245046f0dd9e80ab"
   },
   {
    "id": "pornbay",
    "name": "Pornbay",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pornbay.yaml",
-   "sha256": "48d4411da69439f96e7f01e069953782f2c5490cdf43a175e939c3196bce8d33"
+   "sha256": "da855f845a317e771c2ab12fa78b74ea31537a033a12317e2bce1395c5fb8b55"
   },
   {
    "id": "pornbits",
    "name": "Pornbits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pornbits.yaml",
-   "sha256": "8e8dad1fcfd2d1349683ff73a4c31edf0acaaf9cf263f119bafeebe7028cf542"
+   "sha256": "9e36c1634ecf398f9524aecde2b1ff7fb6ee83862a1e45a7d6a1a754f272ec74"
   },
   {
    "id": "pornolab",
    "name": "PornoLab",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pornolab.yaml",
-   "sha256": "320ce7331904d2da46020d748072f0f14a9bd1c2d62446621902305e4d032786"
+   "sha256": "e0d19a91cd1b8a19a385099978aa1b25230ddbdd8453e171bbb843985cb53e7a"
   },
   {
    "id": "portugas",
    "name": "Portugas",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/portugas.yaml",
-   "sha256": "7c523a746d1afb883ab4c02d299354a05dca49ae775ae70b9f6cd82e8688b2dc"
+   "sha256": "da939cb21a6954d7e6093b7c65e94991e9cadba816e861b5e2f249a5d8da1be4"
   },
   {
    "id": "privatehd",
    "name": "PrivateHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/privatehd.yaml",
-   "sha256": "1c0bb31708f6af32ad1fb85ee9cdedd602a3f6056156861d12f2ec1728a1c9d2"
+   "sha256": "d7548f20a8d3a1c3790bbd512dbd2ccb6ae0e8f17bc84d9cb969973208c10c18"
   },
   {
    "id": "pt99",
    "name": "PT99",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pt99.yaml",
-   "sha256": "aeb747677fd8e888504d211d1838d95ed83eb81af65d7fa551d77399f7a653a8"
+   "sha256": "1f1986e3bf7152b41d42735aa5c3e31b400b012ed843e551497c1a8bccb5f8ef"
   },
   {
    "id": "ptcafe",
    "name": "咖啡",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptcafe.yaml",
-   "sha256": "02d85d1d4adc29967a8a5ac28d93ad20ea31e718b9cb61b23ade9bcc357869c3"
+   "sha256": "9b8280da11778395f08ce7bb6564e3f13b69aeff19f5c5c319f80f39e278e699"
   },
   {
    "id": "ptchina",
    "name": "PTChina",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptchina.yaml",
-   "sha256": "44a16c9ea7f0d43d88a97cf51d9a266feb82c01a83edaca0b6ee6d4bc13b3fa4"
+   "sha256": "136a3272aae01130cd3c84cd13253c86690097c7ee6b235f7cebf2b0e5743182"
   },
   {
    "id": "ptdream",
    "name": "PTDream",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptdream.yaml",
-   "sha256": "cf12490d6cf556fa001ed186985a8781c299d13d5469af6fe9fb2c5d15e963ff"
+   "sha256": "49546ddb896d62fe836b6227be0f534fb1756650b77b7f34460a2bb237cff3b7"
   },
   {
    "id": "pter",
    "name": "PTer",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pter.yaml",
-   "sha256": "6dfe8a180fd773d55e49c43e3b0d86d76886f310e098389c6deea8f016ecdbcc"
+   "sha256": "f96fa2f98af7fb1d703f1644e545915198a47d65f9dfbf9c6513540645cd0e0e"
   },
   {
    "id": "ptfans",
    "name": "PTFans",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptfans.yaml",
-   "sha256": "635b6abd004678b5e7db8c528d0f43cf3b30dd7f91c0493072731524a7e4f7a4"
+   "sha256": "50e39cca2c12f4f5605533454849a328bcca215e72479a2966dc170617e8eef3"
   },
   {
    "id": "ptgtk",
    "name": "PT GTK",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptgtk.yaml",
-   "sha256": "d113a97c4b8bb1bc26106090a3a6a3725319dc604edab58454edbd7e3ccf2d6b"
+   "sha256": "00f46e392173aef843c255e8bef3fc3811f9036f63e7d2a88e2a06b60c44e442"
   },
   {
    "id": "pthome",
@@ -1594,51 +1594,51 @@
   {
    "id": "ptlao",
    "name": "PTLAO",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptlao.yaml",
-   "sha256": "7c93a337bddfdd6519f59cd83f9cd12efc6622519cfa9ac27c86fa468487b37d"
+   "sha256": "3faf85d46f723b1a18dc8a29c0752eb223d763b529e07620f0dfa71b9f2099da"
   },
   {
    "id": "ptlgs",
    "name": "PTLGS",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptlgs.yaml",
-   "sha256": "928ac5a1a64a036e72be168bbb04f342e3f248d6208ad509c0056354ffe2dda1"
+   "sha256": "903e7e963a8bed441adeca14ae48c73d24140458627529722b1de39953a8e9c5"
   },
   {
    "id": "ptlsp",
    "name": "PTLSP",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptlsp.yaml",
-   "sha256": "8f65ba3c9927c08542ab1f5787f45c4a20397f71934c08ac60196b23ab515e1a"
+   "sha256": "d9ee240797b4546aa8000446a00bf4296c981d9fce36d2dd4d71475608da4f49"
   },
   {
    "id": "ptmsg",
    "name": "PTMSG",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptmsg.yaml",
-   "sha256": "bc942a1322e995eca9b0246bde898aadade796f726c4da6b8a181f4c603a4865"
+   "sha256": "097582016b0de2906b13ee2148c2cf73e4ff7681e3a2ff6a26d8d95f6b11497a"
   },
   {
    "id": "ptneko",
    "name": "超科学PT喵",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptneko.yaml",
-   "sha256": "b2b3b7b0f7ffd1cd025a98296c0a956810017ce11682c72ce282109c4385d9bc"
+   "sha256": "26d9ea9140e03e8c59c2b0aca41cdd8bd44de7d99c5ec67455e903508b73710a"
   },
   {
    "id": "ptsbao",
    "name": "PTSBao",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptsbao.yaml",
-   "sha256": "9d756432da1db57f309f2431f9fcff219a4cf232406a8c0c2ea2f6158e90f17c"
+   "sha256": "6fa8ee898d218ce39be95ee5ff0ad310003c6badd23e1c88ee4c0b067dde3e5d"
   },
   {
    "id": "ptskit",
    "name": "PTSkit",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptskit.yaml",
-   "sha256": "2433019710b3662cee21bdac6b2969a430029dd0487e1f3dd451d79bfdf82f29"
+   "sha256": "1f975f585237687deabf7fd1591ee62deba4e7beb4843cc5f1405050d6d6d305"
   },
   {
    "id": "pttime",
@@ -1650,23 +1650,23 @@
   {
    "id": "ptvicomo",
    "name": "象岛",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptvicomo.yaml",
-   "sha256": "d854598ae34ae2bdcfdeef8ab7775f5194adb41dadd907e295b5a27c3bd3ac75"
+   "sha256": "75fa87671a966ed950ad6ae58af07c65752a6bc908ca00ca0dbe45b094b28056"
   },
   {
    "id": "ptzone",
    "name": "PTzone",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ptzone.yaml",
-   "sha256": "0e468398b4d40a69f050a6037f5e7b548859881551f56fff25cdb4b1a262c04a"
+   "sha256": "f328b385598ff9a58ca8373ec5ebf45ce7584ec03df076c5cb00190502357e9a"
   },
   {
    "id": "pussytorrents",
    "name": "Pussytorrents",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/pussytorrents.yaml",
-   "sha256": "337b275c29902346b9934a7f4d85a712cd0f4c732e8c842e6f736a434acd32c5"
+   "sha256": "01229fc102e92af7ff0eabd810dcc8c3a67158fd2af8c31e7aa26a30afca962f"
   },
   {
    "id": "qd-123",
@@ -2649,13 +2649,6 @@
    "sha256": "2e32f3796d90843149e143385c0913aef7ca84100be1b66c0d6109974d97810e"
   },
   {
-   "id": "qd-tpl-33989",
-   "name": "飞牛私有云论坛",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-33989.yaml",
-   "sha256": "5a5f6cd84c31a67aef42794948e7c8033680a92e6b30ebc77893e20fb8b46ff1"
-  },
-  {
    "id": "qd-tpl-35678",
    "name": "火绒安全论坛",
    "version": "1.0.0",
@@ -2923,10 +2916,10 @@
   },
   {
    "id": "qd-tpl-67434",
-   "name": "飞牛私有云社区",
-   "version": "1.0.0",
+   "name": "飞牛私有云论坛",
+   "version": "1.2.0",
    "file": "rules/qd-tpl-67434.yaml",
-   "sha256": "fee0c6371580269c13996c3e814fa3fb4eb9943903b95c9d50bdec74fdc0447e"
+   "sha256": "111ff00786850d182fabd8c7dd06942350eb30e4c4ac06b76b38c21a7caeafe1"
   },
   {
    "id": "qd-tpl-68156",
@@ -3071,9 +3064,9 @@
   {
    "id": "qd-tpl-78800",
    "name": "爱快论坛",
-   "version": "1.0.0",
+   "version": "1.2.0",
    "file": "rules/qd-tpl-78800.yaml",
-   "sha256": "d0a3ea8150f66773df141482e8269ae710a52ffce548a5efa3fade61f3f53150"
+   "sha256": "929797dd2294daee1699981d78ba10c05dbc9ada802ca81a7ac27940dc188882"
   },
   {
    "id": "qd-tpl-78916",
@@ -3463,219 +3456,219 @@
   {
    "id": "qingwa",
    "name": "QingWa",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qingwa.yaml",
-   "sha256": "95428d51c7f1b5a3af3b54062c01958a78e3c09fc0a78d06c9bb5e506526df0c"
+   "sha256": "65e53874d55c696f7d72b6100ac3bb95236d24b79244e8b5d9a31e70625d56a5"
   },
   {
    "id": "qingyingpt",
    "name": "清影PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qingyingpt.yaml",
-   "sha256": "ecf0b1048ee813a663defc3ad8d71060fa8dbfdf5fc7ce5af7a1fcda32cb6869"
+   "sha256": "dc953087a22e1fca664983f4665f456b6e67c9dee46b2beb378f1d917958ae1b"
   },
   {
    "id": "racing4everyone",
    "name": "Racing4Everyone",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/racing4everyone.yaml",
-   "sha256": "c0adfcee46736e6f6552104b220744132390b1e429055c566175a99fcfb77e0e"
+   "sha256": "ffc55b0ef7124b143004cc93b34bbc63aa4f97a5d63c18e5b7d3d4290f3136bf"
   },
   {
    "id": "railgunpt",
    "name": "RailgunPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/railgunpt.yaml",
-   "sha256": "70300dce80139493e3ad53efd40a7490ad8a707c5ad6124f9083930d93dbe92a"
+   "sha256": "2eae983218bed14c2698ccdc2198c522dffe1acc136685df5dd8cb6d317ce4e6"
   },
   {
    "id": "raingfh",
    "name": "雨",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/raingfh.yaml",
-   "sha256": "f227f0310ffdae59985c593a3591cb0b6e10da66f0c7cc1b4deb767753708aa2"
+   "sha256": "0d1ba9acce59de8b5f39b20492b0347465b453390c54a3d3bb0b7de69e568222"
   },
   {
    "id": "rastastugan",
    "name": "Rastastugan",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/rastastugan.yaml",
-   "sha256": "efa194ffbf8587ee72cfbcb83b552af1ccdd7598633ede16e33daf32722e5f19"
+   "sha256": "80b2c6609275b9671d83a8930a42483ada8b3f9bd5fced9baf1000896c7e80f8"
   },
   {
    "id": "redacted",
    "name": "Redacted",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/redacted.yaml",
-   "sha256": "36d9beab30c3baf5e3cab483c89166d29307a435791483e45fcb20a5d7c3092c"
+   "sha256": "f1293498d30d549efec34bd65c790b44e39a1f0ca23d76deac23d69efef0f1f5"
   },
   {
    "id": "redleaves",
    "name": "红叶",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/redleaves.yaml",
-   "sha256": "fc7ebb84d8f94d3af2d34128838a855ba4761263f24c639b1a90828428dd0e3c"
+   "sha256": "ccf5717358efb1d394988ab0886a4e06aebca0b92fb05bd4185931cff6e22158"
   },
   {
    "id": "reelflix",
    "name": "ReelFliX",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/reelflix.yaml",
-   "sha256": "875cd546d38e469f44046d1b890f60dd46f3d4a2046e8349806e17178ae861a7"
+   "sha256": "58cf121284cf210d2a51f47d9c5e44f4b78a9d5eefa7eab2046ded2fdb822351"
   },
   {
    "id": "retroflix",
    "name": "RetroFlix",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/retroflix.yaml",
-   "sha256": "d709f8cebe59c3211b5238422da5681ebb3d6e8092110d537a1666e9195d40aa"
+   "sha256": "2036cb3a3677e576b234543cd7fee01a8427fe12160784bf4efa7009dd703f70"
   },
   {
    "id": "retromoviesclub",
    "name": "RetroMoviesClub",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/retromoviesclub.yaml",
-   "sha256": "074d5c8aa23feaaeef9b731a45fe1e5dbe63df6d1248266f6e52003403da90c7"
+   "sha256": "8465a16fca841bcbf1feabcd1bc24ebe407c04690e67e4220bf73ac86bf99d24"
   },
   {
    "id": "retrotoon",
    "name": "RetroToon World",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/retrotoon.yaml",
-   "sha256": "bd69d80e79820e4a1475cb81058c798889a4f70065e513828ef12fc2f72fecdb"
+   "sha256": "dc648bc859932b82f1373fa51cf029c0050beb938155a21064d8f7ae7cdb79fb"
   },
   {
    "id": "rockethd",
    "name": "RocketHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/rockethd.yaml",
-   "sha256": "ac1e3061040e43a91d9e9e12fdab6ad2dee66776fc4407ea61f4d607a8460935"
+   "sha256": "700881586dd8c66bde5590185f459074c7c9b0acb74b4a448632f3fb59eafc2f"
   },
   {
    "id": "rousi",
    "name": "Rousi",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/rousi.yaml",
-   "sha256": "0baf725b991374420a602c008c41f5007d1b13c053221e449427fbbed51e71b8"
+   "sha256": "b551c10172eb98ca2548e0978f8d177c369daa2ddabee86c0715c01dfda4f770"
   },
   {
    "id": "rousipro",
    "name": "Rousi Pro",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/rousipro.yaml",
-   "sha256": "f7442fccaf468b1805d41405e51279dac78f3caa7700d7138f611fe44bceb650"
+   "sha256": "9b7d5b8c04cb6a189fafc8e0ae538332bee97c9353f2314ea11a9e5b51e5586c"
   },
   {
    "id": "rs",
    "name": "睿思",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/rs.yaml",
-   "sha256": "c1c6610e4715ce1851191d69e0d5bba082d7a92c7b832792a0176b3db63658ba"
+   "sha256": "2d4314ebec9d8930446476165aed7c823c8019f1713c65f889978e8d4ac69735"
   },
   {
    "id": "rutracker",
    "name": "RuTracker.org",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/rutracker.yaml",
-   "sha256": "2db90d32a9d7285d7b5c3165aa98bde4b1933ef2ee1afa5b185640c6f9ea74c4"
+   "sha256": "14c37a85a4387612810ec8b55e136b7b5ff0b637960cea08178148a2df54958c"
   },
   {
    "id": "sanpro",
    "name": "伞",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sanpro.yaml",
-   "sha256": "6cc44d94f3082d82c050c0567991c8982a717ad80ebbd92addbbc844695ecb00"
+   "sha256": "5377320e7d569e324a55e318249a2495b3e4b4c34f0f83390d7ee9978ba5a462"
   },
   {
    "id": "sbpt",
    "name": "SBPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sbpt.yaml",
-   "sha256": "6ccd26566b78c0018475bb8d90fb975857c290c4ea969c552332cc958c0b7cf3"
+   "sha256": "4055c9e0850b8b4b8d38e930dc3db8cfcfaccfc22ecd2a11ef5e91dd1310790f"
   },
   {
    "id": "sdbits",
    "name": "SDBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sdbits.yaml",
-   "sha256": "196d266159054780af8712dff408b2227ba1d302391e744471e4e959b4a0f8b8"
+   "sha256": "dd12037708ceb5d7bdd0a0b7c51c986eaa5efb3c04088abc2ff96624483ae0f6"
   },
   {
    "id": "secretcinema",
    "name": "Secret Cinema",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/secretcinema.yaml",
-   "sha256": "14c35bb0021693f3528449a9f6a2c84b313230095f332bff9d5e8cc2168b7a25"
+   "sha256": "8ba1b5e9eced90887021549b1b1f2d040202d37830c843e0d1ed9ad81afbf78c"
   },
   {
    "id": "seedcore",
    "name": "SeedCore",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/seedcore.yaml",
-   "sha256": "423d00007a2dfacf430de35ab200ab89faf3242e379eb67ecfdf550df37b769c"
+   "sha256": "43793277c58d34d32ed57c81912bb0780b4f163ae81ffe1d7a3484c06c70d19e"
   },
   {
    "id": "seedpool",
    "name": "seedpool",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/seedpool.yaml",
-   "sha256": "beedfb4e221d67e4a7617a8589e0a3e47e3f0fd133e6effe139d6a2bd762b241"
+   "sha256": "f576694b3c96f8b49a2141088aade9f7c11e2e18672fe4ecdcc0247eae085df3"
   },
   {
    "id": "sewerpt",
    "name": "下水道",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sewerpt.yaml",
-   "sha256": "df5f8e13d5eaa686db79cb8024e5a366a12c9e07685b1315f279afd798b178b9"
+   "sha256": "898e7d8692e743c5a220cceb72171eaf60c87eb9e5e319748df0537e877870f2"
   },
   {
    "id": "shareisland",
    "name": "ShareIsland",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/shareisland.yaml",
-   "sha256": "ce37b094f5d0212b32d5adcbd305866d77f006d18cbf5c9f2faacbdc6440da84"
+   "sha256": "97428965a667b90b3df061dd7fd967bf0399edf8c73b48afafbd283c3161260f"
   },
   {
    "id": "sharkpt",
    "name": "鲨鱼PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sharkpt.yaml",
-   "sha256": "42249416754f7aeb6cd4e6cb765e3a0c8f6543436af02c3b57e9ebb3dd1023e8"
+   "sha256": "fa2e7376aaa8edb52663ccff3d74c1be38b90cb17bc8b99ffdd9c21116268d23"
   },
   {
    "id": "simurg",
    "name": "Simurg",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/simurg.yaml",
-   "sha256": "c525b4fdc51745ca920adc782a6dbd27833f7a6a110670945e39cf602854ce70"
+   "sha256": "664f0c051ee3fb3da7023755a999dbc3a14b80681c411f7e52f7acb69ad1eff5"
   },
   {
    "id": "siqi",
    "name": "思齐",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/siqi.yaml",
-   "sha256": "ee478a5569d6ab16bb3e7950ede1e3e9d27e91aec2919779e2418a4a785556c9"
+   "sha256": "038e8ba2697d9f83523209a46bda68c36d1d7887cdaabc6f93f754b4a7bc6d87"
   },
   {
    "id": "sjtu",
    "name": "葡萄",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sjtu.yaml",
-   "sha256": "fb551e96bac399e72194031ec10296ab08632d2a6c8ad8ffd4d6ad8e24fe2fa3"
+   "sha256": "ad8acce25ed245f3ff7b4617821db9e8b96b2bb97684a071b1976ee8405cb920"
   },
   {
    "id": "skipthecommercials",
    "name": "SkipTheCommercials",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/skipthecommercials.yaml",
-   "sha256": "31577e3b6a057fd1c94e8cdc9ac4475c8041fafa6abc5987abebdc1ffa721f3d"
+   "sha256": "809a02ddf66b67733697eec35f31bf167af115a4677113449219044070b7ca6b"
   },
   {
    "id": "snakepop",
    "name": "Snakepop",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/snakepop.yaml",
-   "sha256": "18aa4d66900d790a5ed08bff42f61318abee191f2f0050d824ae7f44e3d27b86"
+   "sha256": "6c4aef170a73de1d71e23ef84156f8534c071f013b8d05ef8919fe611803fb6d"
   },
   {
    "id": "soulvoice",
@@ -3687,184 +3680,184 @@
   {
    "id": "speedapp",
    "name": "SpeedApp",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/speedapp.yaml",
-   "sha256": "4ecd76bab2652b0ece27a98536348ef1f26e30be01f38da1cc7370e22f2fca3b"
+   "sha256": "b46ac63c17f2b6b1841cdda4b92084692d411cf483dd75aa595bae2a9b842015"
   },
   {
    "id": "sportscult",
    "name": "SportsCult",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sportscult.yaml",
-   "sha256": "e8b4d2dbbe6dde6cb5c9af019c0742cb76162e49706a1705d02ceafe5d203703"
+   "sha256": "f2e57b02f0254449ec3302728fac7a050b885c20bbc4533df6987e217a2de5f2"
   },
   {
    "id": "springsunday",
    "name": "SpringSunday",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/springsunday.yaml",
-   "sha256": "225eba0a53b1e8917eb54a053d7c63077e9b0911507ceca6d189c1ddf984d586"
+   "sha256": "04740dad70f40446f0b8af66d2e285fae2b1bd4ba03aa398389453c3aeb1a754"
   },
   {
    "id": "starspace",
    "name": "星空",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/starspace.yaml",
-   "sha256": "027899098fac165345b2ec278a0761e5c7730863837b9bab27a82fb64bb3f8aa"
+   "sha256": "a67bde92c869d5d49c65216f44dbc7ca2d747d7477864ee2201b628a80a947b0"
   },
   {
    "id": "stspt",
    "name": "STSPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/stspt.yaml",
-   "sha256": "c0e1ba3ea3d355fa56dc14516e3ab37bf1bc9b187afb311b9bc5fb7a151f31d2"
+   "sha256": "4d15a8ad0d4223d01fe66695886f54a002752f750696e6baa7dbca37687f4511"
   },
   {
    "id": "sugoimusic",
    "name": "SugoiMusic",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sugoimusic.yaml",
-   "sha256": "f69476d06cacc2179a1870de62c39315f86be39737926509871e482b334d7185"
+   "sha256": "2e77ee7e0d803f725ab9c7759be2fd8ab9a8ba13089fabc64223cc333c2d6aea"
   },
   {
    "id": "sunnypt",
    "name": "Sunny",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/sunnypt.yaml",
-   "sha256": "87bb604c6dd5a4f440a3288b4a82717a13d1175612a9c00ddfd3268d59a3f47a"
+   "sha256": "b104f177434452cd451175fd580b3e741c8c7cc7555f6c0e620997a889f3c616"
   },
   {
    "id": "superbits",
    "name": "Superbits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/superbits.yaml",
-   "sha256": "dac127655beb54f908ea6b5adede9412d31556f6cd736dbb9cc8ddb9c53099d5"
+   "sha256": "9742a17715a2b9c0d0e59591c59302529dade6872d1efe65fea065dd99cb821e"
   },
   {
    "id": "tangpt",
    "name": "躺平",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tangpt.yaml",
-   "sha256": "21014323f1023f6b0e278c95ebd0e00841290728c5e342cd29da947cc329d91c"
+   "sha256": "60f19dd0906a56e6714ca3d3f786e03eb65ab6dff1eccf2a7e8e6708e05b946f"
   },
   {
    "id": "tccf",
    "name": "TorrentCCF",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tccf.yaml",
-   "sha256": "91b5291a987d53458e25bcbc7adeb7734a7a28ee72c86baaad7e92c3ee548ef2"
+   "sha256": "01fac8ce096b45f22f63cd5091c5118ada4ad73528a6282ec6716be3b00aa318"
   },
   {
    "id": "teamhd",
    "name": "TeamHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/teamhd.yaml",
-   "sha256": "ba131a57006b61da074403cd267481d48ca9834b7c10279d69e57ffccd878a49"
+   "sha256": "9d0f008d5cb6124d42a37551a72303357ef51569f26005250d1f420d995a5e90"
   },
   {
    "id": "telly",
    "name": "Telly",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/telly.yaml",
-   "sha256": "6f417d979ab2441ac607478fc5701e44d495173fc52b3b67e36a6e913577f4f5"
+   "sha256": "234bd551802fecaca6d5f06725b73c69f5d0bce51ccf84508315103583d11852"
   },
   {
    "id": "tey",
    "name": "tey",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tey.yaml",
-   "sha256": "e75be997d70a74adafcd98708e349efd3108644fe83edd88a4b717d1a24267e0"
+   "sha256": "7936f22a2f14396b6f6cf6e850450cd76c9bd71cc92f8009ef1616b14a13646d"
   },
   {
    "id": "thegeeks",
    "name": "TheGeeks",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/thegeeks.yaml",
-   "sha256": "712e9b57eb8a0d0644c4a998356885a223ed78a40e706149ec1552d467b8e4a1"
+   "sha256": "0fcad93e8cc2ea77d3ac70fb64ce1e2a2221ebf226826fbc110776f4f7bd4761"
   },
   {
    "id": "thevault",
    "name": "TheVault",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/thevault.yaml",
-   "sha256": "3d30c42e62e8cdbe891e624c34aaeb7f5d16074230a867f6f2cb68d890229bed"
+   "sha256": "5fe6cef09584c4d67db09d19665bb81ffb3f3cffc9f29bca2540f23cd5126b01"
   },
   {
    "id": "tjupt",
    "name": "北洋园PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tjupt.yaml",
-   "sha256": "e78acd68be2b3fe6283fcd85c35ba726f4fec0bf06c35927dfba1de93b077acd"
+   "sha256": "07aaccf2adeecd7a84307abc1dd8f03df0f858e09266f3af7e5ef1f313680198"
   },
   {
    "id": "tlfbits",
    "name": "TLFBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tlfbits.yaml",
-   "sha256": "52f97c9291f8e9867499e95744e718c8f98834ad9c82054e338835c2b57380d8"
+   "sha256": "ac7dfbaf1c272a158bebf8975a59f97d021cbf6044bc470ec529f09bea3ffb4e"
   },
   {
    "id": "tlzdigital",
    "name": "TLZ Digital",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tlzdigital.yaml",
-   "sha256": "5e5a69a0ea4301d8cc7a5e4aeeab44e154998eb7272e88219091bdd10adb6fb1"
+   "sha256": "2fddd95eb2747cc468a957d6538179f8e95729007345096143fabec42ddbddeb"
   },
   {
    "id": "tmpt",
    "name": "唐门",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tmpt.yaml",
-   "sha256": "552e6b91a98cf92b10559ac43ca617eb855aaba61ad689ac2eee5974fcb39d57"
+   "sha256": "fdb05cee7e8754f94c287ae5bc2535b8294df1954cd10a3f94bd0ec1395b4fdb"
   },
   {
    "id": "tokyopt",
    "name": "Tokyo",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tokyopt.yaml",
-   "sha256": "ab9f86f179dd6f968868ac1077d07117b7eff25bdf8d8360a5b0330e05e14bdb"
+   "sha256": "fe9149247cec5fa41854073f5d5cb59c9c1c5579b9bbab7af577b28aa5600321"
   },
   {
    "id": "torrentday",
    "name": "TorrentsTD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/torrentday.yaml",
-   "sha256": "b59ece881409c1efa97a55a939d3c7b130c265b2b1438a173da0b253be90d234"
+   "sha256": "45cb2792218a5e04cab895258a91a10b724b8ac9c0573e05dabd05c7c4e4f76c"
   },
   {
    "id": "torrenthub",
    "name": "TorrentHub",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/torrenthub.yaml",
-   "sha256": "280e2cac9807178d11c2da431d858ae1e0b49730080bff20940d6ad90b1f0815"
+   "sha256": "11a84960c2e5d23a76485a57aa13b736bb0fc186d09d555fa55311de145aa793"
   },
   {
    "id": "torrenting",
    "name": "Torrenting",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/torrenting.yaml",
-   "sha256": "a27ba304595e664702640becaef997607a947e1e29a1731b2688f9cc7060c441"
+   "sha256": "fb56e4a07517d955388b8851729fbaeae811065656b485996785fb3500f31cc8"
   },
   {
    "id": "torrentleech",
    "name": "TorrentLeech",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/torrentleech.yaml",
-   "sha256": "5e0773bc1e5c0bcded5bcb941c4f5234ac1dc0607a7088c876d27fa9615cdb2b"
+   "sha256": "c0a91adad20ca680a52cf5094d1aad7ea1299f7bfc2c79006ce4c7dad130396c"
   },
   {
    "id": "torrentseeds",
    "name": "TorrentSeeds",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/torrentseeds.yaml",
-   "sha256": "22ef34216f321cbb1473924a12ad52dd8777d42d6bb5e51f8d13f8ce2dcfd4fa"
+   "sha256": "6310d6e34910404df9b236b244ad1420cf9a70e52d4f0265137792730bcc2f0b"
   },
   {
    "id": "tosky",
    "name": "ToSky",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tosky.yaml",
-   "sha256": "17096b17399ef3c10445dfb595fd1f3cbb9d9f357392dea32f39037cfb3b934c"
+   "sha256": "3b466ab207fc042b44cfc3c86f4b300e2ddaa0fce12565fe1cb2e47cd72d7644"
   },
   {
    "id": "totheglory",
@@ -3876,233 +3869,233 @@
   {
    "id": "trancetraffic",
    "name": "TranceTraffic",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/trancetraffic.yaml",
-   "sha256": "6d3c9dbf3d93477239e99b91a02da256ff3da9914d487493320cd23f0e8d9a26"
+   "sha256": "9355e81ffbd93e897bcce2e73ee1a2de8c246d303d3f30cca4a19a3a46558f60"
   },
   {
    "id": "traxary",
    "name": "Traxary",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/traxary.yaml",
-   "sha256": "b9b3ace998fa50018910329ae28e2c252e9a6e877094ea345f52abdabd9e21f6"
+   "sha256": "55afd666a1154179796c98cd525945d52e34f4a3177f4b6a259af65d59c0c42a"
   },
   {
    "id": "tu88",
    "name": "TU88",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tu88.yaml",
-   "sha256": "fef04bc4ff341b9d16d3496243af61312fc6b3b8e7ddb2239d815c23c11ba434"
+   "sha256": "78bd29deb138d0a2098715c2694e994b949646c45e9183b6a45e4b2a172ac415"
   },
   {
    "id": "turkseed",
    "name": "TURKSEED",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/turkseed.yaml",
-   "sha256": "8cf29a28b10786ec28561ed1124cbee5c0f97cb3c2858a156018ef50b687c5c7"
+   "sha256": "6bb80662dad94c614674f4d30a9b0f91a5c29a2461ae79101762d584e02dea5f"
   },
   {
    "id": "tvvault",
    "name": "TV-Vault",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/tvvault.yaml",
-   "sha256": "f508fb7226eed553f1baa0320b7fe6878362d274d9bf0e1b29efd31eb2e18135"
+   "sha256": "5550c4f3da05dc970ac91fcceba49e3cec636217dc0a4b6b3daac848a460aa9d"
   },
   {
    "id": "ubits",
    "name": "UBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ubits.yaml",
-   "sha256": "9bcc14c4d5cfc4e6ace4cfcdd52aa0c7a5f1c02a81fb5326b252b33bbac7b3fa"
+   "sha256": "624707cc8f1269741a99eb2f74f858434e3d23dbb7c865fd8bf9d6c50363f8a3"
   },
   {
    "id": "uhdbits",
    "name": "UHDBits",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/uhdbits.yaml",
-   "sha256": "6a38209c20b0ff0ea9846b3fff15be2adb68b415ea0db6761759440ff4778a30"
+   "sha256": "0fa4bde4096ab5c72a3ec46ca0648cadda0dc50e18561ba6499a75e10fe2e9f4"
   },
   {
    "id": "ultrahd",
    "name": "UltraHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ultrahd.yaml",
-   "sha256": "f97d120e28c2dbc88f92a0bc6ab4f4dfbc36e883c9c8ebaafac8e689254eb6c7"
+   "sha256": "702065e0a4845a3b31c2ca8d5a20a8c12be80b16cfdb53d00aa6150f94ed1dd6"
   },
   {
    "id": "unwalled",
    "name": "Unwalled",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/unwalled.yaml",
-   "sha256": "c36292d4fb3ec68d97ec410ba30bbd5ab999c70a81ae8fa1010e70b37e0a0abd"
+   "sha256": "0487f31017e1870a9438d1e72bf328dc50277e08c1727cb9e2767e5062ac1654"
   },
   {
    "id": "uploadcx",
    "name": "ULCX",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/uploadcx.yaml",
-   "sha256": "a387bf1f39e13219502d046562cdbd95c6b6af3c34e8abc3e412c6d1a40cfcef"
+   "sha256": "ff382719bcf14e8aa9078c565e922b9ba1ec3f6b1d1e77b713e8d411f0adb5a4"
   },
   {
    "id": "vclib",
    "name": "VC-Lib",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/vclib.yaml",
-   "sha256": "6daba2bfa9f53cb68cae810e2391aee5a899385720bb0ec6dd614c4cacf50bdf"
+   "sha256": "735af1eac25283370b38182fe6216b1a61cbd4d667b18750e1681a33b0ec7698"
   },
   {
    "id": "whupt",
    "name": "珞樱-WHUPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/whupt.yaml",
-   "sha256": "0cd107d870fff4da14e0691f7eb3149ee01fec4f60cac0fe8c6e817a7c9d6d98"
+   "sha256": "b81c14ceed92f65a8f7a97666d26346d7cd13480538413ce41a6bd2878a6dfe3"
   },
   {
    "id": "wihd",
    "name": "WiHD",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/wihd.yaml",
-   "sha256": "1cf687697463709040bb179c033b1207c6f2160eac6510a0e5a615e0147f08bd"
+   "sha256": "93afb1a04f3cffc87c0064eab90e031543e42a646bfc810e708c1a9113be26b5"
   },
   {
    "id": "wintersakura",
    "name": "WinterSakura",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/wintersakura.yaml",
-   "sha256": "e5171892363db2a8eeaaf13283a3e5251fa01a3bc01563bf9bfa07c0f952b60f"
+   "sha256": "e1fb05d11e6dd19236d3d0d9baeffa042f552cb877d49d5e2c8dea97479935c1"
   },
   {
    "id": "wukongwendao",
    "name": "悟空问道",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/wukongwendao.yaml",
-   "sha256": "865656e4aa6c48dfd7f59d099bde92fd51be8b48a89a913c2c03cb1a051286fc"
+   "sha256": "e78699cb2575863fbdf9f418e957edc6cbe85f9ce91f799b8f9fa4b4604c4675"
   },
   {
    "id": "xauat6",
    "name": "溪涧草堂PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xauat6.yaml",
-   "sha256": "60b6b01a094b6e3fd0d41ca80376eaaf12563e5da3e1b62a1cfe37e9f5955d50"
+   "sha256": "6fc768193a1540d09fbec0f4c3df977063dfbd431f31bc4c046954746a2ae3ff"
   },
   {
    "id": "xdypt",
    "name": "修道院",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xdypt.yaml",
-   "sha256": "d48b0b11a49fe8488a99f2bab891d87f6c27ce13de3623af73fc01af40d36646"
+   "sha256": "4f4420590e16e904976f4a2b2f69c0e2bc703d4c818a611cdcee46c24073762e"
   },
   {
    "id": "xingtan",
    "name": "杏坛",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xingtan.yaml",
-   "sha256": "b719785e865dc1924fd3ac3d5d1300ebe208b9c70301f457d11d486c6796ba0c"
+   "sha256": "f888dbaf97028fbc86b766e9038bef406367cc81b70e55a440ff311dd5ae99df"
   },
   {
    "id": "xingwan",
    "name": "星湾",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xingwan.yaml",
-   "sha256": "2755ff9d83942c88991d24914eb875c3c174bafd3653c77bfcc3c8be288014fb"
+   "sha256": "a9187b7cdfc74134523f5860312f231703f17430f6e8121e3d415be138bd3858"
   },
   {
    "id": "xingyunge",
    "name": "星陨阁",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xingyunge.yaml",
-   "sha256": "a01da14ca101b51b21f60b66cbf4ca21b275387339fc2cba76c1a29a28f25b85"
+   "sha256": "9e0ae27599fb45cf331e2e8ddf468938243cf1488814cebc11a0ea6b56f3ac49"
   },
   {
    "id": "xite",
    "name": "x·ite.me",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xite.yaml",
-   "sha256": "0fb3daa8522c20c72262318e320b1f98170d1a850fb90037a7ece38283246564"
+   "sha256": "d2e5e530d454998415e0cd9eb39f4f535eeffc51ce3373b9e6387cfdf81fcc9b"
   },
   {
    "id": "xtr",
    "name": "XTR",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/xtr.yaml",
-   "sha256": "64b224cba265c2e0c053477c72617846d0bc7745a2784ac330257261504a8d70"
+   "sha256": "0b0a96c2db9aa56fdeacee6cd2e3cbc095cc771d7442a42ba06e4e7e2a3851c7"
   },
   {
    "id": "ydypt",
    "name": "伊甸园",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/ydypt.yaml",
-   "sha256": "14dff5505f8e73ed4bedaaebe2c418f80b1afe6c48bb25cdecd6293a907b8861"
+   "sha256": "884cf744deb8641b24c9120b985e64c5ec246fe9c33a465c2a7ba0ed0b81fdf2"
   },
   {
    "id": "yemapt",
    "name": "YemaPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/yemapt.yaml",
-   "sha256": "32797249d170e7af47513b45bc70de9c840f77143ee317a7aab7d51c62a33988"
+   "sha256": "e9ecea5d9d0fec4928719733c331aae8d7bce79f56109cd674adab7d2de12450"
   },
   {
    "id": "yingk",
    "name": "影客",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/yingk.yaml",
-   "sha256": "37a6375f2da2da70b86dcbdbb7d76adb4846292117e6c4113b31dc2114096fb7"
+   "sha256": "94cc99e09b2685f269abd4db502140c7feda8b6c22f506ec1a37e9cb7d041b8e"
   },
   {
    "id": "yinguskg",
    "name": "樱花",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/yinguskg.yaml",
-   "sha256": "d02d0a5129a7b1c71e86126e0739a74a3324bde3185f3fbf488d6fed5ece1919"
+   "sha256": "008c49926b99cbefa403eb55ec13dca129dedeced4c66dfcf42da3683830bb54"
   },
   {
    "id": "yuscene",
    "name": "YUSCENE",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/yuscene.yaml",
-   "sha256": "b45912bedc59829e5698f90a3605a44884b5e1f3ddd584eb8bf691b9fb585912"
+   "sha256": "d14494e1b371afa75411081253fb6d4f30710f9e0d0f6957ca177e716865179c"
   },
   {
    "id": "yzyy",
    "name": "YzYY",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/yzyy.yaml",
-   "sha256": "338850482e788523745aa3fafcbb504a71a1934d14b2131e2d7b561ccb2cccdf"
+   "sha256": "9d2a8e87f64bbba4b93db2416aa134110887fac45ea65d396ae79c8feba6e425"
   },
   {
    "id": "zenith",
    "name": "Zenith",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/zenith.yaml",
-   "sha256": "5f637c3c8a3e752e0234c020e08ba722b2ab935b8a25b78ce2a4a0f2b99a8b93"
+   "sha256": "3942f648a6a5f93810baede750269ffc4d729ac9148ef0fcff85d8fc4d4d9438"
   },
   {
    "id": "zhixing",
    "name": "知行PT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/zhixing.yaml",
-   "sha256": "752fb7a27ad079b49326ffc2add4d4bef875d1f16333909a555f52386ee1b402"
+   "sha256": "10e34280a3dcf480da5e8257f64c13dc07c039ea607e8617a4f838c84cbb76a8"
   },
   {
    "id": "zhuque",
    "name": "朱雀",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/zhuque.yaml",
-   "sha256": "7f712fdf0ff32785a779122327693f60ccedf5d1652b1698b8477779ea1a1e64"
+   "sha256": "c69fa433ce098be7624408dfe0e2172fff0501eb98e2a156f0445317ef5942ad"
   },
   {
    "id": "zmpt",
    "name": "织梦",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/zmpt.yaml",
-   "sha256": "be27a6c5d39c8811e0cf652f8307b0c21a072048d2fc7602f249477ce6b7dfe7"
+   "sha256": "7c5a282410be29a61a96095eeefadf801d0f1f9774619ac9f06faead5cd21282"
   },
   {
    "id": "zrpt",
    "name": "ZRPT",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/zrpt.yaml",
-   "sha256": "acaa6a793ff66805a7a55457b3c2223d96c1a951f59e9f371aa0c6dbb9f58290"
+   "sha256": "ce9fd054c638f63a966fbaa125526aa216b82775312363a0ebcd09b1200f5b92"
   }
  ]
 }

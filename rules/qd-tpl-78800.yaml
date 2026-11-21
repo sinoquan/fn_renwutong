@@ -1,95 +1,45 @@
 id: qd-tpl-78800
 name: 爱快论坛
-category: other
+category: forum
 icon: community
-summary: 每日任务
+summary: 每日签到
 description: |
-  任务地址：https://bbs.ikuai8.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1
-  作用：调用该站点自己的任务接口完成每日任务。
-risk: none
-version: 1.0.0
-updatedAt: 2026-11-20
+  任务地址：https://bbs.ikuai8.com/plugin.php?id=k_misign:sign
+  作用：完成站点「爱快签到」插件的每日签到。
+  执行：先打开签到页取 formhash，再带着令牌提交签到（两步）。
+  说明：签到成功返回「签到成功」；当天已签到返回「今日已签」。
+risk: high
+version: 1.2.0
+updatedAt: 2026-11-21
 allowedHosts: [bbs.ikuai8.com]
 fields:
   - key: cookie
     label: Cookie
     type: password
     required: true
+    help: 登录后按 F12 → Network → 复制 Request Headers 里的 Cookie 整串
 steps:
-  - name: 任务
-    method: POST
-    url: "https://bbs.ikuai8.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1"
-    headers:
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      accept-language: "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
-      cache-control: "no-cache"
-      content-type: "application/x-www-form-urlencoded"
-      origin: "https://bbs.ikuai8.com"
-      pragma: "no-cache"
-      referer: "https://bbs.ikuai8.com/"
-      sec-ch-ua: "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Microsoft Edge\";v=\"114\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      sec-fetch-dest: "iframe"
-      sec-fetch-mode: "navigate"
-      sec-fetch-site: "same-origin"
-      sec-fetch-user: "?1"
-      upgrade-insecure-requests: "1"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43"
-  - name: 任务
+  - name: 取签到令牌
     method: GET
-    url: "https://bbs.ikuai8.com/"
+    url: "https://bbs.ikuai8.com/plugin.php?id=k_misign:sign"
     headers:
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      accept-language: "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
-      cache-control: "no-cache"
-      pragma: "no-cache"
+      cookie: "{{cookie}}"
       referer: "https://bbs.ikuai8.com/"
-      sec-ch-ua: "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Microsoft Edge\";v=\"114\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      sec-fetch-dest: "document"
-      sec-fetch-mode: "navigate"
-      sec-fetch-site: "same-origin"
-      sec-fetch-user: "?1"
-      upgrade-insecure-requests: "1"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43"
-  - name: 任务
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    # formhash 藏在「退出登录」链接里，形如 formhash=c4c9146d
+    capture:
+      fh: 'formhash[^0-9a-zA-Z]{0,20}([0-9a-f]{8})'
+  - name: 提交签到
     method: GET
-    url: "https://bbs.ikuai8.com/plugin.php?id=k_misign%3Asign&operation=qiandao&format=button&inajax=1&ajaxtarget=midaben_sign&formhash={{formhash|urlencode}}"
+    url: "https://bbs.ikuai8.com/plugin.php?id=k_misign:sign&operation=qiandao&format=button&formhash={{fh}}"
     headers:
-      accept: "*/*"
-      accept-language: "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
-      cache-control: "no-cache"
-      pragma: "no-cache"
-      referer: "https://bbs.ikuai8.com/"
-      sec-ch-ua: "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Microsoft Edge\";v=\"114\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      sec-fetch-dest: "empty"
-      sec-fetch-mode: "cors"
-      sec-fetch-site: "same-origin"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.51"
+      cookie: "{{cookie}}"
+      referer: "https://bbs.ikuai8.com/plugin.php?id=k_misign:sign"
       x-requested-with: "XMLHttpRequest"
-  - name: 任务
-    method: GET
-    url: "https://bbs.ikuai8.com/"
-    headers:
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      accept-language: "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
-      cache-control: "no-cache"
-      pragma: "no-cache"
-      referer: "https://bbs.ikuai8.com/"
-      sec-ch-ua: "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Microsoft Edge\";v=\"114\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      sec-fetch-dest: "document"
-      sec-fetch-mode: "navigate"
-      sec-fetch-site: "same-origin"
-      sec-fetch-user: "?1"
-      upgrade-insecure-requests: "1"
-      user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43"
+      accept: "text/html,application/xml,*/*;q=0.8"
 check:
-  notLogin: [请登录, 登录后方可]
-  already: [已签到, 已经签到, 今日已签到]
-  success: [签到成功, 签到获得, 获得魔力, 获得积分]
+  notLogin: [您需要先登录, 请先登录, 请登录后]
+  already: [今日已签]
+  # 注意：签到页本身含「连续签到」「今日签到」等文案，不能当成功判据，
+  # 否则会变成「打开页面就算成功」。只认签到接口真正返回的措辞。
+  success: [签到成功, 签到奖励]
