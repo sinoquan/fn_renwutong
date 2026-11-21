@@ -1,0 +1,33 @@
+id: dajiao
+name: "DAJIAO"
+category: pt
+icon: pt
+summary: 保活
+description: |
+  站点地址：https://dajiao.cyou/
+  作用：定时访问首页留存活跃记录（保号）。不做签到，也不判定登录态。
+  来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
+  探活 2026-11-21：探活通过
+  注意：本站不是 NexusPHP，登录后的页面无法离线验证，因此只提供保活。
+risk: high
+version: 1.0.0
+updatedAt: 2026-11-21
+allowedHosts: [dajiao.cyou]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+defaultTask: keepalive
+tasks:
+  - key: keepalive
+    name: 保活
+    type: keepalive
+    description: 只定时访问首页留活跃记录，不判定登录态
+    steps:
+      - name: 访问首页
+        method: GET
+        url: "https://dajiao.cyou/"
+        headers:
+          cookie: "{{cookie}}"
+    check: {}

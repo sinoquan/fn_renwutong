@@ -1,0 +1,45 @@
+id: hdkylin
+name: "HDKylin"
+category: pt
+icon: pt
+summary: 每日保活 + 模拟登录
+description: |
+  站点地址：https://www.hdkyl.in/ / https://na.hdkylin.com/ / https://cf.hdkylin.com/
+  作用：定时访问首页留存活跃记录（保号），并检查 Cookie 是否有效。不做签到。
+  来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
+  探活 2026-11-21：探活通过（NexusPHP 登录页）
+risk: high
+version: 1.0.0
+updatedAt: 2026-11-21
+allowedHosts: [www.hdkyl.in, na.hdkylin.com, cf.hdkylin.com]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+defaultTask: login
+tasks:
+  - key: login
+    name: 模拟登录
+    type: login
+    description: 访问首页确认 Cookie 仍有效；未登录会被重定向到登录页
+    steps:
+      - name: 检查登录态
+        method: GET
+        url: "https://www.hdkyl.in/"
+        headers:
+          cookie: "{{cookie}}"
+    check:
+      notLogin: ["takelogin.php", "login.php?returnto", "你需要启用cookies"]
+      success: ["logout.php", "退出登录", "个人中心", "我的账户", "我的资料"]
+  - key: keepalive
+    name: 保活
+    type: keepalive
+    description: 只定时访问首页留活跃记录，不判定登录态
+    steps:
+      - name: 访问首页
+        method: GET
+        url: "https://www.hdkyl.in/"
+        headers:
+          cookie: "{{cookie}}"
+    check: {}
