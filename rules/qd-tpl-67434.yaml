@@ -9,8 +9,10 @@ description: |
   作用：完成站点自带「天天打卡」插件的每日打卡。
   执行：先打开打卡页取本次的 sign 令牌，再带着令牌提交（两步）。
   说明：当天已打卡会返回「您今天已经打过卡了，请勿重复操作」。
+  变更 1.2.1：补充打卡令牌的匹配说明。
+  变更 1.2.1：补充打卡令牌的匹配说明。
 risk: high
-version: 1.2.0
+version: 1.2.1
 updatedAt: 2026-11-21
 allowedHosts: [club.fnnas.com]
 fields:

@@ -1,6 +1,6 @@
 {
  "version": "2026-11-21",
- "updatedAt": "2026-11-21T13:11:20Z",
+ "updatedAt": "2026-11-21T13:12:01Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -2917,9 +2917,9 @@
   {
    "id": "qd-tpl-67434",
    "name": "飞牛私有云论坛",
-   "version": "1.2.0",
+   "version": "1.2.1",
    "file": "rules/qd-tpl-67434.yaml",
-   "sha256": "111ff00786850d182fabd8c7dd06942350eb30e4c4ac06b76b38c21a7caeafe1"
+   "sha256": "cc8a6478cadb8ee4434f60d6ab9d9e9843104a8cd82d99ae111e3e16fdcb77f1"
   },
   {
    "id": "qd-tpl-68156",
