@@ -1,6 +1,6 @@
 {
  "version": "2026-11-21",
- "updatedAt": "2026-11-21T13:12:01Z",
+ "updatedAt": "2026-11-21T13:36:33Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -325,13 +325,6 @@
    "sha256": "b403d85560dc4b8445c7f34e6493b4abe6f004678f3593e1a8c4c0168833b8da"
   },
   {
-   "id": "cdfile",
-   "name": "CD File",
-   "version": "1.1.0",
-   "file": "rules/cdfile.yaml",
-   "sha256": "d21f890b1b7cac005201ee70130c2484ce86261dd238b94cfc542709618ad714"
-  },
-  {
    "id": "cdy",
    "name": "传道院",
    "version": "1.1.0",
@@ -570,13 +563,6 @@
    "sha256": "667c85f1e56645d3c89455e9844a110657c01306b5034a0bb75f0ae43bf373aa"
   },
   {
-   "id": "ecustpt",
-   "name": "ECUSTPT",
-   "version": "1.1.0",
-   "file": "rules/ecustpt.yaml",
-   "sha256": "d0600499c8e02c62fa0046e73cc3d1b5d714aec987897e609bdccf533f5e3acf"
-  },
-  {
    "id": "empornium",
    "name": "Empornium",
    "version": "1.1.0",
@@ -808,13 +794,6 @@
    "sha256": "9b53956a5ef2cdabb371a96e429708f38ba0da9248d4d37731835210c60a965e"
   },
   {
-   "id": "hddisk",
-   "name": "HDDisk",
-   "version": "1.1.0",
-   "file": "rules/hddisk.yaml",
-   "sha256": "1472a3e79fbf194243c25e977cc9e6c46f801890099c1d48bc7b02f4d8e3e475"
-  },
-  {
    "id": "hddolby",
    "name": "UHDDolby",
    "version": "1.1.0",
@@ -1009,13 +988,6 @@
    "version": "1.1.0",
    "file": "rules/ianon.yaml",
    "sha256": "c4255cf24f83bfb992909f7c0245259018cfd80dc230fd29b3de45fb70c3c1a9"
-  },
-  {
-   "id": "ihdbits",
-   "name": "iHDBits",
-   "version": "1.1.0",
-   "file": "rules/ihdbits.yaml",
-   "sha256": "ff68bd1317fb824a89f48d38288dd569841109e25000b54bdae7f722d3466ce6"
   },
   {
    "id": "ilolicon",
@@ -1555,13 +1527,6 @@
    "version": "1.1.0",
    "file": "rules/ptchina.yaml",
    "sha256": "136a3272aae01130cd3c84cd13253c86690097c7ee6b235f7cebf2b0e5743182"
-  },
-  {
-   "id": "ptdream",
-   "name": "PTDream",
-   "version": "1.1.0",
-   "file": "rules/ptdream.yaml",
-   "sha256": "49546ddb896d62fe836b6227be0f534fb1756650b77b7f34460a2bb237cff3b7"
   },
   {
    "id": "pter",
@@ -3573,13 +3538,6 @@
    "sha256": "14c37a85a4387612810ec8b55e136b7b5ff0b637960cea08178148a2df54958c"
   },
   {
-   "id": "sanpro",
-   "name": "伞",
-   "version": "1.1.0",
-   "file": "rules/sanpro.yaml",
-   "sha256": "5377320e7d569e324a55e318249a2495b3e4b4c34f0f83390d7ee9978ba5a462"
-  },
-  {
    "id": "sbpt",
    "name": "SBPT",
    "version": "1.1.0",
@@ -3657,20 +3615,6 @@
    "sha256": "ad8acce25ed245f3ff7b4617821db9e8b96b2bb97684a071b1976ee8405cb920"
   },
   {
-   "id": "skipthecommercials",
-   "name": "SkipTheCommercials",
-   "version": "1.1.0",
-   "file": "rules/skipthecommercials.yaml",
-   "sha256": "809a02ddf66b67733697eec35f31bf167af115a4677113449219044070b7ca6b"
-  },
-  {
-   "id": "snakepop",
-   "name": "Snakepop",
-   "version": "1.1.0",
-   "file": "rules/snakepop.yaml",
-   "sha256": "6c4aef170a73de1d71e23ef84156f8534c071f013b8d05ef8919fe611803fb6d"
-  },
-  {
    "id": "soulvoice",
    "name": "SoulVoice",
    "version": "1.1.0",
@@ -3704,13 +3648,6 @@
    "version": "1.1.0",
    "file": "rules/starspace.yaml",
    "sha256": "a67bde92c869d5d49c65216f44dbc7ca2d747d7477864ee2201b628a80a947b0"
-  },
-  {
-   "id": "stspt",
-   "name": "STSPT",
-   "version": "1.1.0",
-   "file": "rules/stspt.yaml",
-   "sha256": "4d15a8ad0d4223d01fe66695886f54a002752f750696e6baa7dbca37687f4511"
   },
   {
    "id": "sugoimusic",
@@ -3874,13 +3811,6 @@
    "sha256": "9355e81ffbd93e897bcce2e73ee1a2de8c246d303d3f30cca4a19a3a46558f60"
   },
   {
-   "id": "traxary",
-   "name": "Traxary",
-   "version": "1.1.0",
-   "file": "rules/traxary.yaml",
-   "sha256": "55afd666a1154179796c98cd525945d52e34f4a3177f4b6a259af65d59c0c42a"
-  },
-  {
    "id": "tu88",
    "name": "TU88",
    "version": "1.1.0",
@@ -4040,13 +3970,6 @@
    "version": "1.1.0",
    "file": "rules/yingk.yaml",
    "sha256": "94cc99e09b2685f269abd4db502140c7feda8b6c22f506ec1a37e9cb7d041b8e"
-  },
-  {
-   "id": "yinguskg",
-   "name": "樱花",
-   "version": "1.1.0",
-   "file": "rules/yinguskg.yaml",
-   "sha256": "008c49926b99cbefa403eb55ec13dca129dedeced4c66dfcf42da3683830bb54"
   },
   {
    "id": "yuscene",
