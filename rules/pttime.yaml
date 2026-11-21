@@ -7,7 +7,7 @@ description: |
   任务地址：https://www.pttime.org/attendance.php?id={{uid|urlencode}}
   作用：调用该站点自己的任务接口完成每日任务。
 risk: high
-version: 1.1.0
+version: 1.1.1
 updatedAt: 2026-11-20
 allowedHosts: [www.pttime.org]
 fields:
@@ -81,14 +81,3 @@ tasks:
     check:
       notLogin: [takelogin.php, 登录 / 注册, 你需要启用cookies, 请登录, 登录后方可]
       success: [logout.php, 退出登录, 个人中心, 我的账户, 我的资料]
-  - key: keepalive
-    name: 保活
-    type: keepalive
-    description: 只定时访问首页留活跃记录，不判定登录态；适合不想动账号的场景
-    steps:
-      - name: 访问首页
-        method: GET
-        url: "https://www.pttime.org/index.php"
-        headers:
-          cookie: "{{cookie}}"
-    check: {}

@@ -2,14 +2,14 @@ id: sjtu
 name: "葡萄"
 category: pt
 icon: pt
-summary: 模拟登录 + 保活
+summary: 模拟登录
 description: |
   站点地址：https://pt.sjtu.edu.cn/
-  作用：模拟登录、保活。
+  作用：模拟登录。
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
   探活 2026-11-21：探活通过（NexusPHP 登录页）
 risk: high
-version: 1.1.0
+version: 1.1.1
 updatedAt: 2026-11-21
 allowedHosts: [pt.sjtu.edu.cn]
 fields:
@@ -32,14 +32,3 @@ tasks:
     check:
       notLogin: ["takelogin.php", "login.php?returnto", "你需要启用cookies"]
       success: ["logout.php", "退出登录", "个人中心", "我的账户", "我的资料"]
-  - key: keepalive
-    name: 保活
-    type: keepalive
-    description: 只定时访问首页留活跃记录，不判定登录态
-    steps:
-      - name: 访问首页
-        method: GET
-        url: "https://pt.sjtu.edu.cn/"
-        headers:
-          cookie: "{{cookie}}"
-    check: {}

@@ -2,7 +2,7 @@ id: sewerpt
 name: "下水道"
 category: pt
 icon: pt
-summary: 保活
+summary: 模拟登录
 description: |
   站点地址：https://sewerpt.com/
   作用：保活。
@@ -10,7 +10,7 @@ description: |
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
   探活 2026-11-21：生成时未能连通（可能被墙/需要代理），站点恢复后本规则即可用
 risk: high
-version: 1.1.0
+version: 1.1.1
 updatedAt: 2026-11-21
 allowedHosts: [sewerpt.com]
 fields:
@@ -18,12 +18,12 @@ fields:
     label: Cookie
     type: password
     required: true
-defaultTask: keepalive
+defaultTask: login
 tasks:
-  - key: keepalive
-    name: 保活
-    type: keepalive
-    description: 只定时访问首页留活跃记录，不判定登录态
+  - key: login
+    name: 模拟登录
+    type: login
+    description: 带 Cookie 访问一次站点；登录态失效会被识别出来
     steps:
       - name: 访问首页
         method: GET

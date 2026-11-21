@@ -2,15 +2,15 @@ id: c411
 name: "C411"
 category: pt
 icon: pt
-summary: 签到 + 模拟登录 + 保活
+summary: 签到 + 模拟登录
 description: |
   站点地址：https://c411.org/
-  作用：签到、模拟登录、保活。
+  作用：签到、模拟登录。
   签到：调用站点自带的签到页 /attendance.php。
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
   探活 2026-11-21：生成时未能连通（可能被墙/需要代理），站点恢复后本规则即可用
 risk: high
-version: 1.1.0
+version: 1.1.1
 updatedAt: 2026-11-21
 allowedHosts: [c411.org]
 fields:
@@ -48,14 +48,3 @@ tasks:
     check:
       notLogin: ["takelogin.php", "login.php?returnto", "你需要启用cookies"]
       success: ["logout.php", "退出登录", "个人中心", "我的账户", "我的资料"]
-  - key: keepalive
-    name: 保活
-    type: keepalive
-    description: 只定时访问首页留活跃记录，不判定登录态
-    steps:
-      - name: 访问首页
-        method: GET
-        url: "https://c411.org/"
-        headers:
-          cookie: "{{cookie}}"
-    check: {}
