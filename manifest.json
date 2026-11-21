@@ -1,6 +1,6 @@
 {
  "version": "2026-11-21",
- "updatedAt": "2026-11-21T08:40:19Z",
+ "updatedAt": "2026-11-21T08:49:28Z",
  "rules": [
   {
    "id": "audiences",
@@ -423,13 +423,6 @@
    "sha256": "b3158c495df36f76e2bc0019f699c471e5d3bf4ffdacac62ef5a0ed4b6015937"
   },
   {
-   "id": "qd-gmgard",
-   "name": "gmgard",
-   "version": "1.0.0",
-   "file": "rules/qd-gmgard.yaml",
-   "sha256": "237dbe7eef87922fb45074c207336bac4ca4bc7a92303a67a31225e28ffe046c"
-  },
-  {
    "id": "qd-gmgard-com",
    "name": "gmgard.com绅士之庭",
    "version": "1.0.0",
@@ -449,13 +442,6 @@
    "version": "1.0.0",
    "file": "rules/qd-har.yaml",
    "sha256": "90ef483e2a245b7434e437bfb1e09e3b2f3a45cfe56dfbacaa7d88f2f9eac8a7"
-  },
-  {
-   "id": "qd-hdarea",
-   "name": "HDarea高清视界",
-   "version": "1.0.0",
-   "file": "rules/qd-hdarea.yaml",
-   "sha256": "17b3c1b4d1331b6c2d5ccb0b0bff36ebbe8da133ee67d8baabd537f71ca9c838"
   },
   {
    "id": "qd-hdsay",
@@ -514,13 +500,6 @@
    "sha256": "313f24dbd8c9eca896b430c995c38dcc0700835d8eb2e43d7a681b7da067e7c4"
   },
   {
-   "id": "qd-it",
-   "name": "IT技术交流论坛",
-   "version": "1.0.0",
-   "file": "rules/qd-it.yaml",
-   "sha256": "af00b70405ccb2705c8848de857cd6a9600fe89c20de6945def9e82f5eb202aa"
-  },
-  {
    "id": "qd-javbus",
    "name": "javbus",
    "version": "1.0.0",
@@ -542,13 +521,6 @@
    "sha256": "93dcc382577ab9bb3879ecd78be322b9f630efb44e0ea7f802906633f1e86b8b"
   },
   {
-   "id": "qd-kdays",
-   "name": "KDays论坛",
-   "version": "1.0.0",
-   "file": "rules/qd-kdays.yaml",
-   "sha256": "02d46001b4c5a60d3a5d684a21f1d586210ea9ba0f1c75308a4fb175caa547ff"
-  },
-  {
    "id": "qd-keylol-steamcn",
    "name": "keylol(原SteamCN蒸汽论坛)",
    "version": "1.0.0",
@@ -561,13 +533,6 @@
    "version": "1.0.0",
    "file": "rules/qd-leaguehd.yaml",
    "sha256": "fce714f643065ea6dfb4c23bc9b62b17d2fa37ca58bbc9af32c993cf3e69f2eb"
-  },
-  {
-   "id": "qd-lightnovel",
-   "name": "lightnovel",
-   "version": "1.0.0",
-   "file": "rules/qd-lightnovel.yaml",
-   "sha256": "a33506d3b835fe99e33a2c9574e0b20f779e058a9e229c640dc9bd8b18b6125a"
   },
   {
    "id": "qd-link-ai",
@@ -694,13 +659,6 @@
    "version": "1.0.0",
    "file": "rules/qd-nodeloc.yaml",
    "sha256": "3cd58c3127f9ae16b1519d5f6f9ffc2246b5e5873e46b72c9ad0d504611dcc65"
-  },
-  {
-   "id": "qd-op-gg-lol",
-   "name": "op.gg自动刷新LOL战绩",
-   "version": "1.0.0",
-   "file": "rules/qd-op-gg-lol.yaml",
-   "sha256": "1f00501c51f2c5c4b81d8e9a052ad1d9697b615f6066b7b777f4fc8d221f09e6"
   },
   {
    "id": "qd-pcbeta-cookie",
@@ -892,13 +850,6 @@
    "sha256": "8fb06439579772a7ffa169eab0779a232f6001073a4c8aa16706c6ea8d4b43a2"
   },
   {
-   "id": "qd-tpl-13336",
-   "name": "摩登犀牛",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-13336.yaml",
-   "sha256": "8d151469df307e5862ba68d863c133d4c12db59445d327add07187127e1c11d8"
-  },
-  {
    "id": "qd-tpl-14196",
    "name": "天雪",
    "version": "1.0.0",
@@ -1004,13 +955,6 @@
    "sha256": "c9021c5b50828c518fa78274da5195cae95780e873cd9f9847d7d8425a3c1bc4"
   },
   {
-   "id": "qd-tpl-22239",
-   "name": "白兔俱乐部",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-22239.yaml",
-   "sha256": "c13d8956376cfaae39ebb283084c827b0dc3622a1be4dad6d8d8d20533082834"
-  },
-  {
    "id": "qd-tpl-22541",
    "name": "理想股票技术论坛",
    "version": "1.0.0",
@@ -1109,25 +1053,11 @@
    "sha256": "58d11f78b2edc342d19f6dc279c1214e662aea2dd474a6b5a160dbb6454f82c3"
   },
   {
-   "id": "qd-tpl-36790",
-   "name": "港知堂",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-36790.yaml",
-   "sha256": "f0d5d80289bb360589f1c46206e148ece1783c17deb4f907060728faa8308ccf"
-  },
-  {
    "id": "qd-tpl-37391",
    "name": "科技玩家",
    "version": "1.0.0",
    "file": "rules/qd-tpl-37391.yaml",
    "sha256": "72c38b8d56f9b3265de916b57c19da92ba09114845b55e1f67dcc786afded6a4"
-  },
-  {
-   "id": "qd-tpl-3766",
-   "name": "大碗岛漫画",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-3766.yaml",
-   "sha256": "828ebd978f06427bb21946fcb8fbfac2404ce78701a20a43acdb441d1e5d2bcd"
   },
   {
    "id": "qd-tpl-39186",
@@ -1403,13 +1333,6 @@
    "sha256": "d786f833482e929bffeea233a43292296b538be846a7ae6334332f74206370ee"
   },
   {
-   "id": "qd-tpl-69362",
-   "name": "飘云阁",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-69362.yaml",
-   "sha256": "9ab6d6ada0892cc0c1c44d12f18da620eaad1b355b85e16ad292c430a1c62889"
-  },
-  {
    "id": "qd-tpl-69885",
    "name": "爱阅书吧",
    "version": "1.0.0",
@@ -1450,13 +1373,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-75044.yaml",
    "sha256": "fdad8b4d066bdf5fd715e32175fc2e10474588f0cbb16e669d26e8b2de7b9b64"
-  },
-  {
-   "id": "qd-tpl-7522",
-   "name": "好书友",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-7522.yaml",
-   "sha256": "eecec659ac4d02020d9f6561e43810a9f845ea62ed04c80b04ad2c3998b81139"
   },
   {
    "id": "qd-tpl-75808",
@@ -1562,13 +1478,6 @@
    "version": "1.0.0",
    "file": "rules/qd-tpl-79287.yaml",
    "sha256": "b44369194a0ba1d83e82ac5f96f7734fbb872f7702ea7f201c74ec2a223586dc"
-  },
-  {
-   "id": "qd-tpl-7936",
-   "name": "土星人论坛",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-7936.yaml",
-   "sha256": "a177053553b29700937d02d422bfbe3d97fd63a6b09f25834bfb462694ef28da"
   },
   {
    "id": "qd-tpl-79773",
@@ -1753,13 +1662,6 @@
    "sha256": "d6936295ad9ccfb2ca2c4e0d04b8ce2a510bff31476770b1a6628a5606d0ab88"
   },
   {
-   "id": "qd-tpl-98072",
-   "name": "飞客茶馆",
-   "version": "1.0.0",
-   "file": "rules/qd-tpl-98072.yaml",
-   "sha256": "bd07cacf742e09f8eace8721e9dd67097377cecf3fb98d6337401db7e6c9d3c3"
-  },
-  {
    "id": "qd-tpl-98295",
    "name": "学犀牛中文网",
    "version": "1.0.0",
@@ -1828,13 +1730,6 @@
    "version": "1.0.0",
    "file": "rules/qd-vcb-studio.yaml",
    "sha256": "83bfe16e972043ebbdf054e39159415e11197636c5a44f70cd8fe383cfe43f4e"
-  },
-  {
-   "id": "qd-vikacg-com",
-   "name": "vikacg.com",
-   "version": "1.0.0",
-   "file": "rules/qd-vikacg-com.yaml",
-   "sha256": "c554fa7099f1c5ad4cad50430b04dded81ea9bcd633dd155f75ce078f3c9a24a"
   },
   {
    "id": "qd-vip",
