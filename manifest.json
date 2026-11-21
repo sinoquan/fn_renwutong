@@ -1,6 +1,6 @@
 {
- "version": "2026-11-20",
- "updatedAt": "2026-11-20T11:42:16Z",
+ "version": "2026-11-21",
+ "updatedAt": "2026-11-21T08:40:19Z",
  "rules": [
   {
    "id": "audiences",
@@ -1860,9 +1860,9 @@
   {
    "id": "qd-www-52pojie-cn",
    "name": "吾爱破解",
-   "version": "1.1.0",
+   "version": "1.1.1",
    "file": "rules/qd-www-52pojie-cn.yaml",
-   "sha256": "7b1c38df38dca2bf100b0dd50dcdfbed2002b142aca836a291a9b0c2064bce5a"
+   "sha256": "ccc12585c37d5f69f2021b7b4925ce1797343c12bf37c8106d36cf7a67f1dd71"
   },
   {
    "id": "qd-www-anywlan-com",
