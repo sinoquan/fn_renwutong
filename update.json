@@ -1,8 +1,8 @@
 {
- "version": "2.0.19",
- "url": "https://raw.githubusercontent.com/sinoquan/fn_renwutong/main/dist/renwutong-2.0.19.tar.gz",
- "sha256": "031786ffec98b8b6b9f5e56790eb4bdcf2043912e9645dac85d072efec574c5b",
- "size": 5183146,
- "notes": "整包替换验证（含前端）",
- "publishedAt": "2026-11-21T02:00:00+08:00"
+ "version": "2.0.20",
+ "url": "https://raw.githubusercontent.com/sinoquan/fn_renwutong/main/dist/renwutong-2.0.20.tar.gz",
+ "sha256": "2733723481c131925b55e1f42981765f065d8c5f6e2ca0ce4ae9b85c91738837",
+ "size": 5183747,
+ "notes": "首页「待处理」改为按任务条数统计，与「我的任务 → 异常」口径一致；点击卡片直接筛出要处理的那几条",
+ "publishedAt": "2026-11-21T15:25:00+08:00"
 }
