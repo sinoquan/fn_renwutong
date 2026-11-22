@@ -1,6 +1,6 @@
 {
  "version": "2026-11-23",
- "updatedAt": "2026-11-22T18:04:09Z",
+ "updatedAt": "2026-11-22T18:09:06Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -1860,9 +1860,9 @@
   {
    "id": "qd-ccna",
    "name": "攻城狮论坛-CCNA论坛",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-ccna.yaml",
-   "sha256": "f591605f2bc8e9d1117903db6e1a67d888040772f6afdf44ec457009fa26e4be"
+   "sha256": "04081a7345f8d77af33d82be5faf727ece11c2275b90bf7b652ed1a199bcd3b6"
   },
   {
    "id": "qd-cngame",

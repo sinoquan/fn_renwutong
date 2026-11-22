@@ -1,14 +1,17 @@
 id: qd-ccna
 name: 攻城狮论坛-CCNA论坛
-category: other
+category: forum
 icon: community
-summary: 每日任务
+summary: 每日签到
 description: |
   任务地址：http://bbs.vlan5.com/
-  作用：调用该站点自己的任务接口完成每日任务。
+  作用：Discuz「每日签到」（dsu_paulsign）插件，奖励金币。
+
+  要点：提交必须带 formhash 与 qdxq（签到心情）。旧版用的是 POST 且两个参数都缺，
+  站点一律回「未定义操作」。
 risk: none
-version: 1.0.0
-updatedAt: 2026-11-20
+version: 1.1.0
+updatedAt: 2026-11-23
 allowedHosts: [bbs.vlan5.com]
 fields:
   - key: cookie
@@ -16,33 +19,48 @@ fields:
     type: password
     required: true
 steps:
-  - name: 任务
+  - name: 打开首页
     method: GET
     url: "http://bbs.vlan5.com/"
     headers:
-      Cache-Control: "max-age=0"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-      Referer: "http://bbs.vlan5.com/member.php?mod=register"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
       Accept-Language: "zh-CN,zh;q=0.9"
       Cookie: "{{cookie}}"
-  - name: 任务
-    method: POST
-    url: "http://bbs.vlan5.com/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&infloat=1&sign_as=1&inajax=1"
+
+  - name: 打开签到页
+    method: GET
+    url: "http://bbs.vlan5.com/plugin.php?id=dsu_paulsign:sign"
     headers:
-      Cache-Control: "max-age=0"
-      Origin: "http://bbs.vlan5.com"
-      Upgrade-Insecure-Requests: "1"
-      DNT: "1"
-      Content-Type: "application/x-www-form-urlencoded"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-      Referer: "http://bbs.vlan5.com/"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
       Accept-Language: "zh-CN,zh;q=0.9"
+      Referer: "http://bbs.vlan5.com/"
+      Cookie: "{{cookie}}"
+    capture:
+      formhash: 'formhash=([0-9a-fA-F]{8})'
+
+  - name: 提交签到
+    method: GET
+    url: "http://bbs.vlan5.com/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&qdxq=kx&infloat=1&inajax=1&formhash={{formhash|urlencode}}"
+    headers:
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "*/*"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      X-Requested-With: "XMLHttpRequest"
+      Referer: "http://bbs.vlan5.com/plugin.php?id=dsu_paulsign:sign"
+      Cookie: "{{cookie}}"
+
+  - name: 确认签到结果
+    method: GET
+    url: "http://bbs.vlan5.com/plugin.php?id=dsu_paulsign:sign"
+    headers:
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Referer: "http://bbs.vlan5.com/"
       Cookie: "{{cookie}}"
 check:
-  notLogin: [请登录, 登录后方可]
-  already: [已签到, 已经签到, 今日已签到]
-  success: [签到成功, 签到获得, 获得魔力, 获得积分]
+  notLogin: [请登录, 登录后方可, 您需要先登录]
+  already: [已经签到, 今日已经签到, 请明天再来, 已签到]
+  success: [签到成功, 恭喜你签到成功, 获得随机奖励]
