@@ -1,6 +1,6 @@
 {
  "version": "2026-11-23",
- "updatedAt": "2026-11-22T17:43:42Z",
+ "updatedAt": "2026-11-22T17:47:29Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -1748,9 +1748,9 @@
   {
    "id": "qd-90wd",
    "name": "90wd论坛任务",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-90wd.yaml",
-   "sha256": "eab754dec21e69adbeeb2e00b71dcd90b7d7d8b166be5eecfd9ed2f51032a17f"
+   "sha256": "d0cf2a29bbaa82d43d0d041ac29f7d7411ccc5b6b86eee2ff928e8672b0d5e0e"
   },
   {
    "id": "qd-91tvg",
@@ -2630,9 +2630,9 @@
   {
    "id": "qd-tpl-49419",
    "name": "鸿鹄论坛",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-tpl-49419.yaml",
-   "sha256": "31af778ba1b2506e96f28386aa30bc2daa9a70cec54afe07c429f08bcbe807f5"
+   "sha256": "810cd6fdef957f1d6405b574b12510459e681adb38aa0b343716d0e2c3914398"
   },
   {
    "id": "qd-tpl-49890",
