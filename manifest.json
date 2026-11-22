@@ -1,6 +1,6 @@
 {
  "version": "2026-11-22",
- "updatedAt": "2026-11-22T12:29:47Z",
+ "updatedAt": "2026-11-22T14:35:54Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -1979,9 +1979,9 @@
   {
    "id": "qd-gm",
    "name": "如此玩GM基地论坛",
-   "version": "1.1.0",
+   "version": "1.1.1",
    "file": "rules/qd-gm.yaml",
-   "sha256": "3a12ae976ea5e6e879ac0aa3da0cafeed01da23f7d491c4cd27b3f55bf9f5a5d"
+   "sha256": "2cc94adc250f4e8679ee16d04e5ca758bbc4751dba73e6c0761203d9a690dd91"
   },
   {
    "id": "qd-gmgard-com",

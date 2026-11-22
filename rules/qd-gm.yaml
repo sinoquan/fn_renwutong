@@ -7,7 +7,7 @@ description: |
   任务地址：https://www.ruciwan.com/
   作用：Discuz 每日签到插件（k_misign），先取 formhash 再提交签到，最后回签到页确认。
 risk: none
-version: 1.1.0
+version: 1.1.1
 updatedAt: 2026-11-22
 allowedHosts: [www.ruciwan.com]
 fields:
@@ -74,5 +74,7 @@ steps:
       Cookie: "{{cookie}}"
 check:
   notLogin: [请登录, 登录后方可, 你还没有登录]
-  already: [已签到, 已经签到, 今日已签到, 今天已签到, 明天再来]
+  # 这个插件的签到接口回的是 XML，未签到时给「签到成功/获得 X 金币」，
+  # 已签到时给「今日已签」四个字（实测 dump 出来就是 <![CDATA[今日已签]]>）。
+  already: [今日已签, 已签到, 已经签到, 今日已签到, 今天已签到, 明天再来]
   success: [签到成功, 签到获得, 获得魔力, 获得积分, 恭喜]
