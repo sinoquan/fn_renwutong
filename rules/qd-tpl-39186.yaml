@@ -1,14 +1,17 @@
 id: qd-tpl-39186
 name: 飞天资源论坛
-category: other
+category: forum
 icon: community
-summary: 每日任务
+summary: 每日签到
 description: |
-  任务地址：https://ftzylt.cn/forum.php
-  作用：调用该站点自己的任务接口完成每日任务。
+  任务地址：https://ftzylt.cn/
+  作用：Discuz「每日签到」（dsu_paulsign）插件，奖励资源币。
+
+  要点：提交必须带 formhash 与 qdxq（签到心情），否则会被判「未定义操作」。
+  旧版用「HTTP 302 就算成功」当判据，签到其实没成功也会显示成功，已改掉。
 risk: none
-version: 1.0.0
-updatedAt: 2026-11-20
+version: 1.1.0
+updatedAt: 2026-11-23
 allowedHosts: [ftzylt.cn]
 fields:
   - key: cookie
@@ -16,82 +19,37 @@ fields:
     type: password
     required: true
 steps:
-  - name: 任务
+  - name: 打开签到页
     method: GET
-    url: "https://ftzylt.cn/forum.php"
+    url: "https://ftzylt.cn/plugin.php?id=dsu_paulsign:sign"
     headers:
-      Cache-Control: "max-age=0"
-      sec-ch-ua: "\"Not A(Brand\";v=\"99\", \"Chromium\";v=\"22\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      Upgrade-Insecure-Requests: "1"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.9 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "same-origin"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-User: "?1"
-      Sec-Fetch-Dest: "document"
-      Referer: "https://ftzylt.cn/member.php?mod=connect&referer=https%3A%2F%2Fftzylt.cn%2F.%2Fforum.php"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
       Accept-Language: "zh-CN,zh;q=0.9"
       Cookie: "{{cookie}}"
-  - name: 任务
-    method: POST
-    url: "https://ftzylt.cn/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&infloat=1&sign_as=1&inajax=1"
-    headers:
-      Cache-Control: "max-age=0"
-      sec-ch-ua: "\"Not A(Brand\";v=\"99\", \"Chromium\";v=\"22\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      Upgrade-Insecure-Requests: "1"
-      Origin: "https://ftzylt.cn"
-      Content-Type: "application/x-www-form-urlencoded"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.9 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "same-origin"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-User: "?1"
-      Sec-Fetch-Dest: "iframe"
-      Referer: "https://ftzylt.cn/forum.php"
-      Accept-Language: "zh-CN,zh;q=0.9"
-      Cookie: "{{cookie}}"
-  - name: 任务
+    capture:
+      formhash: 'formhash=([0-9a-fA-F]{8})'
+
+  - name: 提交签到
     method: GET
-    url: "https://ftzylt.cn/home.php?mod=spacecp&ac=credit&showcredit=1"
+    url: "https://ftzylt.cn/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&qdxq=kx&infloat=1&inajax=1&formhash={{formhash|urlencode}}"
     headers:
-      Cache-Control: "max-age=0"
-      sec-ch-ua: "\"Not A(Brand\";v=\"99\", \"Chromium\";v=\"22\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      Upgrade-Insecure-Requests: "1"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.9 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "same-origin"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-User: "?1"
-      Sec-Fetch-Dest: "document"
-      Referer: "https://ftzylt.cn/home.php?mod=spacecp&ac=profile"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "*/*"
       Accept-Language: "zh-CN,zh;q=0.9"
+      X-Requested-With: "XMLHttpRequest"
+      Referer: "https://ftzylt.cn/plugin.php?id=dsu_paulsign:sign"
       Cookie: "{{cookie}}"
-  - name: 任务
-    method: POST
-    url: "https://ftzylt.cn/plugin.php?id=yinxingfei_zzza%3Ayinxingfei_zzza_post"
+
+  - name: 确认签到结果
+    method: GET
+    url: "https://ftzylt.cn/plugin.php?id=dsu_paulsign:sign"
     headers:
-      Cache-Control: "max-age=0"
-      sec-ch-ua: "\"Not A(Brand\";v=\"99\", \"Chromium\";v=\"22\""
-      sec-ch-ua-mobile: "?0"
-      sec-ch-ua-platform: "\"Windows\""
-      Upgrade-Insecure-Requests: "1"
-      Origin: "https://ftzylt.cn"
-      Content-Type: "application/x-www-form-urlencoded"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.9 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-      Sec-Fetch-Site: "same-origin"
-      Sec-Fetch-Mode: "navigate"
-      Sec-Fetch-Dest: "document"
-      Referer: "https://ftzylt.cn/plugin.php?id=yinxingfei_zzza:yinxingfei_zzza_hall"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
       Accept-Language: "zh-CN,zh;q=0.9"
       Cookie: "{{cookie}}"
 check:
-  notLogin: [请登录, 登录后方可]
-  already: [已签到, 已经签到, 今日已签到]
-  success: ["regex:302"]
+  notLogin: [请登录, 登录后方可, 您需要先登录]
+  already: [已经签到, 今日已经签到, 请明天再来, 已签到]
+  success: [签到成功, 恭喜你签到成功, 获得随机奖励]

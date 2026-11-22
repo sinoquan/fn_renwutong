@@ -1,6 +1,6 @@
 {
  "version": "2026-11-23",
- "updatedAt": "2026-11-22T17:47:29Z",
+ "updatedAt": "2026-11-22T17:55:43Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -2546,9 +2546,9 @@
   {
    "id": "qd-tpl-39186",
    "name": "飞天资源论坛",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-tpl-39186.yaml",
-   "sha256": "21e49ce885e1fca499f59b380673b7290fb77f74a7fe56cd3cfb51bb74d26726"
+   "sha256": "feca619d391c602d40344ad1322428483d5f804f8417b7daada472d099872c3c"
   },
   {
    "id": "qd-tpl-39426",
