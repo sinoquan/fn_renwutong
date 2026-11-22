@@ -1,6 +1,6 @@
 {
  "version": "2026-11-23",
- "updatedAt": "2026-11-22T17:33:30Z",
+ "updatedAt": "2026-11-22T17:43:42Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -1699,9 +1699,9 @@
   {
    "id": "qd-3dmgame",
    "name": "3DMGAME论坛",
-   "version": "1.1.1",
+   "version": "1.2.0",
    "file": "rules/qd-3dmgame.yaml",
-   "sha256": "e481a4b02ab9ea727ccea33baecd29d6aab33ed09e4e53bd9b9e68b3b2def669"
+   "sha256": "e36bd47e12c022c212bf511b41d2cb2d2ff6baa0d71f96b918c0ca03c747df5b"
   },
   {
    "id": "qd-3g",
