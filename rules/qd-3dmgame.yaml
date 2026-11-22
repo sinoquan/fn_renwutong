@@ -2,13 +2,18 @@ id: qd-3dmgame
 name: 3DMGAME论坛
 category: forum
 icon: community
-summary: 每日任务
+summary: 每日打卡签到
 description: |
-  任务地址：https://bbs.3dmgame.com/forum.php
-  作用：调用该站点自己的任务接口完成每日任务。
+  任务地址：https://bbs.3dmgame.com/
+  作用：走 Discuz 任务系统领取「论坛用户打卡签到」任务（id 172，资深玩家以上是 171），
+  奖励是 3DMer 勋章，有效期 1 天 —— 这就是 3DM 的每日签到。
+
+  注意：新账号必须先完成站内前置任务（一般是「新手任务【新人报道】」，需要在茶坊发一帖，
+  这一步涉及发内容，不能也不应该自动化）。前置没做完时，申请会返回
+  「申请此任务需要先完成另一个任务」，本任务会显示失败，属正常。
 risk: none
-version: 1.0.0
-updatedAt: 2026-11-20
+version: 1.1.0
+updatedAt: 2026-11-23
 allowedHosts: [bbs.3dmgame.com]
 fields:
   - key: cookie
@@ -16,198 +21,51 @@ fields:
     type: password
     required: true
 steps:
-  - name: 任务
+  # ① 建立会话（同时确认 Cookie 是否还有效）
+  - name: 打开论坛
     method: GET
     url: "https://bbs.3dmgame.com/forum.php"
     headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Upgrade-Insecure-Requests: "1"
       Cookie: "{{cookie}}"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
+
+  # ② 任务中心：确认任务列表能打开（顺便带上会话里新增的 cookie）
+  - name: 打开任务中心
     method: GET
-    url: "https://bbs.3dmgame.com/home.php?mod=task&do=apply&id=127"
+    url: "https://bbs.3dmgame.com/home.php?mod=task&item=new"
     headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Referer: "https://bbs.3dmgame.com/forum.php"
+      Cookie: "{{cookie}}"
+
+  # ③ 申请每日打卡任务（资深玩家以下用 172；等级上去后改成 171 即可）
+  - name: 申请打卡任务
+    method: GET
+    url: "https://bbs.3dmgame.com/home.php?mod=task&do=apply&id=172"
+    headers:
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
       Referer: "https://bbs.3dmgame.com/home.php?mod=task&item=new"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
+      Cookie: "{{cookie}}"
+
+  # ④ 回到任务页确认结果（check 判据作用在这一页）
+  - name: 确认任务状态
     method: GET
-    url: "https://bbs.3dmgame.com/thread-6354844-1-1.html"
+    url: "https://bbs.3dmgame.com/home.php?mod=task&item=done"
     headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      Cache-Control: "max-age=0"
-  - name: 任务
-    method: POST
-    url: "https://bbs.3dmgame.com/forum.php?mod=post&action=reply&fid={{fid0|urlencode}}&tid={{tid0|urlencode}}&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost&inajax=1"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      Content-Type: "application/x-www-form-urlencoded"
-      Origin: "https://bbs.3dmgame.com"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/thread-6354844-1-1.html"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/thread-6354844-1-1.html"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      Cache-Control: "max-age=0"
-  - name: 任务
-    method: POST
-    url: "https://bbs.3dmgame.com/forum.php?mod=post&action=reply&fid={{fid1|urlencode}}&tid={{tid1|urlencode}}&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost&inajax=1"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      Content-Type: "application/x-www-form-urlencoded"
-      Origin: "https://bbs.3dmgame.com"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/thread-6354844-1-1.html"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/thread-6354844-1-1.html"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      Cache-Control: "max-age=0"
-  - name: 任务
-    method: POST
-    url: "https://bbs.3dmgame.com/forum.php?mod=post&action=reply&fid={{fid2|urlencode}}&tid={{tid2|urlencode}}&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost&inajax=1"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      Content-Type: "application/x-www-form-urlencoded"
-      Origin: "https://bbs.3dmgame.com"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/thread-6354844-1-1.html"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/home.php?mod=task&do=draw&id=127"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/home.php?mod=task&do=view&id=127"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/home.php?mod=task&do=apply&id=68"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
       Referer: "https://bbs.3dmgame.com/home.php?mod=task&item=new"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/thread-6272162-1-1.html"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      Cache-Control: "max-age=0"
-  - name: 任务
-    method: POST
-    url: "https://bbs.3dmgame.com/forum.php?mod=post&action=reply&fid={{fid3|urlencode}}&tid={{tid3|urlencode}}&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost&inajax=1"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      Content-Type: "application/x-www-form-urlencoded"
-      Origin: "https://bbs.3dmgame.com"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/thread-6272162-1-1.html"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/thread-6272162-1-1.html"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      Cache-Control: "max-age=0"
-  - name: 任务
-    method: POST
-    url: "https://bbs.3dmgame.com/forum.php?mod=post&action=reply&fid={{fid4|urlencode}}&tid={{tid4|urlencode}}&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost&inajax=1"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      Content-Type: "application/x-www-form-urlencoded"
-      Origin: "https://bbs.3dmgame.com"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/thread-6272162-1-1.html"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/thread-6272162-1-1.html"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
-      Cache-Control: "max-age=0"
-  - name: 任务
-    method: POST
-    url: "https://bbs.3dmgame.com/forum.php?mod=post&action=reply&fid={{fid5|urlencode}}&tid={{tid5|urlencode}}&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost&inajax=1"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      Content-Type: "application/x-www-form-urlencoded"
-      Origin: "https://bbs.3dmgame.com"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/thread-6272162-1-1.html"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/home.php?mod=task&do=draw&id=68"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Referer: "https://bbs.3dmgame.com/home.php?mod=task&do=view&id=68"
-      Upgrade-Insecure-Requests: "1"
-  - name: 任务
-    method: GET
-    url: "https://bbs.3dmgame.com/home.php?mod=spacecp&ac=credit&op=base"
-    headers:
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      Accept-Language: "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
-      DNT: "1"
-      Upgrade-Insecure-Requests: "1"
+      Cookie: "{{cookie}}"
 check:
-  notLogin: [请登录, 登录后方可]
-  already: [已签到, 已经签到, 今日已签到]
-  success: ["regex:任务已成功完成", "regex:任务申请成功", "regex:任务已成功完成"]
+  notLogin: [请登录, 您需要先登录, 登录后才能]
+  # 25 小时限制 / 已在任务列表里 = 今天已经打过卡了
+  already: [每隔 25 小时, 已完成, 已申请, 已经申请, 进行中的任务]
+  success: [申请成功, 任务已完成, 恭喜您完成了, 领取成功, 勋章]
