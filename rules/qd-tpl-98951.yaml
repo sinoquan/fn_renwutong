@@ -2,13 +2,18 @@ id: qd-tpl-98951
 name: 经管之家
 category: forum
 icon: community
-summary: 每日任务
+summary: 每日签到
 description: |
   任务地址：https://bbs.pinggu.org/
-  作用：调用该站点自己的任务接口完成每日任务。
+  作用：Discuz「每日签到」（dsu_paulsign）插件，奖励积分/论坛币。
+
+  注意两点（旧版就是因为这两点一直失败）：
+  1) 站点的登录态在 Cookie 里，**每一步都必须带 Cookie 头**。旧规则只有第一步带了，
+     后两步实际是"游客"请求，所以永远被踢回 passport 登录页。
+  2) 提交签到必须带 formhash 与 qdxq（签到心情）。
 risk: none
-version: 1.0.0
-updatedAt: 2026-11-20
+version: 1.1.0
+updatedAt: 2026-11-23
 allowedHosts: [bbs.pinggu.org]
 fields:
   - key: cookie
@@ -16,47 +21,48 @@ fields:
     type: password
     required: true
 steps:
-  - name: 任务
+  - name: 打开首页
     method: GET
     url: "https://bbs.pinggu.org/"
     headers:
-      Pragma: "no-cache"
-      Cache-Control: "no-cache"
-      Upgrade-Insecure-Requests: "1"
-      Origin: "https://bbs.pinggu.org"
-      Content-Type: "application/x-www-form-urlencoded"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-      Referer: "https://bbs.pinggu.org/"
-      Accept-Language: "zh-CN,zh;q=0.9,en;q=0.8"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
       Cookie: "{{cookie}}"
-  - name: 任务
-    method: POST
-    url: "https://bbs.pinggu.org/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&infloat=1&inajax=1"
-    headers:
-      Pragma: "no-cache"
-      Cache-Control: "no-cache"
-      Upgrade-Insecure-Requests: "1"
-      Origin: "https://bbs.pinggu.org"
-      Content-Type: "application/x-www-form-urlencoded"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-      Referer: "https://bbs.pinggu.org/plugin.php?id=dsu_paulsign:sign"
-      Accept-Language: "zh-CN,zh;q=0.9,en;q=0.8"
-  - name: 任务
+
+  - name: 打开签到页
     method: GET
-    url: "https://bbs.pinggu.org/home.php?mod=spacecp&ac=credit"
+    url: "https://bbs.pinggu.org/plugin.php?id=dsu_paulsign:sign"
     headers:
-      Pragma: "no-cache"
-      Cache-Control: "no-cache"
-      Upgrade-Insecure-Requests: "1"
-      Origin: "https://bbs.pinggu.org"
-      Content-Type: "application/x-www-form-urlencoded"
-      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-      Referer: "https://bbs.pinggu.org/home.php?mod=spacecp&ac=userpic"
-      Accept-Language: "zh-CN,zh;q=0.9,en;q=0.8"
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Referer: "https://bbs.pinggu.org/"
+      Cookie: "{{cookie}}"
+    capture:
+      formhash: 'formhash=([0-9a-fA-F]{8})'
+
+  - name: 提交签到
+    method: GET
+    url: "https://bbs.pinggu.org/plugin.php?id=dsu_paulsign%3Asign&operation=qiandao&qdxq=kx&infloat=1&inajax=1&formhash={{formhash|urlencode}}"
+    headers:
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "*/*"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      X-Requested-With: "XMLHttpRequest"
+      Referer: "https://bbs.pinggu.org/plugin.php?id=dsu_paulsign:sign"
+      Cookie: "{{cookie}}"
+
+  - name: 确认签到结果
+    method: GET
+    url: "https://bbs.pinggu.org/plugin.php?id=dsu_paulsign:sign"
+    headers:
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      Accept-Language: "zh-CN,zh;q=0.9"
+      Referer: "https://bbs.pinggu.org/"
+      Cookie: "{{cookie}}"
 check:
-  notLogin: [请登录, 登录后方可]
-  already: [已签到, 已经签到, 今日已签到]
-  success: [签到成功, 签到获得, 获得魔力, 获得积分]
+  notLogin: [请登录, 登录后方可, 您需要先登录, 需要先登录]
+  already: [已签到, 已经签到, 今日已签到, 今天已签到, 明天再来]
+  success: [签到成功, 签到获得, 获得积分, 获得魔力, 恭喜你签到成功]

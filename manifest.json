@@ -1,6 +1,6 @@
 {
  "version": "2026-11-23",
- "updatedAt": "2026-11-22T17:55:43Z",
+ "updatedAt": "2026-11-22T18:04:09Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -3113,9 +3113,9 @@
   {
    "id": "qd-tpl-98951",
    "name": "经管之家",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "file": "rules/qd-tpl-98951.yaml",
-   "sha256": "68171d2a5de748645a03ee63364528c91b04e2d2f27b8955e52ca77103c68ac4"
+   "sha256": "9bf12a2300c6a77f80e47c1cf45c31020fac0fa8824501c10079fc97a94c8dd2"
   },
   {
    "id": "qd-tpl-99222",
