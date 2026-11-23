@@ -1,0 +1,61 @@
+id: qd-52pojie-browser
+name: 吾爱破解（浏览器）
+category: forum
+icon: community
+summary: 社区每日任务（需浏览器过 JS 挑战）
+description: |
+  任务地址：https://www.52pojie.cn/forum.php
+  作用：该站有 WAF 的 JS 挑战，纯请求会被挡。本规则用内置浏览器打开页面，
+       让挑战在真实浏览器里完成，再用渲染后的 HTML 做判定。
+  前置：设置页需打开「浏览器能力」，且目标机已安装 chromium。
+risk: none
+version: 0.1.0
+updatedAt: 2026-11-23
+allowedHosts: [www.52pojie.cn]
+fields:
+  - key: cookie
+    label: Cookie
+    type: password
+    required: true
+    help: 登录站点后按 F12 → Network → 复制 Cookie 整串
+defaultTask: checkin
+tasks:
+  - key: checkin
+    name: 每日签到
+    type: checkin
+    description: 读取论坛页的签到状态（实际签到动作被 WAF 验证码挡住，自动化做不了）
+    steps:
+      - name: 检查签到状态
+        url: "https://www.52pojie.cn/forum.php"
+        headers:
+          Cookie: "{{cookie}}"
+    check:
+      # 未登录特征（未登录首页/论坛页含「请 登录 后使用快捷导航」「注册[Register]」）
+      notLogin: ["请 登录 后使用快捷导航", "没有帐号？", "注册[Register]", "takelogin.php"]
+      # 未签到：论坛页有「领取今日签到奖励」入口（div#res-sign）。
+      # 点它跳 home.php?mod=task 会被创宇盾强制验证码（实测 HTTP 返回
+      # "Please enable JavaScript"、真实 Chromium 返回「访问验证·验证码访问」、
+      # 同源 fetch 也返回 wzws-waf 挑战页），所以只能报 manual 让用户自己点。
+      # 注意 judgeAll 顺序是 notLogin → manual → already → success，manual 优先，
+      # 所以「未签到」一定先命中这里，不会被下面的 success 抢先。
+      manual: ["领取今日签到奖励"]
+      # 已签到：签到前后页面唯一差异就是「领取今日签到奖励」区块消失（整页 diff 实测），
+      # 页面不会新增任何「已完成」文案 —— 所以不能靠 already 关键词判定，
+      # 只能靠「manual 没命中 → 落到 success」。这里用一个该站必有的稳定文案兜底。
+      success: ["吾爱破解"]
+
+  - key: login
+    name: 模拟登录
+    type: login
+    description: 访问首页确认 Cookie 是否仍有效（HTTP 实测可过创宇盾 WAF）
+    steps:
+      - name: 检查登录态
+        url: "https://www.52pojie.cn/index.php"
+        headers:
+          # HTTP 步骤不会自动带 cookie，必须显式声明（这是之前一直判成未登录的根因）
+          Cookie: "{{cookie}}"
+    check:
+      notLogin: ["请 登录 后使用快捷导航", "没有帐号？", "注册[Register]", "takelogin.php", "你需要启用cookies"]
+      # 「退出」链接是 member.php?mod=logging&amp;action=logout（& 转义成 &amp;），
+      # 只能匹配 action=logout；写成 logging&action=logout 永远命中不了。
+      success: ["action=logout"]
