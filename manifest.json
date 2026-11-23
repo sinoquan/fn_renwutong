@@ -1,6 +1,6 @@
 {
- "version": "2026-11-23",
- "updatedAt": "2026-11-22T18:28:31Z",
+ "version": "2026-11-24",
+ "updatedAt": "2026-11-23T20:29:23Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -1725,6 +1725,13 @@
    "sha256": "b7d38953e4a98d135466f9a3912b3364b6d6ea1f146b21d995c972258f16d4cd"
   },
   {
+   "id": "qd-52pojie-browser",
+   "name": "吾爱破解（浏览器）",
+   "version": "0.1.0",
+   "file": "rules/qd-52pojie-browser.yaml",
+   "sha256": "6447fccfe6da6d2d89d78aef220a6a86c0ebad0d8ffb6cc199342193b8934df9"
+  },
+  {
    "id": "qd-56brand",
    "name": "56brand我来网",
    "version": "1.0.0",
@@ -3354,13 +3361,6 @@
    "version": "1.1.1",
    "file": "rules/rousi.yaml",
    "sha256": "83bd3fee76d4ee7d06cdf5a8b2055eb127e84785d566d7283904da90f8d55975"
-  },
-  {
-   "id": "rousipro",
-   "name": "Rousi Pro",
-   "version": "1.1.1",
-   "file": "rules/rousipro.yaml",
-   "sha256": "4f2205fbfd83355cc0654bb1d172cac6c5287fa0827e58c6f81ffcc650b811c4"
   },
   {
    "id": "rs",
