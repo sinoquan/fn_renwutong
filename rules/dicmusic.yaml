@@ -1,50 +1,45 @@
 id: dicmusic
-name: "DICMusic"
+name: DICMusic
 category: pt
 icon: pt
-summary: 签到 + 模拟登录
-description: |
-  站点地址：https://dicmusic.com/
-  作用：签到、模拟登录。
-  签到：调用站点自带的签到页 /attendance.php。
-  来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
-  探活 2026-11-21：探活通过（NexusPHP 登录页）
+summary: 模拟登录（本站无签到，靠做种得积分）
+description: '站点地址：https://dicmusic.com/
+
+  作用：访问首页确认 Cookie 有效，并记录当前积分余额。
+
+  说明：本站没有每日签到页（/attendance.php 返回 404，/bonus.php 是积分商城），积分靠做种获得，故不提供签到任务。
+
+  '
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-21
-allowedHosts: [dicmusic.com]
+version: 1.3.0
+updatedAt: '2026-11-24'
+allowedHosts:
+- dicmusic.com
 fields:
-  - key: cookie
-    label: Cookie
-    type: password
-    required: true
-defaultTask: checkin
+- key: cookie
+  label: Cookie
+  type: password
+  required: true
+defaultTask: login
 tasks:
-  - key: checkin
-    name: 签到
-    type: checkin
-    description: 打开签到页完成每日签到
-    steps:
-      - name: 签到
-        method: GET
-        url: "https://dicmusic.com/attendance.php"
-        headers:
-          cookie: "{{cookie}}"
-          referer: "https://dicmusic.com/"
-    check:
-      notLogin: ["takelogin.php", "login.php"]
-      already: ["已签到", "已经签到", "今日已签到"]
-      success: ["签到成功", "签到获得", "获得魔力", "获得积分"]
-  - key: login
-    name: 模拟登录
-    type: login
-    description: 访问首页确认 Cookie 仍有效；未登录会被重定向到登录页
-    steps:
-      - name: 检查登录态
-        method: GET
-        url: "https://dicmusic.com/"
-        headers:
-          cookie: "{{cookie}}"
-    check:
-      notLogin: ["takelogin.php", "login.php?returnto", "你需要启用cookies"]
-      success: ["logout.php", "退出登录", "个人中心", "我的账户", "我的资料"]
+- key: login
+  name: 模拟登录
+  type: login
+  description: 访问首页确认 Cookie 仍有效，并提取当前积分
+  steps:
+  - name: 检查登录态
+    method: GET
+    url: https://dicmusic.com/
+    headers:
+      cookie: '{{cookie}}'
+  check:
+    notLogin:
+    - takelogin.php
+    - login.php?returnto
+    - 请登录
+    success:
+    - logout.php
+    - 退出
+    - User
+    reward:
+    - (?:積分|积分)[^0-9]{0,6}\(?([0-9,]+)\)?
