@@ -1,6 +1,6 @@
 {
  "version": "2026-11-24",
- "updatedAt": "2026-11-24T14:00:04Z",
+ "updatedAt": "2026-11-24T15:04:32Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -1237,9 +1237,9 @@
   {
    "id": "mteam",
    "name": "M-Team - TP",
-   "version": "1.2.0",
+   "version": "1.3.0",
    "file": "rules/mteam.yaml",
-   "sha256": "d3bd4ffc8197caf8c2d29047bf60ce22ef925fd788c45a4b6480a13c6304f604"
+   "sha256": "218c95eea8c729260c4ee5267e2372814b5ee3bed81e5ebbc0a3e26c0a46097e"
   },
   {
    "id": "musopia",
@@ -3561,9 +3561,9 @@
   {
    "id": "tjupt",
    "name": "北洋园PT",
-   "version": "1.3.0",
+   "version": "1.4.0",
    "file": "rules/tjupt.yaml",
-   "sha256": "4cda0cf3eaf282d989c01863f4cb70167b9ef675766ed24f85d4469745f7abf8"
+   "sha256": "1013e0aafad4f7e1f2cbbfda9ac610d772b273086721fa4ca9cd935f3d798b68"
   },
   {
    "id": "tlfbits",
@@ -3841,9 +3841,9 @@
   {
    "id": "zhuque",
    "name": "朱雀",
-   "version": "1.2.0",
+   "version": "1.3.0",
    "file": "rules/zhuque.yaml",
-   "sha256": "dc1c82d3c4db3c62378f146ea1627b91949e99d79b1b88316fb1ed64135ecf15"
+   "sha256": "d4ba1fea98738c72c52900e4b69934d36e0a08eb4f6a79f8a4e6a5946d53b819"
   },
   {
    "id": "zmpt",
