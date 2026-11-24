@@ -15,10 +15,12 @@ description: '站点地址：https://piggo.me/
 
   '
 risk: high
-version: 1.1.4
+version: 1.2.0
 updatedAt: '2026-11-24'
 allowedHosts:
 - piggo.me
+manualOnly: true
+manualHint: "Piggo 站点打不开了（https://piggo.me/ 返回 404），可能换域名或已关闭。请确认新地址后再更新规则。"
 fields:
 - key: cookie
   label: Cookie
