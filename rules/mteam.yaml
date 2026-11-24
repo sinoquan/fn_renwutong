@@ -10,9 +10,11 @@ description: |
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
   探活 2026-11-21：探活通过
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-21
+version: 1.2.0
+updatedAt: 2026-11-24
 allowedHosts: [kp.m-team.cc, zp.m-team.io, ob.m-team.cc, h5.m-team.cc]
+manualOnly: true
+manualHint: "M-Team 需要手工签到：站点是纯前端应用（要 JavaScript 渲染），程序拿不到签到接口。点站点地址打开后自己签一下。"
 fields:
   - key: cookie
     label: Cookie
