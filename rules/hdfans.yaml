@@ -13,7 +13,7 @@ description: '站点地址：https://hdfans.org/
 
   '
 risk: high
-version: 1.1.2
+version: 1.1.3
 updatedAt: '2026-11-24'
 allowedHosts:
 - hdfans.org
@@ -24,6 +24,35 @@ fields:
   required: true
 defaultTask: login
 tasks:
+- key: checkin
+  name: 每日签到
+  type: checkin
+  description: 访问签到页 /attendance.php 完成签到
+  steps:
+  - name: 签到
+    method: GET
+    url: https://hdfans.org/attendance.php
+    headers:
+      cookie: '{{cookie}}'
+      referer: https://hdfans.org/
+  check:
+    notLogin:
+    - takelogin.php
+    - login.php?returnto
+    - 请登录
+    already:
+    - 已签到
+    - 已经签到
+    - 今日已签到
+    - 已簽到
+    success:
+    - 签到成功
+    - 签到获得
+    - 获得魔力
+    - 获得积分
+    - 簽到成功
+    reward:
+    - (?:魔力值|魔力)[^0-9]{0,12}([0-9,]+(?:\.[0-9]+)?)
 - key: login
   name: 模拟登录
   type: login
