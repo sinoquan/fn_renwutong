@@ -1,6 +1,6 @@
 {
  "version": "2026-11-24",
- "updatedAt": "2026-11-24T10:13:15Z",
+ "updatedAt": "2026-11-24T10:34:29Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -19,9 +19,9 @@
   {
    "id": "1ptba",
    "name": "1PTBar",
-   "version": "1.1.2",
+   "version": "1.1.3",
    "file": "rules/1ptba.yaml",
-   "sha256": "7971f31775e8c7fb9f0891cb9e2533b5771852bb0e53ee83bb468ed7284bb148"
+   "sha256": "239401b3b693875839f460432cfa41e70ea157064d5099779eb8039f4cf4a721"
   },
   {
    "id": "52movie",
@@ -271,9 +271,9 @@
   {
    "id": "btschool",
    "name": "BTSCHOOL",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/btschool.yaml",
-   "sha256": "f255157ee385a27f90f00b7b015280eaa1affe2cde3a34a82490df0005f49608"
+   "sha256": "edd5b2d3f461f923b62f068cf7408d6e2dca37f42fc2ce099aa6b2a9ea34b28f"
   },
   {
    "id": "bwtorrents",
@@ -348,9 +348,9 @@
   {
    "id": "chdbits",
    "name": "CHDBits",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/chdbits.yaml",
-   "sha256": "60ee16b78cba610fc2e6704ef545cd98c6e3999b6f76b30c72cb8c02107ae801"
+   "sha256": "c1cbf302966a4fc3f1ff35100c934432e8fcd1fb78c0173ef2c9d88f3e88907c"
   },
   {
    "id": "cinemageddon",
@@ -530,9 +530,9 @@
   {
    "id": "dragonhd",
    "name": "龍之家",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/dragonhd.yaml",
-   "sha256": "c843205474fff2e702fdfaa729feeec1911e969535e26cc901c7c921c5edf380"
+   "sha256": "bc2900f8a4275a23d2a3c6f17f0500288e72052d82a64e932a1b4194566f4057"
   },
   {
    "id": "dreadvault",
@@ -747,9 +747,9 @@
   {
    "id": "hdarea",
    "name": "HDArea",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/hdarea.yaml",
-   "sha256": "302553455a0dde553d718974ba49441c7da246eae1235721e105501d2be40663"
+   "sha256": "e9e3ccbe8520d2ef6f80e79ba3bc5d9844489e4e32265c13320e55ec1f0e04f5"
   },
   {
    "id": "hdatmos",
@@ -810,9 +810,9 @@
   {
    "id": "hdfans",
    "name": "HDFans",
-   "version": "1.1.2",
+   "version": "1.1.3",
    "file": "rules/hdfans.yaml",
-   "sha256": "96fef159f865835612b1e4bd585bb6d4706ed4dc4e267385622a83c8d6ab9ed6"
+   "sha256": "97589cbfc6973430190eb6961ff7bb8a0bbd6cb95701abe09e014aa142d0e75e"
   },
   {
    "id": "hdhome",
@@ -859,9 +859,9 @@
   {
    "id": "hdsky",
    "name": "HDSky",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/hdsky.yaml",
-   "sha256": "fc3776c5d0eee839e5816435b823f14b169b8118941fb6046b904030b8734dc1"
+   "sha256": "16de8b1edaddfe1481efca11040ca1563bbd26964422a3831fce654541a48ab3"
   },
   {
    "id": "hdspace",
@@ -1055,9 +1055,9 @@
   {
    "id": "keepfrds",
    "name": "PT@KEEPFRDS",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/keepfrds.yaml",
-   "sha256": "ef828d53967a01a3eb69a46cc1bb3d6feb0090a37158d3dba3cdf02a44837b01"
+   "sha256": "cf56bb813035f2de9912341fbf3ffcfb1959928a4cf1ac980ca446d78e556257"
   },
   {
    "id": "kelu",
@@ -1384,9 +1384,9 @@
   {
    "id": "opencd",
    "name": "OpenCD",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/opencd.yaml",
-   "sha256": "d34e5dd7ea0258871324dfea41a76684202287882e64405f4e57935b7b7246a9"
+   "sha256": "03186701f1627821b9a812916b4f86a93f31c4b374a79daac27f938dfde6e044"
   },
   {
    "id": "oppaiti",
@@ -1447,9 +1447,9 @@
   {
    "id": "piggo",
    "name": "Piggo",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/piggo.yaml",
-   "sha256": "3ef13c75960d7f114566128435a58cb3a51009726d04f698b30ab77afae22646"
+   "sha256": "bdaa6e9ae126c3bf90c992f6a7d53abcb97b4697f2bb987b01f29789f72a29c7"
   },
   {
    "id": "pixelcove",
@@ -3477,9 +3477,9 @@
   {
    "id": "springsunday",
    "name": "SpringSunday",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/springsunday.yaml",
-   "sha256": "f99c3061344485ee4c364f4522e1f02c2f485fe461c62144c055261629668f6a"
+   "sha256": "5d650154a711d4a1571dda70bbaeaafe24d6522a29d70d007db776144b15f400"
   },
   {
    "id": "starspace",
@@ -3519,9 +3519,9 @@
   {
    "id": "tccf",
    "name": "TorrentCCF",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/tccf.yaml",
-   "sha256": "94d3612ff7db40fff0ac80e4178ca5631dec7acba63b2e533bd4861c092e611c"
+   "sha256": "1b422ea894e4967235424834a626374eccf123fff5a180c41c078d7a0c0a6f5d"
   },
   {
    "id": "teamhd",
@@ -3568,9 +3568,9 @@
   {
    "id": "tlfbits",
    "name": "TLFBits",
-   "version": "1.1.2",
+   "version": "1.1.4",
    "file": "rules/tlfbits.yaml",
-   "sha256": "c0786292d8ff031067c76ae817e1a3c28822a0b73cc6d8f72090cd5cc851c971"
+   "sha256": "60925dfb9a3b6900283ab910c61074a88ed52fb875fd55a6b2b33d1aee77dac6"
   },
   {
    "id": "tlzdigital",
