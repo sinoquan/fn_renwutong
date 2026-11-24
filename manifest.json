@@ -1,6 +1,6 @@
 {
  "version": "2026-11-24",
- "updatedAt": "2026-11-23T20:29:23Z",
+ "updatedAt": "2026-11-24T08:33:24Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -3673,9 +3673,9 @@
   {
    "id": "ubits",
    "name": "UBits",
-   "version": "1.1.1",
+   "version": "1.2.0",
    "file": "rules/ubits.yaml",
-   "sha256": "f4718f7366288ccbf8c0a4d4eb0244b38ebbacb6531b7452439b9ea4a76846c7"
+   "sha256": "2e75ad029e27d4cfb1d4c3e7dd035babf60f48d1b55bdc6e9c8f13adb589bbd9"
   },
   {
    "id": "uhdbits",
