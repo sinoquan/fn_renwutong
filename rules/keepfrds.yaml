@@ -13,7 +13,7 @@ description: '站点地址：https://pt.keepfrds.com/
 
   '
 risk: high
-version: 1.1.2
+version: 1.1.4
 updatedAt: '2026-11-24'
 allowedHosts:
 - pt.keepfrds.com
