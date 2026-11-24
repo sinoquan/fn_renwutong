@@ -1,33 +1,41 @@
 id: 1ptba
-name: "1PTBar"
+name: 1PTBar
 category: pt
 icon: pt
 summary: 模拟登录
-description: |
-  站点地址：https://1ptba.com/
+description: '站点地址：https://1ptba.com/
+
   作用：保活。
+
   注意：本站不是 NexusPHP，登录后的页面无法离线验证，因此不提供「模拟登录」，只做保活与签到。
+
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
+
   探活 2026-11-21：生成时未能连通（可能被墙/需要代理），站点恢复后本规则即可用
+
+  '
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-21
-allowedHosts: [1ptba.com]
+version: 1.1.2
+updatedAt: '2026-11-24'
+allowedHosts:
+- 1ptba.com
 fields:
-  - key: cookie
-    label: Cookie
-    type: password
-    required: true
+- key: cookie
+  label: Cookie
+  type: password
+  required: true
 defaultTask: login
 tasks:
-  - key: login
-    name: 模拟登录
-    type: login
-    description: 带 Cookie 访问一次站点；登录态失效会被识别出来
-    steps:
-      - name: 访问首页
-        method: GET
-        url: "https://1ptba.com/"
-        headers:
-          cookie: "{{cookie}}"
-    check: {}
+- key: login
+  name: 模拟登录
+  type: login
+  description: 带 Cookie 访问一次站点；登录态失效会被识别出来
+  steps:
+  - name: 访问首页
+    method: GET
+    url: https://1ptba.com/
+    headers:
+      cookie: '{{cookie}}'
+  check:
+    reward:
+    - (?:魔力值|魔力)[^0-9]{0,12}([0-9,]+(?:\.[0-9]+)?)
