@@ -3,48 +3,75 @@ name: OurBits
 category: pt
 icon: pt
 summary: PT 站每日任务
-description: |
-  任务地址：https://ourbits.club/attendance.php
+description: '任务地址：https://ourbits.club/attendance.php
+
   作用：访问站点任务页完成每日任务，并记录返回的魔力值。
+
+  '
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-20
-allowedHosts: [ourbits.club]
+version: 1.1.2
+updatedAt: '2026-11-24'
+allowedHosts:
+- ourbits.club
 fields:
-  - key: cookie
-    label: Cookie
-    type: password
-    required: true
-    help: 登录 ourbits.club 后按 F12 → Network → 复制 Request Headers 里的 Cookie 整串
+- key: cookie
+  label: Cookie
+  type: password
+  required: true
+  help: 登录 ourbits.club 后按 F12 → Network → 复制 Request Headers 里的 Cookie 整串
 defaultTask: checkin
 tasks:
-  - key: checkin
-    name: 每日签到
-    type: checkin
-    description: 打开任务页完成每日签到
-    steps:
-      - name: 任务
-        method: GET
-        url: "https://ourbits.club/attendance.php"
-        headers:
-          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-          Accept-Language: "zh-CN,zh;q=0.9,en;q=0.8"
-          Referer: "https://ourbits.club/index.php"
-    check:
-      notLogin: [请登录, 登录后方可, 你需要登录, takelogin.php]
-      already: [已签到, 已经签到, 今日已签到, 您今天已经签到]
-      success: [签到成功, 签到获得, 获得魔力值, 成功签到, 获得积分]
-
-  - key: login
-    name: 模拟登录
-    type: login
-    description: 先访问首页、停顿后再确认 Cookie 仍有效；失效会立刻提示你重填
-    steps:
-      - name: 检查登录态
-        method: GET
-        url: "https://ourbits.club/index.php"
-        headers:
-          cookie: "{{cookie}}"
-    check:
-      notLogin: [takelogin.php, 登录 / 注册, 你需要启用cookies, 请登录, 登录后方可]
-      success: [logout.php, 退出登录, 个人中心, 我的账户, 我的资料]
+- key: checkin
+  name: 每日签到
+  type: checkin
+  description: 打开任务页完成每日签到
+  steps:
+  - name: 任务
+    method: GET
+    url: https://ourbits.club/attendance.php
+    headers:
+      Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+      Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+      Referer: https://ourbits.club/index.php
+  check:
+    notLogin:
+    - 请登录
+    - 登录后方可
+    - 你需要登录
+    - takelogin.php
+    already:
+    - 已签到
+    - 已经签到
+    - 今日已签到
+    - 您今天已经签到
+    success:
+    - 签到成功
+    - 签到获得
+    - 获得魔力值
+    - 成功签到
+    - 获得积分
+- key: login
+  name: 模拟登录
+  type: login
+  description: 先访问首页、停顿后再确认 Cookie 仍有效；失效会立刻提示你重填
+  steps:
+  - name: 检查登录态
+    method: GET
+    url: https://ourbits.club/index.php
+    headers:
+      cookie: '{{cookie}}'
+  check:
+    notLogin:
+    - takelogin.php
+    - 登录 / 注册
+    - 你需要启用cookies
+    - 请登录
+    - 登录后方可
+    success:
+    - logout.php
+    - 退出登录
+    - 个人中心
+    - 我的账户
+    - 我的资料
+    reward:
+    - (?:魔力值|魔力)[^0-9]{0,12}([0-9,]+(?:\.[0-9]+)?)
