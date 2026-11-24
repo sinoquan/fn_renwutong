@@ -1,6 +1,6 @@
 {
  "version": "2026-11-24",
- "updatedAt": "2026-11-24T13:51:41Z",
+ "updatedAt": "2026-11-24T14:00:04Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -19,9 +19,9 @@
   {
    "id": "1ptba",
    "name": "1PTBar",
-   "version": "1.1.3",
+   "version": "1.1.4",
    "file": "rules/1ptba.yaml",
-   "sha256": "239401b3b693875839f460432cfa41e70ea157064d5099779eb8039f4cf4a721"
+   "sha256": "70c10581d2cf2d6529ce8014f3625852639a0207c4ce6cc8b939e582150c87db"
   },
   {
    "id": "52movie",
@@ -747,9 +747,9 @@
   {
    "id": "hdarea",
    "name": "HDArea",
-   "version": "1.1.4",
+   "version": "1.1.5",
    "file": "rules/hdarea.yaml",
-   "sha256": "9a1d43f32aae2b3762958d6b68522be172010e7b519511495e2474c8929d1843"
+   "sha256": "b68adf3844f1c53b071de1b66eda53a0bc90fc6ae66cfe4859aa401f3a91d7fb"
   },
   {
    "id": "hdatmos",
@@ -859,9 +859,9 @@
   {
    "id": "hdsky",
    "name": "HDSky",
-   "version": "1.1.4",
+   "version": "1.1.5",
    "file": "rules/hdsky.yaml",
-   "sha256": "16de8b1edaddfe1481efca11040ca1563bbd26964422a3831fce654541a48ab3"
+   "sha256": "e2dda16d6af3e3850e57f7f6e1145cccd805530d4798a321f91d7672b86c9998"
   },
   {
    "id": "hdspace",
