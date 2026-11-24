@@ -2,32 +2,25 @@ id: ubits
 name: "UBits"
 category: pt
 icon: pt
-summary: 模拟登录
+summary: 需要手工签到
 description: |
   站点地址：https://ubits.club/
-  作用：保活。
-  注意：本站不是 NexusPHP，登录后的页面无法离线验证，因此不提供「模拟登录」，只做保活与签到。
-  来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
-  探活 2026-11-21：生成时未能连通（可能被墙/需要代理），站点恢复后本规则即可用
+  状态：全站 Cloudflare 人机验证，程序无法自动访问（纯 HTTP 403、无头浏览器也被拦）。
+  因此本规则不执行任何自动动作，只在每天提醒你到浏览器手工签到。
+  签到页：https://ubits.club/attendance.php
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-21
+version: 1.2.0
+updatedAt: 2026-11-24
 allowedHosts: [ubits.club]
-fields:
-  - key: cookie
-    label: Cookie
-    type: password
-    required: true
+manualOnly: true
+manualHint: "UBits 需要手工签到：该站有 Cloudflare 人机验证，程序进不去。点「站点地址」打开后自己点一下签到。"
+# 手工站不需要凭据：程序不发任何请求，cookie 填了也用不上，所以留空。
+# 服务端只校验每个字段自己的 required，不存在"至少要有一个字段"的限制，
+# 因此 fields: [] 可以正常建任务（已核 server.go:660 的必填校验逻辑）。
+fields: []
 defaultTask: login
 tasks:
   - key: login
-    name: 模拟登录
+    name: 提醒签到
     type: login
-    description: 带 Cookie 访问一次站点；登录态失效会被识别出来
-    steps:
-      - name: 访问首页
-        method: GET
-        url: "https://ubits.club/"
-        headers:
-          cookie: "{{cookie}}"
-    check: {}
+    description: 不发起网络请求，只提醒
