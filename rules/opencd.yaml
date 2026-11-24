@@ -13,7 +13,7 @@ description: '站点地址：https://open.cd/ / https://www.open.cd/
 
   '
 risk: high
-version: 1.1.2
+version: 1.1.4
 updatedAt: '2026-11-24'
 allowedHosts:
 - open.cd
