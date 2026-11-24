@@ -2,7 +2,7 @@ id: tjupt
 name: "北洋园PT"
 category: pt
 icon: pt
-summary: 签到 + 模拟登录
+summary: 需要手工签到（图片验证码）
 description: |
   站点地址：https://tjupt.org/ / https://www.tjupt.org/
   作用：签到、模拟登录。
@@ -10,9 +10,11 @@ description: |
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
   探活 2026-11-21：探活通过（NexusPHP 登录页）
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-21
+version: 1.3.0
+updatedAt: 2026-11-24
 allowedHosts: [tjupt.org, www.tjupt.org]
+manualOnly: true
+manualHint: "北洋园PT 需要手工签到：签到要选图片对应的影视名（人机验证），程序做不了。点站点地址打开后自己签一下。"
 fields:
   - key: cookie
     label: Cookie
@@ -21,20 +23,11 @@ fields:
 defaultTask: checkin
 tasks:
   - key: checkin
-    name: 签到
+    name: 提醒签到
     type: checkin
-    description: 打开签到页完成每日签到
-    steps:
-      - name: 签到
-        method: GET
-        url: "https://tjupt.org/attendance.php"
-        headers:
-          cookie: "{{cookie}}"
-          referer: "https://tjupt.org/"
+    description: 不发起请求，只提醒（签到页需人工选图片验证码）
     check:
-      notLogin: ["takelogin.php", "login.php"]
-      already: ["已签到", "已经签到", "今日已签到"]
-      success: ["签到成功", "签到获得", "获得魔力", "获得积分"]
+      success: ["签到"]
   - key: login
     name: 模拟登录
     type: login
