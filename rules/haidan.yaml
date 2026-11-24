@@ -9,7 +9,7 @@ description: '任务地址：https://www.haidan.cc/signin.php
 
   '
 risk: high
-version: 1.1.2
+version: 1.2.0
 updatedAt: '2026-11-24'
 allowedHosts:
 - www.haidan.cc
@@ -52,6 +52,8 @@ tasks:
     success:
     - regex:302
     - regex:href=['"]userdetails\.php\?id=\d+['"]
+    reward:
+    - (?:魔力值|魔力)[^0-9]{0,12}([0-9,]+(?:\.[0-9]+)?)
 - key: login
   name: 模拟登录
   type: login
