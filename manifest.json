@@ -1,6 +1,6 @@
 {
  "version": "2026-11-24",
- "updatedAt": "2026-11-24T10:34:29Z",
+ "updatedAt": "2026-11-24T13:02:18Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -131,9 +131,9 @@
   {
    "id": "audiences",
    "name": "Audiences",
-   "version": "1.1.2",
+   "version": "1.2.0",
    "file": "rules/audiences.yaml",
-   "sha256": "95d4ce0ef09413bd55cbcb1e82f8b1d0854a884f4cec185a2eb6af60184980a5"
+   "sha256": "243c3248c2c40e1459240e463e397e36d43017f26e44c934e40f822b2ff94164"
   },
   {
    "id": "audionews",
@@ -705,9 +705,9 @@
   {
    "id": "haidan",
    "name": "海胆",
-   "version": "1.1.2",
+   "version": "1.2.0",
    "file": "rules/haidan.yaml",
-   "sha256": "97a59a2b4654e18d91c6e9d408fb873e7d30607a63aa5f361381c0f58890dfd8"
+   "sha256": "a81f303b09a18d9074b40f582d3b3b9e282aa542eb25d8442e099f18b1e63800"
   },
   {
    "id": "happyfappy",
@@ -1447,9 +1447,9 @@
   {
    "id": "piggo",
    "name": "Piggo",
-   "version": "1.1.4",
+   "version": "1.2.0",
    "file": "rules/piggo.yaml",
-   "sha256": "bdaa6e9ae126c3bf90c992f6a7d53abcb97b4697f2bb987b01f29789f72a29c7"
+   "sha256": "2101215451843f9a2c05af3d6b14f93220d8a194a0ac277d7acd6ccdbb211093"
   },
   {
    "id": "pixelcove",
