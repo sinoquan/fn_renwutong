@@ -11,7 +11,7 @@ description: '任务地址：https://audiences.me/mybonus.php
 
   '
 risk: high
-version: 1.2.0
+version: 1.2.1
 updatedAt: '2026-11-24'
 allowedHosts:
 - audiences.me
@@ -26,7 +26,7 @@ tasks:
 - key: checkin
   name: 每日任务
   type: checkin
-  description: 访问爆米花页，记录当前爆米花余额
+  description: 访问爆米花页确认登录态（本站无签到，魔力靠做种获得）
   steps:
   - name: 爆米花页
     method: GET
@@ -40,8 +40,6 @@ tasks:
     - login.php
     success:
     - 爆米花系统
-    reward:
-    - (?:爆米花|魔力值)[^0-9]{0,12}([0-9,]+)
 - key: login
   name: 模拟登录
   type: login
