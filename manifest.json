@@ -1,6 +1,6 @@
 {
  "version": "2026-11-24",
- "updatedAt": "2026-11-24T13:02:18Z",
+ "updatedAt": "2026-11-24T13:51:41Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -131,9 +131,9 @@
   {
    "id": "audiences",
    "name": "Audiences",
-   "version": "1.2.0",
+   "version": "1.2.1",
    "file": "rules/audiences.yaml",
-   "sha256": "243c3248c2c40e1459240e463e397e36d43017f26e44c934e40f822b2ff94164"
+   "sha256": "c537849f087e04f91fd0d44ff1a94a4d3fdb1db7e6bd8f4c269b2f73cd00b519"
   },
   {
    "id": "audionews",
@@ -749,7 +749,7 @@
    "name": "HDArea",
    "version": "1.1.4",
    "file": "rules/hdarea.yaml",
-   "sha256": "e9e3ccbe8520d2ef6f80e79ba3bc5d9844489e4e32265c13320e55ec1f0e04f5"
+   "sha256": "9a1d43f32aae2b3762958d6b68522be172010e7b519511495e2474c8929d1843"
   },
   {
    "id": "hdatmos",
