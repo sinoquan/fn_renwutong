@@ -1,50 +1,79 @@
 id: discfan
-name: "DiscFan"
+name: DiscFan
 category: pt
 icon: pt
 summary: 签到 + 模拟登录
-description: |
-  站点地址：https://discfan.net/
+description: '站点地址：https://discfan.net/
+
   作用：签到、模拟登录。
+
   签到：调用站点自带的签到页 /attendance.php。
+
   来源：站点清单取自 PT-depiler（MIT 许可），规则按本项目模板生成。
+
   探活 2026-11-21：探活通过（NexusPHP 登录页）
+
+  '
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-21
-allowedHosts: [discfan.net]
+version: 1.2.1
+updatedAt: '2026-11-24'
+allowedHosts:
+- discfan.net
 fields:
-  - key: cookie
-    label: Cookie
-    type: password
-    required: true
+- key: cookie
+  label: Cookie
+  type: password
+  required: true
 defaultTask: checkin
 tasks:
-  - key: checkin
-    name: 签到
-    type: checkin
-    description: 打开签到页完成每日签到
-    steps:
-      - name: 签到
-        method: GET
-        url: "https://discfan.net/attendance.php"
-        headers:
-          cookie: "{{cookie}}"
-          referer: "https://discfan.net/"
-    check:
-      notLogin: ["takelogin.php", "login.php"]
-      already: ["已签到", "已经签到", "今日已签到"]
-      success: ["签到成功", "签到获得", "获得魔力", "获得积分"]
-  - key: login
-    name: 模拟登录
-    type: login
-    description: 访问首页确认 Cookie 仍有效；未登录会被重定向到登录页
-    steps:
-      - name: 检查登录态
-        method: GET
-        url: "https://discfan.net/"
-        headers:
-          cookie: "{{cookie}}"
-    check:
-      notLogin: ["takelogin.php", "login.php?returnto", "你需要启用cookies"]
-      success: ["logout.php", "退出登录", "个人中心", "我的账户", "我的资料"]
+- key: checkin
+  name: 签到
+  type: checkin
+  description: 打开签到页完成每日签到
+  steps:
+  - name: 签到
+    method: GET
+    url: https://discfan.net/attendance.php
+    headers:
+      cookie: '{{cookie}}'
+      referer: https://discfan.net/
+  check:
+    notLogin:
+    - takelogin.php
+    - login.php
+    already:
+    - 簽到已得
+    - 今日已簽到
+    - 已經簽到
+    - 已签到
+    - 已经签到
+    success:
+    - 簽到成功
+    - 签到成功
+    - 獲得
+    reward:
+    - 本次簽到獲得\s*([0-9,]+)
+    - 簽到已得\s*([0-9,]+)
+- key: login
+  name: 模拟登录
+  type: login
+  description: 访问首页确认 Cookie 仍有效；未登录会被重定向到登录页
+  steps:
+  - name: 检查登录态
+    method: GET
+    url: https://discfan.net/
+    headers:
+      cookie: '{{cookie}}'
+  check:
+    notLogin:
+    - takelogin.php
+    - login.php?returnto
+    - 你需要启用cookies
+    success:
+    - logout.php
+    - 退出登录
+    - 个人中心
+    - 我的账户
+    - 我的资料
+    reward:
+    - (?:魔力值|魔力)[^0-9]{0,12}([0-9,]+(?:\.[0-9]+)?)
