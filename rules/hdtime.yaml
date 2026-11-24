@@ -3,55 +3,78 @@ name: HDTime
 category: pt
 icon: pt
 summary: 每日任务
-description: |
-  任务地址：https://hdtime.org/attendance.php
+description: '任务地址：https://hdtime.org/attendance.php
+
   作用：调用该站点自己的任务接口完成每日任务。
+
+  '
 risk: high
-version: 1.1.1
-updatedAt: 2026-11-20
-allowedHosts: [hdtime.org]
+version: 1.1.2
+updatedAt: '2026-11-24'
+allowedHosts:
+- hdtime.org
 fields:
-  - key: cookie
-    label: Cookie
-    type: password
-    required: true
+- key: cookie
+  label: Cookie
+  type: password
+  required: true
 defaultTask: checkin
 tasks:
-  - key: checkin
-    name: 每日签到
-    type: checkin
-    description: 打开任务页完成每日签到
-    steps:
-      - name: 任务
-        method: GET
-        url: "https://hdtime.org/attendance.php"
-        headers:
-          upgrade-insecure-requests: "1"
-          dnt: "1"
-          user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
-          accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-          sec-fetch-site: "same-origin"
-          sec-fetch-mode: "navigate"
-          sec-fetch-user: "?1"
-          sec-fetch-dest: "document"
-          referer: "https://hdtime.org/torrents.php"
-          accept-language: "zh-CN,zh;q=0.9"
-          cookie: "{{cookie}}"
-    check:
-      notLogin: [请登录, 登录后方可]
-      already: [已签到, 已经签到, 今日已签到]
-      success: [签到成功, 签到获得, 获得魔力, 获得积分]
-
-  - key: login
-    name: 模拟登录
-    type: login
-    description: 先访问首页、停顿后再确认 Cookie 仍有效；失效会立刻提示你重填
-    steps:
-      - name: 检查登录态
-        method: GET
-        url: "https://hdtime.org/index.php"
-        headers:
-          cookie: "{{cookie}}"
-    check:
-      notLogin: [takelogin.php, 登录 / 注册, 你需要启用cookies, 请登录, 登录后方可]
-      success: [logout.php, 退出登录, 个人中心, 我的账户, 我的资料]
+- key: checkin
+  name: 每日签到
+  type: checkin
+  description: 打开任务页完成每日签到
+  steps:
+  - name: 任务
+    method: GET
+    url: https://hdtime.org/attendance.php
+    headers:
+      upgrade-insecure-requests: '1'
+      dnt: '1'
+      user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+      sec-fetch-site: same-origin
+      sec-fetch-mode: navigate
+      sec-fetch-user: ?1
+      sec-fetch-dest: document
+      referer: https://hdtime.org/torrents.php
+      accept-language: zh-CN,zh;q=0.9
+      cookie: '{{cookie}}'
+  check:
+    notLogin:
+    - 请登录
+    - 登录后方可
+    already:
+    - 已签到
+    - 已经签到
+    - 今日已签到
+    success:
+    - 签到成功
+    - 签到获得
+    - 获得魔力
+    - 获得积分
+- key: login
+  name: 模拟登录
+  type: login
+  description: 先访问首页、停顿后再确认 Cookie 仍有效；失效会立刻提示你重填
+  steps:
+  - name: 检查登录态
+    method: GET
+    url: https://hdtime.org/index.php
+    headers:
+      cookie: '{{cookie}}'
+  check:
+    notLogin:
+    - takelogin.php
+    - 登录 / 注册
+    - 你需要启用cookies
+    - 请登录
+    - 登录后方可
+    success:
+    - logout.php
+    - 退出登录
+    - 个人中心
+    - 我的账户
+    - 我的资料
+    reward:
+    - (?:魔力值|魔力)[^0-9]{0,12}([0-9,]+(?:\.[0-9]+)?)
