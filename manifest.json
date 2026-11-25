@@ -1,6 +1,6 @@
 {
  "version": "2026-11-25",
- "updatedAt": "2026-11-25T06:21:40Z",
+ "updatedAt": "2026-11-25T06:56:33Z",
  "rules": [
   {
    "id": "0dayfiles",
@@ -922,9 +922,9 @@
   {
    "id": "hhanclub",
    "name": "憨憨",
-   "version": "1.1.2",
+   "version": "1.2.0",
    "file": "rules/hhanclub.yaml",
-   "sha256": "e59688bbfa114c077e07e077b97a7bcfa3f20af089bac1e0741b5331d4ad5866"
+   "sha256": "4fd92427e0a46201eb3d55b9cf08c753bc1af9a2580376387e69774131a609cf"
   },
   {
    "id": "hitpt",
