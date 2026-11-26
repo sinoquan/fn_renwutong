@@ -9,8 +9,8 @@ description: '任务地址：https://bbs.binmt.cc/plugin.php?id=k_misign%3Asign
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - bbs.binmt.cc
 fields:
@@ -36,6 +36,8 @@ steps:
     Referer: https://bbs.binmt.cc/forum.php?gid=36
     Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
     Cookie: '{{cookie}}'
+  capture:
+    formhash: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
 - name: 任务
   method: GET
   url: https://bbs.binmt.cc/k_misign-sign.html?operation=qiandao&format=button&formhash={{formhash|urlencode}}&inajax=1&ajaxtarget=midaben_sign
