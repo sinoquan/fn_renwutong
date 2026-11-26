@@ -9,8 +9,8 @@ description: '任务地址：https://erciyuan.org
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - erciyuan.org
 fields:
@@ -40,6 +40,8 @@ steps:
   url: https://erciyuan.org
   headers:
     Cookie: '{{cookie}}'
+  capture:
+    formhash: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
 - name: 任务
   method: POST
   url: https://{{d}}/member.php?mod=logging&action=login&loginsubmit=yes&handlekey=login&inajax=1
