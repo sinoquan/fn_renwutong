@@ -9,8 +9,8 @@ description: '任务地址：https://www.wnflb2023.com/plugin.php?id=fx_checkin%
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - www.wnflb2023.com
 fields:
@@ -30,6 +30,8 @@ steps:
     Referer: https://www.wnflb2023.com/
     Cookie: '{{cookie}}'
     Upgrade-Insecure-Requests: '1'
+  capture:
+    formhash: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
 - name: 任务
   method: GET
   url: https://www.wnflb2023.com/plugin.php?id=fx_checkin%3Acheckin&formhash={{formhash|urlencode}}&{{formhash|urlencode}}=&infloat=yes&handlekey=fx_checkin&inajax=1&ajaxtarget=fwin_content_fx_checkin
