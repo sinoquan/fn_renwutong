@@ -9,8 +9,8 @@ description: '任务地址：https://www.pdawiki.com/forum/
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.2
+updatedAt: '2026-11-26'
 allowedHosts:
 - www.pdawiki.com
 fields:
@@ -40,6 +40,9 @@ steps:
     sec-fetch-site: same-origin
     user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
     Cookie: '{{cookie}}'
+  capture:
+    formhash3: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
+    loginhash: (?:name="loginhash"\s+value="|loginhash=)([A-Za-z0-9]{4,32})
 - name: 任务
   method: GET
   url: https://www.pdawiki.com/forum/member.php?mod=logging&action=login
