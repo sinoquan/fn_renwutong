@@ -9,8 +9,8 @@ description: '任务地址：https://www.anywlan.com/plugin.php?id=k_misign%3Asi
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - www.anywlan.com
 fields:
@@ -32,6 +32,8 @@ steps:
     upgrade-insecure-requests: '1'
     user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
     Cookie: '{{cookie}}'
+  capture:
+    formhash: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
 - name: 任务
   method: GET
   url: https://www.anywlan.com/plugin.php?id=k_misign%3Asign&operation=qiandao&formhash={{formhash|urlencode}}&format=empty
