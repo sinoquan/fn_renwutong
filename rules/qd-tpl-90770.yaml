@@ -9,8 +9,8 @@ description: '任务地址：https://www.mydigit.cn/plugin.php?id=k_misign:sign
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - www.mydigit.cn
 fields:
@@ -30,6 +30,8 @@ steps:
     Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
     Cookie: '{{cookie}}'
     Upgrade-Insecure-Requests: '1'
+  capture:
+    formhash: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
 - name: 任务
   method: GET
   url: https://www.mydigit.cn/plugin.php?id=k_misign:sign&operation=qiandao&format=empty&inajax=1&ajaxtarget=JD_sign&formhash={{formhash|urlencode}}
