@@ -9,8 +9,8 @@ description: '任务地址：https://bbs.meizu.cn/
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - bbs.meizu.cn
 fields:
@@ -31,6 +31,8 @@ steps:
     Cookie: '{{cookie}}'
     If-None-Match: W/"5aa56ea1-1b3ca"
     If-Modified-Since: Sun, 11 Mar 2018 18:00:01 GMT
+  capture:
+    formhash: (?:name="formhash"\s+value="|formhash=)([0-9a-f]{8,10})
 - name: 任务
   method: POST
   url: https://bbs.meizu.cn/app.php?mod=signin&action=sign&formhash={{formhash|urlencode|urlencode}}
