@@ -9,8 +9,8 @@ description: '任务地址：https://passport.jlc.com/api/cas/sso/check-login
 
   '
 risk: none
-version: 1.1.0
-updatedAt: '2026-11-23'
+version: 1.1.1
+updatedAt: '2026-11-26'
 allowedHosts:
 - passport.jlc.com
 fields:
@@ -41,7 +41,7 @@ steps:
     Cookie: '{{cookie}}'
 - name: 任务
   method: GET
-  url: https://oshwhub.com/api/users/getSignInProfile?_t={{time16|truncate(14,True,'',0)|urlencode}}
+  url: https://oshwhub.com/api/users/getSignInProfile?_t={{timestamp('ms')|truncate(14,True,'',0)|urlencode}}
   headers:
     cookie: '{{cookies}}'
     Accept: application/json, text/plain, */*
